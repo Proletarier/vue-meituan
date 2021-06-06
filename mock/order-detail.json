@@ -1,0 +1,69 @@
+{
+  "shopInfo": {
+    "id": 0,
+    "mtId": "943133088849413",
+    "name": "乡村基（双流信息工程学院店）",
+    "phone": "13981976948",
+    "shopLat": 0.0,
+    "shopLng": 0.0
+  },
+  "dinners": "",
+  "dishes": [
+    {
+      "dishId": 2994497338,
+      "spuId": 2652661367,
+      "count": 1,
+      "name": "爱心大鸡排一枚(份)",
+      "price": 8.88,
+      "originPrice": 12.0,
+      "activityIcon": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+    },
+    {
+      "dishId": 2977264329,
+      "spuId": 2635866264,
+      "count": 1,
+      "name": "肉末茄子盖饭（含赠品）(份)",
+      "price": 15.99,
+      "originPrice": 20.0,
+      "activityIcon": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+    }
+  ],
+  "boxFee": 2.0,
+  "delFee": 3.5,
+  "deliveryTimeDesc": "立即配送",
+  "activities": [
+    {
+      "id": 0,
+      "name": "减配送费",
+      "desc": "-￥3",
+      "price": 3.0,
+      "amount": 1,
+      "iconUrl": "http://p1.meituan.net/activityconfig/b5390a1576d025f68a954f95fb3f44de1824.png"
+    },
+    {
+      "id": 0,
+      "name": "美团红包",
+      "desc": "-￥5",
+      "price": 5.0,
+      "amount": 1,
+      "iconUrl": "http://p1.meituan.net/xianfu/02f69fe99e9d74ca67a9545dbff26e312048.png"
+    }
+  ],
+  "totalPrice": 37.5,
+  "discountPrice": 15.13,
+  "payPrice": 22.37,
+  "receiver": {
+    "name": "赵(先生)",
+    "phone": "18780027522",
+    "address": "龙伦成诊所 (旁边188号 )",
+    "addressLat": 3.0581465E7,
+    "addressLng": 1.03982564E8
+  },
+  "mtOrderViewId": "84666733127761131",
+  "createTime": "2020-11-09 12:35",
+  "payType": "在线支付",
+  "invoiceTitle": "",
+  "comment": "",
+  "orderAccountType": 0,
+  "orderSource": 1
+}

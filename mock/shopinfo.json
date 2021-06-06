@@ -1,0 +1,54 @@
+{
+  "activityList": [
+    {
+      "actName": "",
+      "actDesc": "满22减12;满50减20;满70减30",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png"
+    },
+    {
+      "actName": "",
+      "actDesc": "折扣商品0折起",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+    },
+    {
+      "actName": "",
+      "actDesc": "该商家支持在线支付",
+      "actType": 0,
+      "iconText": "",
+      "iconUrl": "http://p1.meituan.net/xianfu/32200c3060be7903f62c9076308619ee734.png"
+    }
+  ],
+  "dpShopId": 0,
+  "invoiceMsg": "",
+  "invoiceSupport": 1,
+  "licencePics": [],
+  "poiQualificationInfo": {
+    "show": true,
+    "content": "查看食品安全档案",
+    "url": "https://i.waimai.meituan.com/c/foods_safe_doc/index.html?wm_poi_id=1063057164065765"
+  },
+  "mtWmPoiId": "1063057163803621",
+  "onlinePay": 1,
+  "overtimePaymentSupported": false,
+  "isBrand": 0,
+  "serTime": [
+    "00:00-02:00",
+    "10:00-23:59"
+  ],
+  "shopAddress": "火车南站西路6号1栋1层166号",
+  "shopEnvTitle": "商家环境",
+  "shopName": "叫了只炸鸡（桐梓林店）",
+  "shopPhone": [
+    "13882183793"
+  ],
+  "shopReviewTitle": "点评评价",
+  "shopStar": 45,
+  "sold": "0",
+  "tip": "新店开业，全场5折！外脆里嫩，鲜嫩多汁，鸡年叫就点叫了只鸡！\n炸鸡底味微辣，不能吃一点点辣的宝贝们慎点哦！\n出来卖，不要装，做好吃了，你就是好鸡！\n全国热线:400-606-2556",
+  "shopLat": 3.0611476E7,
+  "shopLng": 1.04065114E8
+}

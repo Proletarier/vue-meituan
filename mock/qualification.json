@@ -1,0 +1,28 @@
+{
+  "allow_zoom_in": false,
+  "qulify_show_type": 3,
+  "support_classify": false,
+  "qualify_pics": [
+    "https://p1.meituan.net/waimaipoi/9b7dbfe18bb190efab09898940dad662251855.jpg",
+    "https://p1.meituan.net/waimaipoi/39be19640e16e1de678ae3639ee74136133210.jpg"
+  ],
+  "classify_pic": [],
+  "certify_info": {
+    "pic_url": "",
+    "place_grade": 0,
+    "manage_grade": 0,
+    "check_grade": 0,
+    "last_check_grade": 0,
+    "check_date": "",
+    "company_name": "武侯区子祥食品店",
+    "company_owner": "唐榆冈",
+    "address": "成都市武侯区火车南站西路6号1栋1层166号",
+    "business_scope": "热食类食品制售",
+    "business_type": "",
+    "expire_time": "2023-08-14",
+    "certify_office": "",
+    "licence_num": ""
+  },
+  "page_title": "食品安全档案",
+  "is_drug": false
+}

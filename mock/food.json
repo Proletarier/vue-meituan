@@ -1,0 +1,6096 @@
+{
+  "outOfRange": 0,
+  "mtWmPoiId": "1063057163803621",
+  "dpShopId": 0,
+  "shopStatus": 0,
+  "shopPage": false,
+  "shopInfo": {
+    "shopName": "叫了只炸鸡（桐梓林店）",
+    "shopPic": "http://p1.meituan.net/waimaipoi/e7f3a90439e8e3e1f391e15807138c9b62594.jpg",
+    "poiType": 0,
+    "deliveryFee": 4.0,
+    "deliveryType": 1,
+    "deliveryTime": 0,
+    "deliveryTimeDecoded": "30",
+    "deliveryMsg": "由 美团专送 提供配送服务",
+    "minFee": 15.0,
+    "minFeeDecoded": "15.0",
+    "activityList": [
+      {
+        "actDesc": "满22减12;满50减20;满70减30",
+        "actType": 0,
+        "iconUrl": "http://p0.meituan.net/activityconfig/6087b33fd42d14fd94e899084aaef56d1720.png"
+      },
+      {
+        "actDesc": "折扣商品0折起",
+        "actType": 0,
+        "iconUrl": "http://p0.meituan.net/activityconfig/3da2d9c7a4ddf89e4e71cfdfff168c391088.png"
+      }
+    ],
+    "onlinePay": 1,
+    "bulletin": "新店开业，全场5折！外脆里嫩，鲜嫩多汁，鸡年叫就点叫了只鸡！\n炸鸡底味微辣，不能吃一点点辣的宝贝们慎点哦！\n出来卖，不要装，做好吃了，你就是好鸡！\n全国热线:400-606-2556",
+    "discountRestrict": -1,
+    "distance": "1.9km",
+    "bizCode": 0,
+    "shipping_time": "00:00-02:00,10:00-23:59"
+  },
+  "pageCategoryList": [],
+  "categoryList": [
+    {
+      "tag": "100",
+      "activityTag": "",
+      "iconUrl": "http://p1.meituan.net/aichequan/87f966955f693102d67daf2ec44b58411361.png",
+      "categoryName": "热销",
+      "categoryType": 1,
+      "spuList": [
+        {
+          "spuName": "限时特价！一只神奇的鸡（口味自选）",
+          "unit": "约500克",
+          "spuId": 663316028,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1000+",
+          "originPrice": 39.8,
+          "currentPrice": 18.88,
+          "spuDesc": "外酥里嫩，秘制腌制，粉少汁多。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "86",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719475388,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": 995,
+              "activityStock": 995,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 39.8,
+              "currentPrice": 18.88,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "4.74折",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 681776011,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 681776012,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 681776014,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 681776016,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 681776017,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 681776018,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 2325894290,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 4303870732,
+                  "attrValue": "蒜香"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.74折",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "土豆芝士棒",
+          "unit": "约200克",
+          "spuId": 2633975064,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "bigImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "800+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "11",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2975189195,
+              "spec": "(约200克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 2808728963,
+                  "attrValue": "香味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "嘎嘣脆脆骨肠",
+          "unit": "约50克",
+          "spuId": 2293631760,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "700+",
+          "originPrice": 1.5,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "13",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2602563821,
+              "spec": "(约50克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 1.5,
+              "currentPrice": 0.1,
+              "boxFee": 0.3,
+              "skuPromotionInfo": "0.67折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.67折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一只神奇的炸鸡(第2只一分钱)",
+          "unit": "约500克",
+          "spuId": 1988734091,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "600+",
+          "originPrice": 39.8,
+          "currentPrice": 0.01,
+          "spuDesc": "炸鸡又香，又脆，赞不绝口",
+          "praiseNum": 0,
+          "praiseNumDecoded": "14",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2262842342,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 2,
+              "restrict": 1,
+              "originPrice": 39.8,
+              "currentPrice": 0.01,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "0折 限1份 2份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "第一只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918967692,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918967693,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983960,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983961,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1918983963,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922751426,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1991292717,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891963,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891964,
+                  "attrValue": "原味"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "第二只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918983964,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1918983965,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918983966,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983967,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983970,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922742532,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1991292718,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891965,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891966,
+                  "attrValue": "原味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0折 限1份 2份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一口肠（一个装）",
+          "unit": "约10克",
+          "spuId": 2405155441,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "进店必买，人人都爱吃，一口一个！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2727616514,
+              "spec": "(约10克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.2,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "特价黄金鸡翅尖(10只)单点不送",
+          "unit": "约150克",
+          "spuId": 1957005994,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 15.0,
+          "currentPrice": 4.88,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "18",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2227564905,
+              "spec": "(约150克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 15.0,
+              "currentPrice": 4.88,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "3.25折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "3.25折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "辣椒包",
+          "unit": "",
+          "spuId": 717568870,
+          "tag": "56248161",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.3,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778204129,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 10,
+              "originPrice": 2.0,
+              "currentPrice": 0.3,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "1.5折 限10份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1.5折 限10份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "川香鸡柳",
+          "unit": "约500克",
+          "spuId": 1998295331,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "8",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273054606,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.5折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.5折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香骨肉相连",
+          "unit": "约100克",
+          "spuId": 1998444779,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 2.0,
+          "currentPrice": 0.2,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273179467,
+              "spec": "(约100克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 3,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.2,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "1折 限1份 3份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1折 限1份 3份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "特价鸡翅（一对）（1只翅中，1只翅根）",
+          "unit": "",
+          "spuId": 663316007,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 8.0,
+          "currentPrice": 7.6,
+          "spuDesc": "1只翅中，1只翅根，总共2只！好吃的不得了！鸡年吃鸡，就点叫了只炸鸡！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477335,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 8.0,
+              "currentPrice": 7.6,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9.5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9.5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "act17",
+      "activityTag": "discount",
+      "iconUrl": "http://p0.meituan.net/aichequan/45662b4d1968fd75bff38de23f6d62641421.png",
+      "categoryName": "折扣",
+      "categoryType": 2,
+      "spuList": [
+        {
+          "spuName": "限时特价！一只神奇的鸡（口味自选）",
+          "unit": "约500克",
+          "spuId": 663316028,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1000+",
+          "originPrice": 39.8,
+          "currentPrice": 18.88,
+          "spuDesc": "外酥里嫩，秘制腌制，粉少汁多。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "86",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719475388,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": 995,
+              "activityStock": 995,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 39.8,
+              "currentPrice": 18.88,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "4.74折",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 681776011,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 681776012,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 681776014,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 681776016,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 681776017,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 681776018,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 2325894290,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 4303870732,
+                  "attrValue": "蒜香"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.74折",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "叫了只炸鸡+虎邦辣酱+三官堂乌梅汽水",
+          "unit": "1人份",
+          "spuId": 1888052137,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/5b9899a6db20828ca86c364bfab1819491090.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/5b9899a6db20828ca86c364bfab1819491090.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "9",
+          "originPrice": 40.0,
+          "currentPrice": 27.8,
+          "spuDesc": "虎邦辣酱蘸着鸡吃，",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2147136551,
+              "spec": "(1人份)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 40.0,
+              "currentPrice": 27.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.95折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.95折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "单人鸡情套餐",
+          "unit": "约650克",
+          "spuId": 896184373,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/01a9eae1de988670a142956d9ed3767c886316.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/01a9eae1de988670a142956d9ed3767c886316.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "62",
+          "originPrice": 42.8,
+          "currentPrice": 32.8,
+          "spuDesc": "炸鸡1只+小腿2个+大腿1个+甜辣酱1个+饮料1瓶，炸鸡口味默认麻辣，其他口味可以备注。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 974199806,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": 8633,
+              "activityStock": 8633,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 42.8,
+              "currentPrice": 32.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.66折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "炸鸡口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 555436666,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 555436667,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 555436668,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 555436669,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 555436670,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 555436671,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 555436672,
+                  "attrValue": "椒盐"
+                },
+                {
+                  "attrId": 555436673,
+                  "attrValue": "甘梅"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "饮料",
+              "spuAttrValueList": [
+                {
+                  "attrId": 555436831,
+                  "attrValue": "雪碧"
+                },
+                {
+                  "attrId": 555436832,
+                  "attrValue": "可乐"
+                },
+                {
+                  "attrId": 555436833,
+                  "attrValue": "芬达"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "7.66折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "雪碧(300ml)单点不送",
+          "unit": "",
+          "spuId": 663316006,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/ecc2451fac7eecec90ab5e43c13ce6f5424966.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/ecc2451fac7eecec90ab5e43c13ce6f5424966.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "45",
+          "originPrice": 4.0,
+          "currentPrice": 2.0,
+          "spuDesc": "炸鸡加雪碧，不离更不弃。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719474507,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 4.0,
+              "currentPrice": 2.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "特价鸡翅（一对）（1只翅中，1只翅根）",
+          "unit": "",
+          "spuId": 663316007,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 8.0,
+          "currentPrice": 7.6,
+          "spuDesc": "1只翅中，1只翅根，总共2只！好吃的不得了！鸡年吃鸡，就点叫了只炸鸡！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477335,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 8.0,
+              "currentPrice": 7.6,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9.5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9.5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "腿翅组合",
+          "unit": "",
+          "spuId": 697887884,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/fac0344b5bd54b4cb246baed3efc2a01840016.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/fac0344b5bd54b4cb246baed3efc2a01840016.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "39",
+          "originPrice": 51.8,
+          "currentPrice": 36.88,
+          "spuDesc": "4只鸡腿+大鹏展翅（两对），管饱！秘制腌料，粉少汁多，好吃的不得了！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 756776806,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 8334,
+              "activityStock": 8334,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 51.8,
+              "currentPrice": 36.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.12折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "7.12折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鸡排",
+          "unit": "约400克",
+          "spuId": 1889768987,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9cab138138515b7bac9fea5f3bdf919b105922.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9cab138138515b7bac9fea5f3bdf919b105922.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 18.0,
+          "currentPrice": 9.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "8",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2152801214,
+              "spec": "(约400克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 18.0,
+              "currentPrice": 9.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "土豆芝士棒",
+          "unit": "约200克",
+          "spuId": 2633975064,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "bigImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "800+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "11",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2975189195,
+              "spec": "(约200克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 2808728963,
+                  "attrValue": "香味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "菠萝派（两只装）",
+          "unit": "约100克",
+          "spuId": 2627794400,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/fbdb09165b8cb1411b06c843ed2a0d54362854.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/fbdb09165b8cb1411b06c843ed2a0d54362854.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "48",
+          "originPrice": 10.0,
+          "currentPrice": 6.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "7",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2968159525,
+              "spec": "(约100克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 6.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.8折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.8折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一只神奇的炸鸡(第2只一分钱)",
+          "unit": "约500克",
+          "spuId": 1988734091,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "600+",
+          "originPrice": 39.8,
+          "currentPrice": 0.01,
+          "spuDesc": "炸鸡又香，又脆，赞不绝口",
+          "praiseNum": 0,
+          "praiseNumDecoded": "14",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2262842342,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 2,
+              "restrict": 1,
+              "originPrice": 39.8,
+              "currentPrice": 0.01,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "0折 限1份 2份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "第一只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918967692,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918967693,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983960,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983961,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1918983963,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922751426,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1991292717,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891963,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891964,
+                  "attrValue": "原味"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "第二只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918983964,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1918983965,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918983966,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983967,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983970,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922742532,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1991292718,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891965,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891966,
+                  "attrValue": "原味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0折 限1份 2份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一口肠（一个装）",
+          "unit": "约10克",
+          "spuId": 2405155441,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "进店必买，人人都爱吃，一口一个！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2727616514,
+              "spec": "(约10克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.2,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "南瓜饼",
+          "unit": "约200克",
+          "spuId": 2293556799,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/a750b19504735616fa7f4a2181e35387373089.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/a750b19504735616fa7f4a2181e35387373089.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "300+",
+          "originPrice": 1.0,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2603012975,
+              "spec": "(约200克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.0,
+              "currentPrice": 0.1,
+              "boxFee": 0.2,
+              "skuPromotionInfo": "1折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "嘎嘣脆脆骨肠",
+          "unit": "约50克",
+          "spuId": 2293631760,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "700+",
+          "originPrice": 1.5,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "13",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2602563821,
+              "spec": "(约50克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 1.5,
+              "currentPrice": 0.1,
+              "boxFee": 0.3,
+              "skuPromotionInfo": "0.67折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.67折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式年糕（甜辣味15只）",
+          "unit": "约260克",
+          "spuId": 2287224810,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/683ef506847112fde0978a5de46f3bbb120550.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/683ef506847112fde0978a5de46f3bbb120550.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "74",
+          "originPrice": 15.0,
+          "currentPrice": 9.9,
+          "spuDesc": "美味可口，韩式年糕",
+          "praiseNum": 0,
+          "praiseNumDecoded": "7",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2595292005,
+              "spec": "(约260克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 15.0,
+              "currentPrice": 9.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.6折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.6折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "辣椒包",
+          "unit": "",
+          "spuId": 717568870,
+          "tag": "56248161",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.3,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778204129,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 10,
+              "originPrice": 2.0,
+              "currentPrice": 0.3,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "1.5折 限10份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1.5折 限10份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "怡宝（单点不送）",
+          "unit": "",
+          "spuId": 744255759,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/45329d31cb88b0665c1b3af899216f33619451.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/45329d31cb88b0665c1b3af899216f33619451.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "26",
+          "originPrice": 3.5,
+          "currentPrice": 2.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 806685344,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 9345,
+              "activityStock": 9345,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 3.5,
+              "currentPrice": 2.8,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "8折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "特价黄金鸡翅尖(10只)单点不送",
+          "unit": "约150克",
+          "spuId": 1957005994,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 15.0,
+          "currentPrice": 4.88,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "18",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2227564905,
+              "spec": "(约150克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 15.0,
+              "currentPrice": 4.88,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "3.25折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "3.25折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鹏展翅套餐（送大鸡腿）",
+          "unit": "约1克",
+          "spuId": 2067251215,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/28ebc9652cfd6a92bcb37f733f798997118173.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/28ebc9652cfd6a92bcb37f733f798997118173.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "89",
+          "originPrice": 39.8,
+          "currentPrice": 19.8,
+          "spuDesc": "二只鸡翅，二只小腿，一只大腿",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2352473777,
+              "spec": "(约1克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 39.8,
+              "currentPrice": 19.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.97折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.97折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "天使的翅膀（翅中十只）",
+          "unit": "约499克",
+          "spuId": 2061747306,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/19fd831023cbc1388887e5e01e8d339b103153.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/19fd831023cbc1388887e5e01e8d339b103153.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "42",
+          "originPrice": 49.8,
+          "currentPrice": 39.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2346526417,
+              "spec": "(约499克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 39.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.99折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "7.99折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "十腿桶（小腿10只）",
+          "unit": "约455克",
+          "spuId": 2061748168,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b91053e88de71fba728bae94af581935101827.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b91053e88de71fba728bae94af581935101827.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 49.9,
+          "currentPrice": 29.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2346467206,
+              "spec": "(约455克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.9,
+              "currentPrice": 29.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.99折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.99折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鹏展翅（翅中两只，小腿两只）(单点不送请搭配炸鸡下单)",
+          "unit": "",
+          "spuId": 665275102,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/116350aae0de2d2f99736cb11f85052d725018.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/116350aae0de2d2f99736cb11f85052d725018.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 20.0,
+          "currentPrice": 12.8,
+          "spuDesc": "2只翅中，2只翅根，总共4只！好吃的不得了！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 721628187,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 20.0,
+              "currentPrice": 12.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.4折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.4折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡蒜香酱油味中份+进口年糕＋橙味果饮",
+          "unit": "约650克",
+          "spuId": 2052233396,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/c0a987541ed14840415d030a1f98f166143159.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/c0a987541ed14840415d030a1f98f166143159.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "71",
+          "originPrice": 49.8,
+          "currentPrice": 24.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2335479227,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "香辣",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1991290584,
+                  "attrValue": "蒜香酱油"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡麻辣孜然（粉）中份+进口年糕+橙味饮品",
+          "unit": "约650克",
+          "spuId": 2012943073,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/394bc672155a7e846541a42ee3171c7b141278.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/394bc672155a7e846541a42ee3171c7b141278.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "96",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288763776,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡番茄酱味中份+进口年糕+橙味果饮",
+          "unit": "约650克",
+          "spuId": 2012942192,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b16e37d02139fd646b8a94ef56704290145649.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b16e37d02139fd646b8a94ef56704290145649.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288734806,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1969895598,
+                  "attrValue": "蕃茄"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡蜂蜜芥末味中份+进口年糕＋橙味饮料",
+          "unit": "约650克",
+          "spuId": 2013047433,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9930cc2794621c3dc138eab60fd2c00a148009.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9930cc2794621c3dc138eab60fd2c00a148009.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "34",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288647492,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡甜辣味中份+进口年糕＋橙味果饮",
+          "unit": "约650克",
+          "spuId": 2011719372,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/c95e9bff6096d2c4a91ea2b08caafad0145578.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/c95e9bff6096d2c4a91ea2b08caafad0145578.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "77",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2287334870,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1944908638,
+                  "attrValue": "甜辣"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香鸡腿(买一送一)",
+          "unit": "约300克",
+          "spuId": 2000462176,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/5fbd744518c34343002ae1283a2fc8d4115757.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/5fbd744518c34343002ae1283a2fc8d4115757.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "81",
+          "originPrice": 13.0,
+          "currentPrice": 11.8,
+          "spuDesc": "特惠买一送一",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2275482762,
+              "spec": "(约300克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 13.0,
+              "currentPrice": 11.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9.08折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9.08折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香骨肉相连",
+          "unit": "约100克",
+          "spuId": 1998444779,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 2.0,
+          "currentPrice": 0.2,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273179467,
+              "spec": "(约100克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 3,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.2,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "1折 限1份 3份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1折 限1份 3份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "川香鸡柳",
+          "unit": "约500克",
+          "spuId": 1998295331,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "8",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273054606,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.5折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.5折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "单人吃鸡套餐",
+          "unit": "约500克",
+          "spuId": 1996273520,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/2f80d915cfb8bf0cd7b52bea9dde19b5123464.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/2f80d915cfb8bf0cd7b52bea9dde19b5123464.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "63",
+          "originPrice": 48.0,
+          "currentPrice": 27.8,
+          "spuDesc": "大吉大利，今晚吃鸡",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2271106676,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 48.0,
+              "currentPrice": 27.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.79折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1926509059,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1926509060,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1926509061,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1926509062,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1926509063,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1926509064,
+                  "attrValue": "椒盐"
+                },
+                {
+                  "attrId": 1926509065,
+                  "attrValue": "甘梅"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "饮料",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1926509066,
+                  "attrValue": "可乐"
+                },
+                {
+                  "attrId": 1926509067,
+                  "attrValue": "雪碧"
+                },
+                {
+                  "attrId": 1926509068,
+                  "attrValue": "芬达"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "5.79折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫了一只脆皮香蕉",
+          "unit": "约25克",
+          "spuId": 1991883559,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b261f27cd408c11d6af634efdcd4f96198570.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b261f27cd408c11d6af634efdcd4f96198570.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 1.0,
+          "currentPrice": 0.01,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2266022871,
+              "spec": "(约25克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 1.0,
+              "currentPrice": 0.01,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.1折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.1折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫了只炸鸡（口味自选）",
+          "unit": "约500克",
+          "spuId": 663314554,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "48",
+          "originPrice": 35.8,
+          "currentPrice": 22.98,
+          "spuDesc": "外酥里嫩，秘制腌制，粉少汁多。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477348,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 35.8,
+              "currentPrice": 22.98,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "6.42折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 681777388,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 681777390,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 681777392,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 681777393,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 681777394,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 2325879368,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 4518715623,
+                  "attrValue": "蒜香酱油酱"
+                },
+                {
+                  "attrId": 4518459623,
+                  "attrValue": "韩式甜辣酱"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "6.42折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "神雕侠侣（俩只）",
+          "unit": "",
+          "spuId": 663316020,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/a9d973d0774dc749089e9db64ac940332615572.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/a9d973d0774dc749089e9db64ac940332615572.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1",
+          "originPrice": 66.0,
+          "currentPrice": 45.88,
+          "spuDesc": "2只童子鸡，口味默认孜然，需要其他口味请备注。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477346,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 66.0,
+              "currentPrice": 45.88,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "6.95折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.95折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "甜辣酱",
+          "unit": "",
+          "spuId": 663316014,
+          "tag": "56248161",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/e74dae58d2fac1937bda203c64f84b48570988.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/e74dae58d2fac1937bda203c64f84b48570988.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "34",
+          "originPrice": 2.0,
+          "currentPrice": 0.88,
+          "spuDesc": "招牌酱，甜甜的辣辣的，配酱更美味哦！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719474516,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 2.0,
+              "currentPrice": 0.88,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "4.4折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.4折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "南瓜饼",
+          "unit": "",
+          "spuId": 1446343260,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/ee69bd339ec1429448f8104ace9db7ae2023601.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/ee69bd339ec1429448f8104ace9db7ae2023601.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "15",
+          "originPrice": 6.0,
+          "currentPrice": 4.9,
+          "spuDesc": "丝丝细甜，好吃的不得了，欢迎品尝。每份4只。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1650954895,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 6.0,
+              "currentPrice": 4.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "8.17折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.17折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "千丝万缕虾",
+          "unit": "",
+          "spuId": 1446224649,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/f57847c571b0985f15613c2d9086a04f2168499.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/f57847c571b0985f15613c2d9086a04f2168499.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "12",
+          "originPrice": 12.0,
+          "currentPrice": 10.8,
+          "spuDesc": "只只虾肉鲜美，细腻滑弹，鲜香的口感，丝丝万缕缠绕。欢迎品尝，每份4只。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1651253433,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 8,
+              "originPrice": 12.0,
+              "currentPrice": 10.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9折 限8份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9折 限8份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香鸡米花（单点不送）",
+          "unit": "",
+          "spuId": 663316011,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/9489839ae46baaf9da131ba94cd87a60743883.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/9489839ae46baaf9da131ba94cd87a60743883.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "70",
+          "originPrice": 15.0,
+          "currentPrice": 6.88,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477337,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 15.0,
+              "currentPrice": 6.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.59折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.59折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香鸡块",
+          "unit": "",
+          "spuId": 665257065,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/a5328e106d7d6b353364dcc815363524626221.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/a5328e106d7d6b353364dcc815363524626221.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "31",
+          "originPrice": 12.0,
+          "currentPrice": 6.88,
+          "spuDesc": "鸡块6块哦，配鸡好吃，配酱更好吃！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 721607601,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 12.0,
+              "currentPrice": 6.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.73折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.73折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "勇闯天涯（单点不送）",
+          "unit": "",
+          "spuId": 717587373,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/139d65f14f4032b960f2f9e9d05e8651652855.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/139d65f14f4032b960f2f9e9d05e8651652855.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "29",
+          "originPrice": 8.0,
+          "currentPrice": 6.6,
+          "spuDesc": "吃炸鸡喝啤酒我们一起手拉手",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778218646,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 9999,
+              "minPurchaseNum": -1,
+              "restrict": 10,
+              "originPrice": 8.0,
+              "currentPrice": 6.6,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "8.25折 限10份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.25折 限10份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "玉米棒",
+          "unit": "",
+          "spuId": 717615262,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/b5d7b957a184d9dde0fb0cb5475af03c806187.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/b5d7b957a184d9dde0fb0cb5475af03c806187.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "11",
+          "originPrice": 9.0,
+          "currentPrice": 5.8,
+          "spuDesc": "外酥里嫩，回味悠长，一份4根哦！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778245988,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 888,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 9.0,
+              "currentPrice": 5.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.44折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.44折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "爆浆鸡排(单点不送)",
+          "unit": "",
+          "spuId": 717567066,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/585fdaa38c195d1511610e4be1460cc9724374.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/585fdaa38c195d1511610e4be1460cc9724374.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "84",
+          "originPrice": 10.0,
+          "currentPrice": 8.88,
+          "spuDesc": "外酥里嫩，爆浆在嘴里融开，真是无法形容。太好吃了\uD83D\uDE0B",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778196212,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 998,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 8.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "8.88折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.88折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "菠萝啤（单点不送）",
+          "unit": "",
+          "spuId": 1020663032,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/c082ef0b510adf828f0a86ae248a984f624714.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/c082ef0b510adf828f0a86ae248a984f624714.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "42",
+          "originPrice": 5.0,
+          "currentPrice": 2.8,
+          "spuDesc": "不错u",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1122627653,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 9998,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 5.0,
+              "currentPrice": 2.8,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "5.6折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.6折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "椰蓉酸奶大福(一份3枚)",
+          "unit": "",
+          "spuId": 813526376,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/e21b5621ad7f296c6fb1e2088c62d31d1717175.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/e21b5621ad7f296c6fb1e2088c62d31d1717175.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "25",
+          "originPrice": 10.0,
+          "currentPrice": 6.8,
+          "spuDesc": "全家都爱吃港式甜品糕点.",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 882429492,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 8943,
+              "activityStock": 8943,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 6.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.8折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.8折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248163",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "叫了只炸鸡\uD83D\uDC14",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "南瓜饼",
+          "unit": "约200克",
+          "spuId": 2293556799,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/a750b19504735616fa7f4a2181e35387373089.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/a750b19504735616fa7f4a2181e35387373089.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "300+",
+          "originPrice": 1.0,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2603012975,
+              "spec": "(约200克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.0,
+              "currentPrice": 0.1,
+              "boxFee": 0.2,
+              "skuPromotionInfo": "1折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鹏展翅套餐（送大鸡腿）",
+          "unit": "约1克",
+          "spuId": 2067251215,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/28ebc9652cfd6a92bcb37f733f798997118173.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/28ebc9652cfd6a92bcb37f733f798997118173.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "89",
+          "originPrice": 39.8,
+          "currentPrice": 19.8,
+          "spuDesc": "二只鸡翅，二只小腿，一只大腿",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2352473777,
+              "spec": "(约1克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 39.8,
+              "currentPrice": 19.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.97折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.97折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫了一只脆皮香蕉",
+          "unit": "约25克",
+          "spuId": 1991883559,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b261f27cd408c11d6af634efdcd4f96198570.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b261f27cd408c11d6af634efdcd4f96198570.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 1.0,
+          "currentPrice": 0.01,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2266022871,
+              "spec": "(约25克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 1.0,
+              "currentPrice": 0.01,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.1折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.1折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一只神奇的炸鸡(第2只一分钱)",
+          "unit": "约500克",
+          "spuId": 1988734091,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/7fc683175bb29bd4adc822d3946aee79115662.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "600+",
+          "originPrice": 39.8,
+          "currentPrice": 0.01,
+          "spuDesc": "炸鸡又香，又脆，赞不绝口",
+          "praiseNum": 0,
+          "praiseNumDecoded": "14",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2262842342,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 2,
+              "restrict": 1,
+              "originPrice": 39.8,
+              "currentPrice": 0.01,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "0折 限1份 2份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "第一只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918967692,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918967693,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983960,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983961,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1918983963,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922751426,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1991292717,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891963,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891964,
+                  "attrValue": "原味"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "第二只口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1918983964,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1918983965,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1918983966,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1918983967,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1918983970,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 1922742532,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1991292718,
+                  "attrValue": "柠檬味"
+                },
+                {
+                  "attrId": 2325891965,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 2325891966,
+                  "attrValue": "原味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0折 限1份 2份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "特价黄金鸡翅尖(10只)单点不送",
+          "unit": "约150克",
+          "spuId": 1957005994,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/99efa11cf3944e4e3b8d4a6b36e403a5154542.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 15.0,
+          "currentPrice": 4.88,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "18",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2227564905,
+              "spec": "(约150克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 15.0,
+              "currentPrice": 4.88,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "3.25折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "3.25折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "限时特价！一只神奇的鸡（口味自选）",
+          "unit": "约500克",
+          "spuId": 663316028,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1000+",
+          "originPrice": 39.8,
+          "currentPrice": 18.88,
+          "spuDesc": "外酥里嫩，秘制腌制，粉少汁多。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "86",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719475388,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": 995,
+              "activityStock": 995,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 39.8,
+              "currentPrice": 18.88,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "4.74折",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 681776011,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 681776012,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 681776014,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 681776016,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 681776017,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 681776018,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 2325894290,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 4303870732,
+                  "attrValue": "蒜香"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.74折",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "叫了只炸鸡（口味自选）",
+          "unit": "约500克",
+          "spuId": 663314554,
+          "tag": "56248163",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/654b1fa27de0508c08b33f12ea1f2cf3720291.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "48",
+          "originPrice": 35.8,
+          "currentPrice": 22.98,
+          "spuDesc": "外酥里嫩，秘制腌制，粉少汁多。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477348,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 35.8,
+              "currentPrice": 22.98,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "6.42折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 681777388,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 681777390,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 681777392,
+                  "attrValue": "甘梅"
+                },
+                {
+                  "attrId": 681777393,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 681777394,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 2325879368,
+                  "attrValue": "麻辣加孜然"
+                },
+                {
+                  "attrId": 4518715623,
+                  "attrValue": "蒜香酱油酱"
+                },
+                {
+                  "attrId": 4518459623,
+                  "attrValue": "韩式甜辣酱"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "6.42折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248160",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "鸡的同伙\uD83C\uDDEC\uD83C\uDDE7",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "土豆芝士棒",
+          "unit": "约200克",
+          "spuId": 2633975064,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "bigImageUrl": "http://p1.meituan.net/xianfu/cae6a2382570908235117ecb540af5b6522240.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "800+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "11",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2975189195,
+              "spec": "(约200克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 2808728963,
+                  "attrValue": "香味"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "菠萝派（两只装）",
+          "unit": "约100克",
+          "spuId": 2627794400,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/fbdb09165b8cb1411b06c843ed2a0d54362854.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/fbdb09165b8cb1411b06c843ed2a0d54362854.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "48",
+          "originPrice": 10.0,
+          "currentPrice": 6.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "7",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2968159525,
+              "spec": "(约100克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 6.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.8折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.8折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "嘎嘣脆脆骨肠",
+          "unit": "约50克",
+          "spuId": 2293631760,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/0af956a1911b331aae0dfc4d7d8a1baa176629.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "700+",
+          "originPrice": 1.5,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "13",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2602563821,
+              "spec": "(约50克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 1.5,
+              "currentPrice": 0.1,
+              "boxFee": 0.3,
+              "skuPromotionInfo": "0.67折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.67折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式年糕（甜辣味15只）",
+          "unit": "约260克",
+          "spuId": 2287224810,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/683ef506847112fde0978a5de46f3bbb120550.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/683ef506847112fde0978a5de46f3bbb120550.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "74",
+          "originPrice": 15.0,
+          "currentPrice": 9.9,
+          "spuDesc": "美味可口，韩式年糕",
+          "praiseNum": 0,
+          "praiseNumDecoded": "7",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2595292005,
+              "spec": "(约260克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 15.0,
+              "currentPrice": 9.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.6折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.6折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香鸡腿(买一送一)",
+          "unit": "约300克",
+          "spuId": 2000462176,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/5fbd744518c34343002ae1283a2fc8d4115757.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/5fbd744518c34343002ae1283a2fc8d4115757.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "81",
+          "originPrice": 13.0,
+          "currentPrice": 11.8,
+          "spuDesc": "特惠买一送一",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2275482762,
+              "spec": "(约300克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 13.0,
+              "currentPrice": 11.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9.08折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9.08折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香骨肉相连",
+          "unit": "约100克",
+          "spuId": 1998444779,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/f9a9a59bc8f3b910b4af308334007ac7140513.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 2.0,
+          "currentPrice": 0.2,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273179467,
+              "spec": "(约100克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 3,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.2,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "1折 限1份 3份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1折 限1份 3份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "川香鸡柳",
+          "unit": "约500克",
+          "spuId": 1998295331,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9ba6895bae1ef840e5116165d75d5823158724.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.1,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "8",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2273054606,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 4,
+              "restrict": 1,
+              "originPrice": 2.0,
+              "currentPrice": 0.1,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "0.5折 限1份 4份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.5折 限1份 4份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鸡排",
+          "unit": "约400克",
+          "spuId": 1889768987,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9cab138138515b7bac9fea5f3bdf919b105922.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9cab138138515b7bac9fea5f3bdf919b105922.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 18.0,
+          "currentPrice": 9.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "8",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2152801214,
+              "spec": "(约400克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 18.0,
+              "currentPrice": 9.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "鸡翅包饭(单点不送，请搭配炸鸡下单)",
+          "unit": "约400克",
+          "spuId": 1704323597,
+          "tag": "56248160",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/daa54a7df6f3e6bfe285d2c74c7dd7cf94498.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/daa54a7df6f3e6bfe285d2c74c7dd7cf94498.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "48",
+          "originPrice": 12.0,
+          "currentPrice": 12.0,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1934703344,
+              "spec": "(约400克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 12.0,
+              "currentPrice": 12.0,
+              "boxFee": 0.5,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香薯条(单点不送，请搭配炸鸡下单)",
+          "unit": "",
+          "spuId": 1106217770,
+          "tag": "56248160",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/f3a9e7ad579e102736b766b05403173a321872.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/f3a9e7ad579e102736b766b05403173a321872.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "51",
+          "originPrice": 12.0,
+          "currentPrice": 12.0,
+          "spuDesc": "金黄酥脆，好吃不贵！薯条易软，太远慎点，各位小哥哥、小姐姐不要给差评。点薯条送蕃茄酱哦。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1220940696,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 12.0,
+              "currentPrice": 12.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鹏展翅（翅中两只，小腿两只）(单点不送请搭配炸鸡下单)",
+          "unit": "",
+          "spuId": 665275102,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/116350aae0de2d2f99736cb11f85052d725018.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/116350aae0de2d2f99736cb11f85052d725018.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 20.0,
+          "currentPrice": 12.8,
+          "spuDesc": "2只翅中，2只翅根，总共4只！好吃的不得了！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 721628187,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 20.0,
+              "currentPrice": 12.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.4折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.4折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "千丝万缕虾",
+          "unit": "",
+          "spuId": 1446224649,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/f57847c571b0985f15613c2d9086a04f2168499.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/f57847c571b0985f15613c2d9086a04f2168499.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "12",
+          "originPrice": 12.0,
+          "currentPrice": 10.8,
+          "spuDesc": "只只虾肉鲜美，细腻滑弹，鲜香的口感，丝丝万缕缠绕。欢迎品尝，每份4只。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1651253433,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 8,
+              "originPrice": 12.0,
+              "currentPrice": 10.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9折 限8份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9折 限8份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "香脆饺（6只装，单点不送，请搭配炸鸡下单）",
+          "unit": "",
+          "spuId": 1091017520,
+          "tag": "56248160",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/4dcaa39fd1fca33a3020d889225db79e666156.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/4dcaa39fd1fca33a3020d889225db79e666156.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "3",
+          "originPrice": 13.0,
+          "currentPrice": 13.0,
+          "spuDesc": "香香脆脆就是我。一点都不辣，老少皆宜",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1202550307,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 888,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 13.0,
+              "currentPrice": 13.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "脆皮香蕉",
+          "unit": "约80克",
+          "spuId": 1199312721,
+          "tag": "56248160",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/512fcb2e14920ab521d6abeb1fcd1495637794.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/512fcb2e14920ab521d6abeb1fcd1495637794.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "17",
+          "originPrice": 10.0,
+          "currentPrice": 10.0,
+          "spuDesc": "香脆可口，脆皮丝滑，一份三枚",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1333527810,
+              "spec": "(约80克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 10.0,
+              "currentPrice": 10.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫香鸡块",
+          "unit": "",
+          "spuId": 665257065,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/a5328e106d7d6b353364dcc815363524626221.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/a5328e106d7d6b353364dcc815363524626221.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "31",
+          "originPrice": 12.0,
+          "currentPrice": 6.88,
+          "spuDesc": "鸡块6块哦，配鸡好吃，配酱更好吃！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 721607601,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 12.0,
+              "currentPrice": 6.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.73折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.73折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "爆浆鸡排(单点不送)",
+          "unit": "",
+          "spuId": 717567066,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/585fdaa38c195d1511610e4be1460cc9724374.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/585fdaa38c195d1511610e4be1460cc9724374.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "84",
+          "originPrice": 10.0,
+          "currentPrice": 8.88,
+          "spuDesc": "外酥里嫩，爆浆在嘴里融开，真是无法形容。太好吃了\uD83D\uDE0B",
+          "praiseNum": 0,
+          "praiseNumDecoded": "6",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778196212,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 998,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 8.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "8.88折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.88折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "特价鸡翅（一对）（1只翅中，1只翅根）",
+          "unit": "",
+          "spuId": 663316007,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/9eca4fcd30498c47b3bd25fa5e1f7605794169.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 8.0,
+          "currentPrice": 7.6,
+          "spuDesc": "1只翅中，1只翅根，总共2只！好吃的不得了！鸡年吃鸡，就点叫了只炸鸡！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477335,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 8.0,
+              "currentPrice": 7.6,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "9.5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "9.5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "叫香鸡米花（单点不送）",
+          "unit": "",
+          "spuId": 663316011,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/9489839ae46baaf9da131ba94cd87a60743883.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/9489839ae46baaf9da131ba94cd87a60743883.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "70",
+          "originPrice": 15.0,
+          "currentPrice": 6.88,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477337,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 15.0,
+              "currentPrice": 6.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.59折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.59折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "洋葱圈",
+          "unit": "",
+          "spuId": 717618081,
+          "tag": "56248160",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/2ee7c9be19cf4f17ed00503b6585ea35730316.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/2ee7c9be19cf4f17ed00503b6585ea35730316.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 8.0,
+          "currentPrice": 8.0,
+          "spuDesc": "我不是普通的洋葱圈哦！我是洋葱肉圈。一份5个",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 778248969,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 8.0,
+              "currentPrice": 8.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "玉米棒",
+          "unit": "",
+          "spuId": 717615262,
+          "tag": "56248160",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/b5d7b957a184d9dde0fb0cb5475af03c806187.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/b5d7b957a184d9dde0fb0cb5475af03c806187.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "11",
+          "originPrice": 9.0,
+          "currentPrice": 5.8,
+          "spuDesc": "外酥里嫩，回味悠长，一份4根哦！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778245988,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 888,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 9.0,
+              "currentPrice": 5.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.44折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.44折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248162",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "鸡的套餐\uD83D\uDC14",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "十腿桶（小腿10只）",
+          "unit": "约455克",
+          "spuId": 2061748168,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b91053e88de71fba728bae94af581935101827.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b91053e88de71fba728bae94af581935101827.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 49.9,
+          "currentPrice": 29.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2346467206,
+              "spec": "(约455克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.9,
+              "currentPrice": 29.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.99折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.99折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "天使的翅膀（翅中十只）",
+          "unit": "约499克",
+          "spuId": 2061747306,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/19fd831023cbc1388887e5e01e8d339b103153.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/19fd831023cbc1388887e5e01e8d339b103153.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "42",
+          "originPrice": 49.8,
+          "currentPrice": 39.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2346526417,
+              "spec": "(约499克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 39.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.99折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "7.99折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡蒜香酱油味中份+进口年糕＋橙味果饮",
+          "unit": "约650克",
+          "spuId": 2052233396,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/c0a987541ed14840415d030a1f98f166143159.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/c0a987541ed14840415d030a1f98f166143159.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "71",
+          "originPrice": 49.8,
+          "currentPrice": 24.9,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2335479227,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "香辣",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1991290584,
+                  "attrValue": "蒜香酱油"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡麻辣孜然（粉）中份+进口年糕+橙味饮品",
+          "unit": "约650克",
+          "spuId": 2012943073,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/394bc672155a7e846541a42ee3171c7b141278.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/394bc672155a7e846541a42ee3171c7b141278.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "96",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288763776,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡番茄酱味中份+进口年糕+橙味果饮",
+          "unit": "约650克",
+          "spuId": 2012942192,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/b16e37d02139fd646b8a94ef56704290145649.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/b16e37d02139fd646b8a94ef56704290145649.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288734806,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1969895598,
+                  "attrValue": "蕃茄"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡蜂蜜芥末味中份+进口年糕＋橙味饮料",
+          "unit": "约650克",
+          "spuId": 2013047433,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/9930cc2794621c3dc138eab60fd2c00a148009.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/9930cc2794621c3dc138eab60fd2c00a148009.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "34",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2288647492,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "韩式炸鸡甜辣味中份+进口年糕＋橙味果饮",
+          "unit": "约650克",
+          "spuId": 2011719372,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/c95e9bff6096d2c4a91ea2b08caafad0145578.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/c95e9bff6096d2c4a91ea2b08caafad0145578.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "77",
+          "originPrice": 49.8,
+          "currentPrice": 24.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2287334870,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 49.8,
+              "currentPrice": 24.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "4.98折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1944908638,
+                  "attrValue": "甜辣"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "4.98折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "单人吃鸡套餐",
+          "unit": "约500克",
+          "spuId": 1996273520,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/2f80d915cfb8bf0cd7b52bea9dde19b5123464.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/2f80d915cfb8bf0cd7b52bea9dde19b5123464.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "63",
+          "originPrice": 48.0,
+          "currentPrice": 27.8,
+          "spuDesc": "大吉大利，今晚吃鸡",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2271106676,
+              "spec": "(约500克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 48.0,
+              "currentPrice": 27.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5.79折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1926509059,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 1926509060,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 1926509061,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 1926509062,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 1926509063,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 1926509064,
+                  "attrValue": "椒盐"
+                },
+                {
+                  "attrId": 1926509065,
+                  "attrValue": "甘梅"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "饮料",
+              "spuAttrValueList": [
+                {
+                  "attrId": 1926509066,
+                  "attrValue": "可乐"
+                },
+                {
+                  "attrId": 1926509067,
+                  "attrValue": "雪碧"
+                },
+                {
+                  "attrId": 1926509068,
+                  "attrValue": "芬达"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "5.79折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "性感小腿两只+特价鸡翅一对+虎邦辣酱+三官堂乌梅汽水套餐",
+          "unit": "1人份",
+          "spuId": 1892477539,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/a4cee9cf2e8139c987dc62f801841538158748.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/a4cee9cf2e8139c987dc62f801841538158748.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1",
+          "originPrice": 35.0,
+          "currentPrice": 35.0,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 2155733775,
+              "spec": "(1人份)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 35.0,
+              "currentPrice": 35.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "大鹏展翅+大腿一只+三官堂乌梅汽水+虎邦辣酱",
+          "unit": "",
+          "spuId": 1892684521,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/ca8ee0165b16872ae6d6a2e2b9d81fcd160312.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/ca8ee0165b16872ae6d6a2e2b9d81fcd160312.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1",
+          "originPrice": 40.0,
+          "currentPrice": 40.0,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 2155732950,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 40.0,
+              "currentPrice": 40.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫了只炸鸡+虎邦辣酱+三官堂乌梅汽水",
+          "unit": "1人份",
+          "spuId": 1888052137,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/5b9899a6db20828ca86c364bfab1819491090.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/5b9899a6db20828ca86c364bfab1819491090.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "9",
+          "originPrice": 40.0,
+          "currentPrice": 27.8,
+          "spuDesc": "虎邦辣酱蘸着鸡吃，",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2147136551,
+              "spec": "(1人份)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 40.0,
+              "currentPrice": 27.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.95折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.95折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一只神奇的鸡+特价鸡翅+虎邦辣酱",
+          "unit": "1人份",
+          "spuId": 1694069592,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/8306e5ef9b3d4d44fe77ef24d99a6e4f72134.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/8306e5ef9b3d4d44fe77ef24d99a6e4f72134.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "0",
+          "originPrice": 48.0,
+          "currentPrice": 48.0,
+          "spuDesc": "虎邦辣酱当蘸水，叫了只炸鸡新的吃法。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1923530596,
+              "spec": "(1人份)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 48.0,
+              "currentPrice": 48.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "一只神奇的鸡+鸡的大腿+可乐+虎邦辣酱套餐",
+          "unit": "1人份",
+          "spuId": 1694033390,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/920de31ffe0efc8b8f6f93726b866fe972633.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/920de31ffe0efc8b8f6f93726b866fe972633.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "19",
+          "originPrice": 50.0,
+          "currentPrice": 50.0,
+          "spuDesc": "虎邦辣酱当蘸水用，叫了只炸鸡的新吃法。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1923530043,
+              "spec": "(1人份)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 50.0,
+              "currentPrice": 50.0,
+              "boxFee": 2.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "单人鸡情套餐",
+          "unit": "约650克",
+          "spuId": 896184373,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/01a9eae1de988670a142956d9ed3767c886316.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/01a9eae1de988670a142956d9ed3767c886316.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "62",
+          "originPrice": 42.8,
+          "currentPrice": 32.8,
+          "spuDesc": "炸鸡1只+小腿2个+大腿1个+甜辣酱1个+饮料1瓶，炸鸡口味默认麻辣，其他口味可以备注。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 974199806,
+              "spec": "(约650克)",
+              "soldStatus": 0,
+              "realStock": 8633,
+              "activityStock": 8633,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 42.8,
+              "currentPrice": 32.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.66折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [
+            {
+              "spuAttrName": "炸鸡口味",
+              "spuAttrValueList": [
+                {
+                  "attrId": 555436666,
+                  "attrValue": "原味"
+                },
+                {
+                  "attrId": 555436667,
+                  "attrValue": "麻辣"
+                },
+                {
+                  "attrId": 555436668,
+                  "attrValue": "孜然"
+                },
+                {
+                  "attrId": 555436669,
+                  "attrValue": "蒜香"
+                },
+                {
+                  "attrId": 555436670,
+                  "attrValue": "五香"
+                },
+                {
+                  "attrId": 555436671,
+                  "attrValue": "黑胡椒"
+                },
+                {
+                  "attrId": 555436672,
+                  "attrValue": "椒盐"
+                },
+                {
+                  "attrId": 555436673,
+                  "attrValue": "甘梅"
+                }
+              ]
+            },
+            {
+              "spuAttrName": "饮料",
+              "spuAttrValueList": [
+                {
+                  "attrId": 555436831,
+                  "attrValue": "雪碧"
+                },
+                {
+                  "attrId": 555436832,
+                  "attrValue": "可乐"
+                },
+                {
+                  "attrId": 555436833,
+                  "attrValue": "芬达"
+                }
+              ]
+            }
+          ],
+          "spuPromotionInfo": "7.66折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "鸡的朋友圈",
+          "unit": "",
+          "spuId": 663315446,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/7bc6f51d559e3182e54851b5ebb8b33a886908.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/7bc6f51d559e3182e54851b5ebb8b33a886908.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 52.0,
+          "currentPrice": 52.0,
+          "spuDesc": "1只鸡＋1个鸡腿＋1对鸡翅，默认孜然，需要其他口味请备注。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719477345,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 52.0,
+              "currentPrice": 52.0,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "腿翅组合",
+          "unit": "",
+          "spuId": 697887884,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/fac0344b5bd54b4cb246baed3efc2a01840016.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/fac0344b5bd54b4cb246baed3efc2a01840016.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "39",
+          "originPrice": 51.8,
+          "currentPrice": 36.88,
+          "spuDesc": "4只鸡腿+大鹏展翅（两对），管饱！秘制腌料，粉少汁多，好吃的不得了！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 756776806,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 8334,
+              "activityStock": 8334,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 51.8,
+              "currentPrice": 36.88,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "7.12折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "7.12折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "神雕侠侣（俩只）",
+          "unit": "",
+          "spuId": 663316020,
+          "tag": "56248162",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/a9d973d0774dc749089e9db64ac940332615572.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/a9d973d0774dc749089e9db64ac940332615572.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "1",
+          "originPrice": 66.0,
+          "currentPrice": 45.88,
+          "spuDesc": "2只童子鸡，口味默认孜然，需要其他口味请备注。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719477346,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 66.0,
+              "currentPrice": 45.88,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "6.95折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.95折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "下午茶套餐",
+          "unit": "",
+          "spuId": 663314553,
+          "tag": "56248162",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/28d61e6e5f7026d51180eeddaaef892c2284838.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/28d61e6e5f7026d51180eeddaaef892c2284838.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "10",
+          "originPrice": 48.0,
+          "currentPrice": 48.0,
+          "spuDesc": "一只神奇的鸡（默认孜然）+鸡米花+饮料+甜辣酱（口味备注）",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719475381,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 48.0,
+              "currentPrice": 48.0,
+              "boxFee": 3.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248161",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "鸡的伴侣\uD83D\uDC97",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "甜辣酱",
+          "unit": "",
+          "spuId": 663316014,
+          "tag": "56248161",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/e74dae58d2fac1937bda203c64f84b48570988.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/e74dae58d2fac1937bda203c64f84b48570988.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "34",
+          "originPrice": 2.0,
+          "currentPrice": 0.88,
+          "spuDesc": "招牌酱，甜甜的辣辣的，配酱更美味哦！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719474516,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 3,
+              "originPrice": 2.0,
+              "currentPrice": 0.88,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "4.4折 限3份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "4.4折 限3份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "辣椒包",
+          "unit": "",
+          "spuId": 717568870,
+          "tag": "56248161",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/5b4290febb780eabcf1456c40ddd9756536192.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "200+",
+          "originPrice": 2.0,
+          "currentPrice": 0.3,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778204129,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 10,
+              "originPrice": 2.0,
+              "currentPrice": 0.3,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "1.5折 限10份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "1.5折 限10份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "番茄酱",
+          "unit": "",
+          "spuId": 663316017,
+          "tag": "56248161",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/dafc6cb5c4bb756526741f217a90bf3c575424.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/dafc6cb5c4bb756526741f217a90bf3c575424.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "39",
+          "originPrice": 2.0,
+          "currentPrice": 2.0,
+          "spuDesc": "招牌酱，甜甜的酸酸的，配酱更美味哦！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719477343,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 2.0,
+              "currentPrice": 2.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": "",
+          "productLabelPictureList": [
+            {
+              "pictureUrl": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+              "width": "60",
+              "height": "30"
+            }
+          ]
+        },
+        {
+          "spuName": "千岛酱",
+          "unit": "",
+          "spuId": 663314551,
+          "tag": "56248161",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/1a05dd5fdbd36adbf1c077e3a71ce5f8584875.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/1a05dd5fdbd36adbf1c077e3a71ce5f8584875.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 2.0,
+          "currentPrice": 2.0,
+          "spuDesc": "千岛酱的香，番茄酱的浓。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719476426,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 2.0,
+              "currentPrice": 2.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "蜂蜜芥末酱",
+          "unit": "",
+          "spuId": 663315443,
+          "tag": "56248161",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/e8659cae189ac1c9c3ac24d10f1de11e565220.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/e8659cae189ac1c9c3ac24d10f1de11e565220.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "61",
+          "originPrice": 2.0,
+          "currentPrice": 2.0,
+          "spuDesc": "淡淡的芥末味，配上蜂蜜的香甜，这个酱你会喜欢！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719477340,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 2.0,
+              "currentPrice": 2.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "香甜沙拉酱",
+          "unit": "",
+          "spuId": 1039946704,
+          "tag": "56248161",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/a95e85bb0d8b307428e6d2af576daca1590631.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/a95e85bb0d8b307428e6d2af576daca1590631.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "13",
+          "originPrice": 2.0,
+          "currentPrice": 2.0,
+          "spuDesc": "丝滑甜甜的味道",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1145574665,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 2.0,
+              "currentPrice": 2.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "78798202",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "小吃",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "一口肠（一个装）",
+          "unit": "约10克",
+          "spuId": 2405155441,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/ed360b8f5f20c32f0b655c7dcd8030ae61313.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "400+",
+          "originPrice": 1.2,
+          "currentPrice": 0.1,
+          "spuDesc": "进店必买，人人都爱吃，一口一个！",
+          "praiseNum": 0,
+          "praiseNumDecoded": "3",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 2727616514,
+              "spec": "(约10克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": 5,
+              "restrict": 1,
+              "originPrice": 1.2,
+              "currentPrice": 0.1,
+              "boxFee": 0.2,
+              "skuPromotionInfo": "0.83折 限1份 5份起购",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "0.83折 限1份 5份起购",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "南瓜饼",
+          "unit": "",
+          "spuId": 1446343260,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/ee69bd339ec1429448f8104ace9db7ae2023601.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/ee69bd339ec1429448f8104ace9db7ae2023601.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "15",
+          "originPrice": 6.0,
+          "currentPrice": 4.9,
+          "spuDesc": "丝丝细甜，好吃的不得了，欢迎品尝。每份4只。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1650954895,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 999,
+              "activityStock": 999,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 6.0,
+              "currentPrice": 4.9,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "8.17折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.17折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "椰蓉酸奶大福(一份3枚)",
+          "unit": "",
+          "spuId": 813526376,
+          "tag": "78798202",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/e21b5621ad7f296c6fb1e2088c62d31d1717175.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/e21b5621ad7f296c6fb1e2088c62d31d1717175.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "25",
+          "originPrice": 10.0,
+          "currentPrice": 6.8,
+          "spuDesc": "全家都爱吃港式甜品糕点.",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 882429492,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 8943,
+              "activityStock": 8943,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 10.0,
+              "currentPrice": 6.8,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "6.8折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "6.8折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248159",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "鸡的泡友\uD83D\uDC6C",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "可口可乐",
+          "unit": "",
+          "spuId": 1977234816,
+          "tag": "56248159",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/cb2bd999800f4b000d1c5c15e5460182343784.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/cb2bd999800f4b000d1c5c15e5460182343784.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "100+",
+          "originPrice": 3.5,
+          "currentPrice": 3.5,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "11",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 2249996395,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 3.5,
+              "currentPrice": 3.5,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "三官堂老汽水",
+          "unit": "约300克",
+          "spuId": 1776123235,
+          "tag": "56248159",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproduct/eaf6ce1e6b33ac4a286de4abd0f617d3142453.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproduct/eaf6ce1e6b33ac4a286de4abd0f617d3142453.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "4",
+          "originPrice": 5.0,
+          "currentPrice": 5.0,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 2021923384,
+              "spec": "(约300克)",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 5.0,
+              "currentPrice": 5.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "纯生熟啤500ml(单点不送)",
+          "unit": "",
+          "spuId": 1624194527,
+          "tag": "56248159",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/xianfu/08da35f50590a024a9fd1081849cf820423239.jpg",
+          "bigImageUrl": "http://p0.meituan.net/xianfu/08da35f50590a024a9fd1081849cf820423239.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "18",
+          "originPrice": 6.0,
+          "currentPrice": 6.0,
+          "spuDesc": "纯生熟啤500ml,单点不送",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 1848598070,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 6.0,
+              "currentPrice": 6.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "雪碧(300ml)单点不送",
+          "unit": "",
+          "spuId": 663316006,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/ecc2451fac7eecec90ab5e43c13ce6f5424966.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/ecc2451fac7eecec90ab5e43c13ce6f5424966.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "45",
+          "originPrice": 4.0,
+          "currentPrice": 2.0,
+          "spuDesc": "炸鸡加雪碧，不离更不弃。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "5",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 719474507,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": -1,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 4.0,
+              "currentPrice": 2.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "5折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "芬达(300ml)单点不送",
+          "unit": "",
+          "spuId": 663315441,
+          "tag": "56248159",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/d0c97401635c1ebfd5d3178b9abc9c09420506.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/d0c97401635c1ebfd5d3178b9abc9c09420506.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "15",
+          "originPrice": 4.0,
+          "currentPrice": 4.0,
+          "spuDesc": "炸鸡加芬达，飞黄又腾达。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719476421,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 4.0,
+              "currentPrice": 4.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "菠萝啤（单点不送）",
+          "unit": "",
+          "spuId": 1020663032,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/c082ef0b510adf828f0a86ae248a984f624714.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/c082ef0b510adf828f0a86ae248a984f624714.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "42",
+          "originPrice": 5.0,
+          "currentPrice": 2.8,
+          "spuDesc": "不错u",
+          "praiseNum": 0,
+          "praiseNumDecoded": "4",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 1122627653,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 9998,
+              "minPurchaseNum": -1,
+              "restrict": 5,
+              "originPrice": 5.0,
+              "currentPrice": 2.8,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "5.6折 限5份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "5.6折 限5份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "勇闯天涯（单点不送）",
+          "unit": "",
+          "spuId": 717587373,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/139d65f14f4032b960f2f9e9d05e8651652855.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/139d65f14f4032b960f2f9e9d05e8651652855.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "29",
+          "originPrice": 8.0,
+          "currentPrice": 6.6,
+          "spuDesc": "吃炸鸡喝啤酒我们一起手拉手",
+          "praiseNum": 0,
+          "praiseNumDecoded": "1",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 778218646,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 9999,
+              "minPurchaseNum": -1,
+              "restrict": 10,
+              "originPrice": 8.0,
+              "currentPrice": 6.6,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "8.25折 限10份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8.25折 限10份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "怡宝（单点不送）",
+          "unit": "",
+          "spuId": 744255759,
+          "tag": "56248159",
+          "activityTag": "discount",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/45329d31cb88b0665c1b3af899216f33619451.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/45329d31cb88b0665c1b3af899216f33619451.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "26",
+          "originPrice": 3.5,
+          "currentPrice": 2.8,
+          "spuDesc": "",
+          "praiseNum": 0,
+          "praiseNumDecoded": "2",
+          "sellStatus": 0,
+          "activityType": 1,
+          "skuList": [
+            {
+              "skuId": 806685344,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": 9345,
+              "activityStock": 9345,
+              "minPurchaseNum": -1,
+              "restrict": 1,
+              "originPrice": 3.5,
+              "currentPrice": 2.8,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "8折 限1份",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "8折 限1份",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248164",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "兑换专区\uD83C\uDF81",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "拒绝浪费",
+          "unit": "",
+          "spuId": 663313590,
+          "tag": "56248164",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproductdwm/6a38f2d140ef9401d892bd67f0aebc54259994.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproductdwm/6a38f2d140ef9401d892bd67f0aebc54259994.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "2",
+          "originPrice": 0.0,
+          "currentPrice": 0.0,
+          "spuDesc": "积满本店10个干净完整的手提袋，可到店兑换一只任意口味的童子鸡!",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719477358,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 0.0,
+              "currentPrice": 0.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "从我做起",
+          "unit": "",
+          "spuId": 663316032,
+          "tag": "56248164",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductdwm/6076eab98b181bbb2714c6c9f910f34b222922.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductdwm/6076eab98b181bbb2714c6c9f910f34b222922.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "0",
+          "originPrice": 0.0,
+          "currentPrice": 0.0,
+          "spuDesc": "积满本店5个干净完整的手提袋，可到店兑换一个大鸡腿!",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719475392,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 0.0,
+              "currentPrice": 0.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    },
+    {
+      "tag": "56248165",
+      "activityTag": "",
+      "iconUrl": "",
+      "categoryName": "全国连锁\uD83E\uDD1D",
+      "categoryType": 0,
+      "spuList": [
+        {
+          "spuName": "双狼餐饮公司可实地考察",
+          "unit": "",
+          "spuId": 803203266,
+          "tag": "56248165",
+          "activityTag": "",
+          "littleImageUrl": "http://p0.meituan.net/wmproduct/882ae8ab51e2d54689ba71c87f7a0e34439533.jpg",
+          "bigImageUrl": "http://p0.meituan.net/wmproduct/882ae8ab51e2d54689ba71c87f7a0e34439533.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "0",
+          "originPrice": 500.0,
+          "currentPrice": 500.0,
+          "spuDesc": "双狼餐饮成立于2016年，是来自湖北的大型餐饮连锁企业。目前旗下拥有“叫了只鸡”、“斑马轻食”、“金东板栗”等餐饮品牌。公司经过近两年的发展，已在广东、湖北、河北、河南、山东、四川、陕西、江苏、浙江、天津、重庆等地拥有了近500家直营和加萌店，总部位于武汉市江岸区黄石路9号德润大厦C区519，并拥有80余人组成的专业管理团队。",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 870862539,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 500.0,
+              "currentPrice": 500.0,
+              "boxFee": 0.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        },
+        {
+          "spuName": "叫了只鸡全国连锁品牌店",
+          "unit": "",
+          "spuId": 663314560,
+          "tag": "56248165",
+          "activityTag": "",
+          "littleImageUrl": "http://p1.meituan.net/wmproductwm/cb313ec2a6e2caac3500ceeedaab93eb243061.jpg",
+          "bigImageUrl": "http://p1.meituan.net/wmproductwm/cb313ec2a6e2caac3500ceeedaab93eb243061.jpg",
+          "saleVolume": 0,
+          "saleVolumeDecoded": "0",
+          "originPrice": 500.0,
+          "currentPrice": 500.0,
+          "spuDesc": "当前炸鸡市场鱼龙混杂，选择一个靠谱的公司很重要，双狼餐饮坚持用数据说话，以事实明鉴，调取出各地区加萌伙伴与当地同行的数据，单量分析，包装的再好看，只是表面，内在没东西，加萌的钱，就是打水漂。以下六点，我们说到做到！①公司前期市场调研、辅助选址②店铺装修整体化输出③开业前驻店培训指导④开业后每天外卖平台的数据分析、运营维护⑤店内所有物料批发价送货上门",
+          "praiseNum": 0,
+          "praiseNumDecoded": "0",
+          "sellStatus": 0,
+          "activityType": 0,
+          "skuList": [
+            {
+              "skuId": 719477359,
+              "spec": "",
+              "soldStatus": 0,
+              "realStock": -1,
+              "activityStock": 0,
+              "minPurchaseNum": -1,
+              "restrict": -1,
+              "originPrice": 500.0,
+              "currentPrice": 500.0,
+              "boxFee": 1.0,
+              "skuPromotionInfo": "",
+              "count": 0
+            }
+          ],
+          "spuAttrList": [],
+          "spuPromotionInfo": "",
+          "activityPolicy": {
+            "discountByCount": {
+              "count": 0,
+              "discount": 1.0
+            }
+          },
+          "statusDesc": ""
+        }
+      ],
+      "end": true,
+      "nextPageIndex": 0
+    }
+  ],
+  "shoppingCart": {
+    "minFeeForCartTip": 10.5,
+    "promptText": "满22减12;满50减20;满70减30"
+  }
+}
