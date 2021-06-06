@@ -1,0 +1,41 @@
+border-1px($color)
+  position: relative
+  &:after
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    border-top: 1px solid $color
+    content: ' '
+
+border-1px-before($color)
+  position: relative
+  &:before
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    border-top: 1px solid $color
+    content: ' '
+
+border-none()
+  &:after
+    display: none
+
+
+arrow-right($color, $size, $height, $width)
+  position relative
+  &:after
+    display block
+    content ''
+    position absolute
+    width $width
+    height $height
+    right 2px
+    top 50%
+    border $size solid $color
+    border-top none
+    border-right none
+    transform translateY(-50%) rotate(225deg)
