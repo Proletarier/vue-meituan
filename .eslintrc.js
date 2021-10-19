@@ -19,6 +19,7 @@ module.exports = {
     'prefer-const' :0,
     'no-plusplus':['error',{'allowForLoopAfterthoughts': true}],
     "no-param-reassign": ["error", { "props": false}],
-    "prefer-destructuring": ["error", {"object": false, "array": false}]
+    "prefer-destructuring": ["error", {"object": false, "array": false}],
+    "linebreak-style": ["off", "windows"]
   }
 }
