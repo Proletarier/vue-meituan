@@ -10,7 +10,7 @@
      <div class="login-wrapper">
        <div class="login-phone-num-wrapper">
          <input class="login-phone-num-input" :value="phone" id="phoneNumInput" type="tel" autocomplete="off" placeholder="请输入手机号" maxlength="11"/>
-         <div class="login-send-verify-code-text" :class="{'login-active': phone.length === 11}">
+         <div class="login-send-verify-code-text" :class="{'login-active': isActive}">
            <span id="sendCodeBtnText">发送验证码</span>
            <div class="iloginLoading">
              <div class="sms-circle"></div>
@@ -48,9 +48,20 @@
 export default {
   data() {
     return {
-      phone: '',
-      captcha: ''
+      phone: '', // 手机号码
+      captcha: '', // 验证码
+      isActive: false
     };
+  },
+  watch: {
+    // eslint-disable-next-line func-names
+    phone(val) {
+      if (val.length === 11) {
+        this.isActive = true;
+      } else {
+        this.isActive = false;
+      }
+    }
   }
 };
 </script>
@@ -109,9 +120,9 @@ export default {
         border-radius: .2em
         cursor pointer
         font-size: 1.1em
-      .login-active
-        color #ffd300
-        border 1px solid #ffd300
+        &.login-active
+          color #ffd300
+          border 1px solid #ffd300
     .login-verifty-code-wrapper
       display: flex
       justify-content: space-around
