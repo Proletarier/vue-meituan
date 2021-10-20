@@ -9,8 +9,8 @@
    <div class="login-form">
      <div class="login-wrapper">
        <div class="login-phone-num-wrapper">
-         <input class="login-phone-num-input" :value="phone" id="phoneNumInput" type="tel" autocomplete="off" placeholder="请输入手机号" maxlength="11"/>
-         <div class="login-send-verify-code-text" :class="{'login-active': isActive}">
+         <input class="login-phone-num-input" v-model="phone" id="phoneNumInput" type="tel" autocomplete="off" placeholder="请输入手机号" maxlength="11"/>
+         <div class="login-send-verify-code-text" :class="{'login-active': phone.length === 11}">
            <span id="sendCodeBtnText">发送验证码</span>
            <div class="iloginLoading">
              <div class="sms-circle"></div>
@@ -18,7 +18,7 @@
          </div>
        </div>
        <div class="login-verifty-code-wrapper">
-         <input class="login-code-input" :value="captcha" id="codeInput" type="number" maxlength="6" autocomplete="off" placeholder="请输入短信验证码"/>
+         <input class="login-code-input" v-model="captcha" id="codeInput" type="number" maxlength="6" autocomplete="off" placeholder="请输入短信验证码"/>
        </div>
        <div class="input-opbtn-wrapper">
           <button class="input-login-btn-wrapper" id="iloginBtn">
@@ -49,19 +49,11 @@ export default {
   data() {
     return {
       phone: '', // 手机号码
-      captcha: '', // 验证码
-      isActive: false
+      captcha: '' // 验证码
     };
   },
   watch: {
     // eslint-disable-next-line func-names
-    phone(val) {
-      if (val.length === 11) {
-        this.isActive = true;
-      } else {
-        this.isActive = false;
-      }
-    }
   }
 };
 </script>
