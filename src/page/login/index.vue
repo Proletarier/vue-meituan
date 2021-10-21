@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 <template>
 <div class="login">
    <div class="top">
@@ -52,8 +53,23 @@ export default {
       captcha: '' // 验证码
     };
   },
-  watch: {
-    // eslint-disable-next-line func-names
+  methods: {
+    login() {
+      this.$refs.loginForm.validate(valid => {
+        if (valid) {
+          this.loading = true;
+          this.$store.dispatch('user/login', this.loginForm).then(() => {
+            this.loading = false;
+            this.$router.push({ path: this.redirect || '/' });
+          }).catch(() => {
+            this.loading = false;
+          });
+        } else {
+          console.log('参数验证不合法！');
+          return false;
+        }
+      });
+    }
   }
 };
 </script>

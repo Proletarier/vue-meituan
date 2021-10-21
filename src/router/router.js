@@ -1,3 +1,6 @@
+import Vue from 'vue';
+import Router from 'vue-router';
+
 import home from '../page/home/home.vue';
 import order from '../page/order/order.vue';
 import mine from '../page/mine/mine.vue';
@@ -8,13 +11,9 @@ import qualification from '../page/menu/children/qualification.vue';
 import orderdetail from '../page/order/children/orderdetail.vue';
 import city from '../page/city/city.vue';
 
-// Vue.use(VueRouter);
+Vue.use(Router);
 
-// const router = new VueRouter({
-//   routes
-// });
-
-export default [
+export const constantRouterMap = [
   {
     path: '/login',
     component: login
@@ -58,3 +57,8 @@ export default [
   }
 
 ];
+
+export default new Router({
+  scrollBehavior: () => ({ y: 0 }),
+  routes: constantRouterMap
+});

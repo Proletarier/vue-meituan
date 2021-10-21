@@ -20,6 +20,8 @@ module.exports = {
     'no-plusplus':['error',{'allowForLoopAfterthoughts': true}],
     "no-param-reassign": ["error", { "props": false}],
     "prefer-destructuring": ["error", {"object": false, "array": false}],
-    "linebreak-style": ["off", "windows"]
+    "linebreak-style": ["off", "windows"],
+    "arrow-parens": ["error", "as-needed"],
+    "consistent-return": ["error", "true"]
   }
 }
