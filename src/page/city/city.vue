@@ -53,7 +53,7 @@ export default {
     };
   },
   created() {
-    cityList().then((res) => {
+    cityList().then(res => {
       this.hot_city = res.data.hot_city;
       this.city_nav = res.data.city_nav;
       this.classify_nav = res.data.classify_nav;
@@ -67,7 +67,7 @@ export default {
     getcityListHeight() {
       let listTop = [];
       let citylist = this.$refs.cityWrapper.querySelectorAll('.city-list');
-      citylist.forEach((el) => {
+      citylist.forEach(el => {
         listTop.push(el.offsetTop);
       });
       this.cityListTop = listTop;

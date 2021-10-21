@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     initData() {
-      getAccount().then((res) => {
+      getAccount().then(res => {
         this.account = res.data;
       });
     }

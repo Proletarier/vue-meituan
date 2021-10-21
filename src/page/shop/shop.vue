@@ -194,7 +194,7 @@ export default {
           this.initScroll();
         });
         // 排序标题
-        this.sortTitleName = this.sortVOList.filter((obj) => obj.position)[0].name;
+        this.sortTitleName = this.sortVOList.filter(obj => obj.position)[0].name;
       });
     },
     // 初始化滚动

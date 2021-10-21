@@ -21,7 +21,7 @@ module.exports = {
     "no-param-reassign": ["error", { "props": false}],
     "prefer-destructuring": ["error", {"object": false, "array": false}],
     "linebreak-style": ["off", "windows"],
-    "arrow-parens": ["error", "as-needed"],
-    "consistent-return": ["error", "true"]
+    "arrow-parens": 0,
+    'consistent-return': 0
   }
 }

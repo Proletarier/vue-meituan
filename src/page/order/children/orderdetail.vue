@@ -94,7 +94,7 @@ export default {
   },
   created() {
     this.orderId = this.$route.query.orderid;
-    orderDetail().then((res) => {
+    orderDetail().then(res => {
       this.orderDetail = res.data;
     });
   }

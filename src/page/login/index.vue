@@ -11,10 +11,21 @@
      <div class="login-wrapper">
        <div class="login-phone-num-wrapper">
          <input class="login-phone-num-input" v-model="phone" id="phoneNumInput" type="tel" autocomplete="off" placeholder="请输入手机号" maxlength="11"/>
-         <div class="login-send-verify-code-text" :class="{'login-active': phone.length === 11}">
+         <div class="login-send-verify-code-text" :class="{'login-active': phone.length === 11}" v-on:click="sendSms">
            <span id="sendCodeBtnText">发送验证码</span>
-           <div class="iloginLoading">
+           <div class="fadingCircle" id="iloginLoading" :style="{'display': (loading? 'inline-block' : 'none') }">
              <div class="sms-circle"></div>
+             <div class="sms-circle2"></div>
+             <div class="sms-circle3"></div>
+             <div class="sms-circle4"></div>
+             <div class="sms-circle5"></div>
+             <div class="sms-circle6"></div>
+             <div class="sms-circle7"></div>
+             <div class="sms-circle8"></div>
+             <div class="sms-circle9"></div>
+             <div class="sms-circle10"></div>
+             <div class="sms-circle11"></div>
+             <div class="sms-circle12"></div>
            </div>
          </div>
        </div>
@@ -50,10 +61,17 @@ export default {
   data() {
     return {
       phone: '', // 手机号码
-      captcha: '' // 验证码
+      captcha: '', // 验证码
+      loading: false
     };
   },
   methods: {
+    sendSms() {
+      if (this.phone.length < 11) {
+        return false;
+      }
+      this.loading = true;
+    },
     login() {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
@@ -75,6 +93,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@import "../../style/animation.styl";
+
 .top
   display: block
   .logo

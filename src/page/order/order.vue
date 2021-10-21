@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     initData() {
-      getOrderList().then((res) => {
+      getOrderList().then(res => {
         this.orderList = res.data.orderList;
       });
     },

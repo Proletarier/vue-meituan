@@ -222,7 +222,7 @@ export default {
   },
   created() {
     this.shopId = this.$route.query.shopId;
-    getFood().then((res) => {
+    getFood().then(res => {
       this.categoryList = res.data.categoryList;
       this.shopInfo = res.data.shopInfo;
       this.$nextTick(() => {
@@ -230,7 +230,7 @@ export default {
         this.calculateHeight();
       });
     });
-    getComments().then((res) => {
+    getComments().then(res => {
       this.commentScores = res.data;
       this.commentList = res.data.list;
       this.commentLabels = res.data.commentLabels;
@@ -242,7 +242,7 @@ export default {
         });
       });
     });
-    getShopInfo().then((res) => {
+    getShopInfo().then(res => {
       this.seller = res.data;
     });
     this.INIT_BUYCART();
@@ -252,8 +252,8 @@ export default {
   computed: {
     selectFoods() {
       let foods = [];
-      this.categoryList.forEach((good) => {
-        good.forEach((food) => {
+      this.categoryList.forEach(good => {
+        good.forEach(food => {
           if (food.count) {
             foods.push(food);
           }
@@ -282,7 +282,7 @@ export default {
         click: true,
         probeType: 3
       });
-      this.foodWrapper.on('scroll', (pos) => {
+      this.foodWrapper.on('scroll', pos => {
         if (pos.y <= 0) {
           let scrollY = Math.abs(Math.round(pos.y));
           for (let i = 0; i < this.foodsHeight.length; i++) {
@@ -338,7 +338,7 @@ export default {
     seletPic(pictures, index) {
       let pictureList = [];
       this.picIndex = index;
-      pictures.forEach((pic) => {
+      pictures.forEach(pic => {
         pictureList.push(pic.originalPicUrl);
       });
       this.pictures = pictureList;

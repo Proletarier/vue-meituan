@@ -35,7 +35,7 @@ export default {
     };
   },
   created() {
-    getQualification().then((res) => {
+    getQualification().then(res => {
       this.qualification = res.data;
       this.certify_info = this.qualification.certify_info;
     });

@@ -65,7 +65,7 @@ export default {
       let attrValues = [];
       // 重新获取每个规格第一个元素
       if (this.chooseType === 'specification') {
-        this.food.spuAttrList.forEach((item) => {
+        this.food.spuAttrList.forEach(item => {
           attrs.push(item.spuAttrValueList[0].attrId);
           attrValues.push(item.spuAttrValueList[0].attrValue);
         });
@@ -82,7 +82,7 @@ export default {
       let cart = cartList[this.shopId];
       let num = 0;
       if (cart && cart.length > 0) {
-        cart.forEach((item) => {
+        cart.forEach(item => {
           if (item.spuId === this.food.spuId) {
             num += item.count;
           }

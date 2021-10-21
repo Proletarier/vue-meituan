@@ -135,11 +135,11 @@ export default {
   },
   created() {
     this.getKingkongList();
-    getCategories().then((res) => {
+    getCategories().then(res => {
       this.sortVOList = res.data.sortVOList;
       this.multifilterVOList = res.data.multifilterVOList;
       // 排序标题
-      this.sortTitleName = this.sortVOList.filter((obj) => obj.position)[0].name;
+      this.sortTitleName = this.sortVOList.filter(obj => obj.position)[0].name;
     });
   },
   mounted() {
@@ -157,7 +157,7 @@ export default {
       document.documentElement.scrollTop = 200;
     },
     getKingkongList() {
-      kingkongList().then((res) => {
+      kingkongList().then(res => {
         this.kingkongList = res.data;
       });
     },
@@ -173,7 +173,7 @@ export default {
         return false;
       }
       let isShow = false;
-      this.sortVOList.forEach((obj) => {
+      this.sortVOList.forEach(obj => {
         if (obj.position && obj.sortId === this.sortById) {
           isShow = true;
         }
