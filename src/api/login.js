@@ -2,7 +2,7 @@ import request from '@/utils/request';
 
 export function login(username, password) {
   return request({
-    url: '/admin/login',
+    url: '/business/login',
     method: 'post',
     data: {
       username,
@@ -13,14 +13,22 @@ export function login(username, password) {
 
 export function logout() {
   return request({
-    url: '/admin/logout',
+    url: '/business/logout',
     method: 'post'
   });
 }
 
 export function getInfo() {
   return request({
-    url: '/admin/info',
+    url: '/business/info',
     method: 'get'
+  });
+}
+
+export function getCaptcha(data) {
+  return request({
+    url: '/business/getCaptcha',
+    method: 'get',
+    params: data
   });
 }

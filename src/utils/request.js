@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import axios from 'axios';
+// eslint-disable-next-line import/no-cycle
 import store from '@/store';
 import { getToken } from '@/utils/auth';
 
@@ -45,37 +46,6 @@ service.interceptors.response.use(
    */
   (response) => {
     const res = response.data;
-
-    // if the custom code is not 20000, it is judged as an error.
-    if (res.code !== 200) {
-      // eslint-disable-next-line no-undef
-      Message({
-        message: res.message || 'Error',
-        type: 'error',
-        duration: 5 * 1000
-      });
-
-      // 50008: Illegal token; 50012: Other clients logged in; 50014: Token expired;
-      if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
-        // to re-login
-        // eslint-disable-next-line no-undef
-        MessageBox.confirm(
-          'You have been logged out, you can cancel to stay on this page, or log in again',
-          'Confirm logout',
-          {
-            confirmButtonText: 'Re-Login',
-            cancelButtonText: 'Cancel',
-            type: 'warning'
-          }
-        ).then(() => {
-          store.dispatch('user/resetToken').then(() => {
-            // eslint-disable-next-line no-restricted-globals
-            location.reload();
-          });
-        });
-      }
-      return Promise.reject(new Error(res.message || 'Error'));
-    }
     return res;
   },
   (error) => {

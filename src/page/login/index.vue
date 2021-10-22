@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import { getCaptcha } from '@/api/login';
+
 export default {
   data() {
     return {
@@ -71,6 +73,16 @@ export default {
         return false;
       }
       this.loading = true;
+      let data = {
+        phone: this.phone
+      };
+      getCaptcha(data).then(response => {
+        this.loading = false;
+        this.$message.success('ok')
+      }).catch((err) => {
+        this.$message.error('错误')
+        this.loading = false;
+      });
     },
     login() {
       this.$refs.loginForm.validate(valid => {

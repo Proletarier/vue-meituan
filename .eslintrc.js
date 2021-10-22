@@ -22,6 +22,13 @@ module.exports = {
     "prefer-destructuring": ["error", {"object": false, "array": false}],
     "linebreak-style": ["off", "windows"],
     "arrow-parens": 0,
-    'consistent-return': 0
+    'consistent-return': 0,
+    'no-unused-vars': 0,
+    'prefer-template': 0,
+    'prefer-promise-reject-errors':0,
+    'no-shadow': 0,
+    'semi': 0,
+    'no-param-reassign': 0,
+    'func-names': 0
   }
 }
