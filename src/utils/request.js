@@ -46,16 +46,14 @@ service.interceptors.response.use(
    */
   (response) => {
     const res = response.data;
-    return res;
+    if (res.code !== 200) {
+      return Promise.reject(new Error(res.message || 'Error'))
+    }
+    return res
   },
   (error) => {
     // eslint-disable-next-line prefer-template
     console.log('err' + error); // for debug
-    Message({
-      message: error.message,
-      type: 'error',
-      duration: 5 * 1000
-    });
     return Promise.reject(error);
   }
 );

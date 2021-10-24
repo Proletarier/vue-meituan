@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import request from '@/utils/request';
 
 export function login(username, password) {

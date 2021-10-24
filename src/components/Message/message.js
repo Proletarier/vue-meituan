@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import Vue from 'vue';
 import TMessage from './message.vue';
 
@@ -12,7 +13,6 @@ function Message(data) {
   data.onClose = function () {
     console.log('onClose');
     // instance是消息弹框组件的实例对象即VueComponent
-    // eslint-disable-next-line no-use-before-define
     Message.close(instance);
   };
 

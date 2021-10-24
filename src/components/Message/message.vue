@@ -13,18 +13,18 @@ export default {
   name: 'Message',
   data() {
     return {
-      message: '', // 弹框的提示内容
-      type: 'success', // 弹框的样式 success、warning、error
-      center: true, // 弹框是否居中显示
-      offset: 20, // 弹框默认的偏移量
-      closed: true, // 弹框默认隐藏 通过v-if="!closed"控制
-      duration: 1000, // 弹框消失的时间
-      timer: null // 准备一个定时器
+      message: '',
+      type: 'success',
+      center: true,
+      offset: 160,
+      closed: false,
+      duration: 1000,
+      timer: 2000,
+      onClose: null // 扩充一个功能 弹框消失后触发
     };
   },
   mounted() {
     this.timer = setTimeout(() => {
-    // 在规定的this.duration后该消息弹框消失
       if (!this.closed) {
         this.close();
       }
@@ -33,6 +33,10 @@ export default {
   methods: {
     close() {
       this.closed = true;
+      // 当弹框消失时会调用this.onClose()该函数方法
+      if (typeof this.onClose === 'function') {
+        this.onClose();
+      }
     }
   }
 }
@@ -40,13 +44,12 @@ export default {
 
 <style lang="stylus">
 .message {
-    min-width: 380px;
+    min-width: 300px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 6px;
     border-width: 1px;
     border-style: solid;
-    border-color: #EBEEF5;
     position: fixed;
     left: 50%;
     top: 20px;
@@ -55,9 +58,10 @@ export default {
     background-color: #edf2fc;
     transition: opacity .3s, transform .4s, top .4s;
     overflow: hidden;
-    padding: 15px 15px 15px 20px;
+    padding: 10px 15px 10px 20px;
     display: flex;
     align-items: center
+    opacity .7
 }
 
 .message.is-center {
@@ -75,16 +79,16 @@ export default {
 }
 
 .message-success {
-    background-color: #f0f9eb;
+    background-color: #000000;
     border-color: #e1f3d8
 }
 
 .message-success .message-content {
-    color: #67C23A
+    color: #fff
 }
 
 .message-warning {
-    background-color: #fdf6ec;
+    background-color: #000000;
     border-color: #faecd8
 }
 
@@ -93,17 +97,17 @@ export default {
 }
 
 .message-error {
-    background-color: #fef0f0;
+    background-color: #000000;
     border-color: #fde2e2
 }
 
 .message-error .message-content {
-    color: #F56C6C
+    color: #fff
 }
 
 .message-content {
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1
 }
 

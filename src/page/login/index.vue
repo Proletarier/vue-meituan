@@ -73,14 +73,11 @@ export default {
         return false;
       }
       this.loading = true;
-      let data = {
-        phone: this.phone
-      };
-      getCaptcha(data).then(response => {
+      getCaptcha({ phone: this.phone }).then(response => {
+        this.$message.error(response.message)
         this.loading = false;
-        this.$message.success('ok')
       }).catch((err) => {
-        this.$message.error('错误')
+        this.$message.error(err.message)
         this.loading = false;
       });
     },
