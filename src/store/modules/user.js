@@ -26,15 +26,14 @@ const mutations = {
 
 const actions = {
   // user login
-  login({ commit }, userInfo) {
-    const { username, password } = userInfo;
+  login({ commit }, loginForm) {
+    const { phone, captcha } = loginForm;
     return new Promise((resolve, reject) => {
-      login(username.trim(), password)
+      login(phone, captcha)
         .then(response => {
-          const data = response.data;
-          const tokenStr = data.tokenHead + data.token;
-          setToken(tokenStr);
-          commit('SET_TOKEN', tokenStr);
+          const token = response.data;
+          setToken(token);
+          commit('SET_TOKEN', token);
           resolve();
         })
         .catch(error => {

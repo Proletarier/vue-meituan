@@ -29,6 +29,7 @@ module.exports = {
     'no-shadow': 0,
     'semi': 0,
     'no-param-reassign': 0,
-    'func-names': 0
+    'func-names': 0,
+    'no-cycle': '∞'
   }
 }

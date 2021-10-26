@@ -16,7 +16,7 @@ export default {
       message: '',
       type: 'success',
       center: true,
-      offset: 160,
+      offset: 70,
       closed: false,
       duration: 1000,
       timer: 2000,

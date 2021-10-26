@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// eslint-disable-next-line import/no-cycle
 import user from './modules/user';
 import mutations from './mutations';
 
@@ -11,7 +10,9 @@ const state = {
 };
 
 export default new Vuex.Store({
-  state,
+  modules: {
+    user
+  },
   mutations,
-  user
+  state
 });

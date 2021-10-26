@@ -1,13 +1,12 @@
-/* eslint-disable import/no-cycle */
 import request from '@/utils/request';
 
-export function login(username, password) {
+export function login(phone, captcha) {
   return request({
     url: '/business/login',
     method: 'post',
     data: {
-      username,
-      password
+      phone,
+      captcha
     }
   });
 }

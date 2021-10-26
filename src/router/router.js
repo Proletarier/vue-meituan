@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import home from '../page/home/home.vue';
+import redirect from '../page/redirect.vue';
 import order from '../page/order/order.vue';
 import mine from '../page/mine/mine.vue';
 import shop from '../page/shop/shop.vue';
@@ -14,6 +15,11 @@ import city from '../page/city/city.vue';
 Vue.use(Router);
 
 export const constantRouterMap = [
+  {
+    path: '/redirect',
+    component: redirect,
+    hidden: true,
+  },
   {
     path: '/login',
     component: login

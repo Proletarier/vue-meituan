@@ -32,15 +32,15 @@
        <div class="login-verifty-code-wrapper">
          <input class="login-code-input" v-model="captcha" id="codeInput" type="number" maxlength="6" autocomplete="off" placeholder="请输入短信验证码"/>
        </div>
-       <div class="input-opbtn-wrapper">
-          <button class="input-login-btn-wrapper" id="iloginBtn">
+       <div class="input-opbtn-wrapper" >
+          <button class="input-login-btn-wrapper" id="iloginBtn" v-on:click="login"  :class="{'input-login-active': captcha.length === 6 && phone.length === 11}">
             登录
           </button>
        </div>
       <div class="login-user-confirm">
          <div class="login-user-confirm-wrapper">
            <label id="loginUserConfirm">
-             <input type="checkbox" class="checkbox" id="inputChecked" value="" autocomplete="off">
+             <input type="checkbox" class="checkbox" id="inputChecked" v-model="isSelect" autocomplete="off">
              <i></i>
            </label>
            <div class="login-user-confirm-text login-user-account-common">
@@ -57,15 +57,32 @@
 </template>
 
 <script>
-import { getCaptcha } from '@/api/login';
+import { mapActions } from 'vuex';
+import { getCaptcha, login } from '@/api/login';
 
 export default {
   data() {
     return {
       phone: '', // 手机号码
       captcha: '', // 验证码
-      loading: false
+      loading: false,
+      redirect: undefined,
+      isSelect: undefined
     };
+  },
+  computed: {
+    // isLogin() {
+    //   if (this.phone.siz)
+    //   return false;
+    // }
+  },
+  watch: {
+    $route: {
+      handler: function(route) {
+        this.redirect = route.query && route.query.redirect
+      },
+      immediate: true
+    }
   },
   methods: {
     sendSms() {
@@ -82,19 +99,23 @@ export default {
       });
     },
     login() {
-      this.$refs.loginForm.validate(valid => {
-        if (valid) {
-          this.loading = true;
-          this.$store.dispatch('user/login', this.loginForm).then(() => {
-            this.loading = false;
-            this.$router.push({ path: this.redirect || '/' });
-          }).catch(() => {
-            this.loading = false;
-          });
-        } else {
-          console.log('参数验证不合法！');
-          return false;
-        }
+      if (this.phone.length !== 11 && this.captcha !== 6) {
+        return;
+      }
+
+      if(!this.isSelect){
+        this.$message.warning('请先阅读并勾选协议')
+        return;
+      }
+      
+      let loginForm = {
+        phone: this.phone,
+        captcha: this.captcha
+      }
+      this.$store.dispatch('user/login', loginForm).then(() => {
+        this.$router.push({ path: 'home' })
+      }).catch((err) => {
+        this.$message.error(err.message)
       });
     }
   }
@@ -193,6 +214,9 @@ export default {
        border: none
        cursor pointer
        user-select:none
+       &.input-login-active
+         background-color: #ffd300
+         color: #fff
     .login-user-confirm
       padding-top: 2.3em
       .login-user-confirm-wrapper
@@ -202,6 +226,19 @@ export default {
           min-width: 10%
           .checkbox
             display: none
+          .checkbox[type=checkbox]:checked+i
+             background-color: #fe8c00;
+             &::after
+               position: absolute
+               content: ""
+               width 3px
+               height: 7px
+               top 25%
+               left: 50%
+               transform: rotate(45deg) translateX(-50%)
+               border: 2px solid #222
+               border-top: none
+               border-left: none
           .checkbox[type=checkbox]+i
             display: inline-block
             border: 1px solid #ccc
