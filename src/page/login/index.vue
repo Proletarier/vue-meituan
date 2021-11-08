@@ -99,7 +99,7 @@ export default {
       });
     },
     login() {
-      if (this.phone.length !== 11 && this.captcha !== 6) {
+      if (this.phone.length !== 11 || this.captcha.length !== 6) {
         return;
       }
 
