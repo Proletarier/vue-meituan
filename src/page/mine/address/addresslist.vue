@@ -1,5 +1,12 @@
 <template>
   <div class="addresslist">
+    <header>
+      <div class="go_back">
+        <i></i>
+      </div>
+      <div class="title">
+      </div>
+    </header>
   </div>
 </template>
 
@@ -20,6 +27,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus">
+  .addresslist
+    header
+      .go_back
+         i 
+          background url(/@/images/arrow-r.png)
+          background-size: 20% 30%
+          background-position: center
 </style>
