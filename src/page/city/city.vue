@@ -7,7 +7,7 @@
         </svg>
         <input placeholder="城市中文名或拼音" />
       </div>
-      <div class="go-back">
+      <div class="go-back"  @click="$router.go(-1)">
         取消
       </div>
     </div>

@@ -13,6 +13,7 @@ import orderdetail from '../page/order/children/orderdetail.vue';
 import city from '../page/city/city.vue';
 import addresslist from '@/page/mine/address/addresslist.vue';
 import addaddress from '@/page/mine/address/addaddress.vue';
+import poipicker from '@/page/poipicker/poipicker.vue';
 
 Vue.use(Router);
 
@@ -71,6 +72,10 @@ export const constantRouterMap = [
   {
     path: '/addaddress',
     component: addaddress
+  },
+  {
+    path: '/poipicker',
+    component: poipicker
   }
 
 ];
