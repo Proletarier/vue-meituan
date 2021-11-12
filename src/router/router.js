@@ -44,7 +44,8 @@ export const constantRouterMap = [
   },
   {
     path: '/mine',
-    component: mine
+    component: mine,
+    meta: { keepAlive: true }
   },
   {
     path: '/shop',

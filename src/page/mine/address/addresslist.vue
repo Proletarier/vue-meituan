@@ -2,7 +2,7 @@
   <div class="addresslist">
     <header>
       <div class="box_line">
-        <div class="go_back">
+        <div class="go_back" @click="$router.go(-1)">
         </div>
         <div class="title">
            地址列表
@@ -11,7 +11,7 @@
     </header>
     <section class="address">
       <ul class="address_items">
-        <li class="address_item" v-for="(item,index) in addresslist" :key="index"
+        <li ref="addressItem" class="address_item" v-for="(item,index) in addresslist" :key="index"
         :class="{'active': activeIndex == index }">
           <div class="content" style="width: 90%"  @touchstart ="itemMoveStart" @touchend ="itemMoveEnd($event, index)">
             <div class="detail">
@@ -24,7 +24,7 @@
             </div>
           </div>
           <a class="edit"></a>
-          <div class="delete"  @click="deleteAddress(item.addressId)">删除</div>
+          <div class="delete"  @click="deleteAddress(item.addressId,index)">删除</div>
         </li>
       </ul>
     </section>
@@ -59,13 +59,20 @@ export default {
         this.addresslist=result.data
       })
     },
-    deleteAddress(addressId){
-      console.log('111');
-      delete_address(addressId).then((result) => {
-        this.addressList()
-      }).catch((err) => {
-        this.$message.error(err.message)
-      });
+    deleteAddress(addressId,index){
+      this.$dialog({
+        content: '确定要删除收获地址吗？',
+        onOk: () => {
+          delete_address(addressId).then((result) => {
+              this.$message.success('删除成功')
+             this.$refs.addressItem[index].remove()
+          }).catch((err) => {
+           this.$message.error(err.message)
+          });
+        },
+        onCancel: () => {
+        }
+      })
     },
     itemMoveStart(e){
       this.moveStartX = e.changedTouches[0].pageX;
@@ -73,8 +80,6 @@ export default {
     itemMoveEnd(e,index){
       let moveEndX = e.changedTouches[0].pageX;
       let tag = moveEndX - this.moveStartX;
-      e.preventDefault()
-      console.log(tag)
       if(tag >= 50){
         //向右划
         this.addresslist[index].isActive = false;
