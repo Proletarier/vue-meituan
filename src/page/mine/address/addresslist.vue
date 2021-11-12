@@ -23,12 +23,12 @@
               <span>{{item.phone}}</span>
             </div>
           </div>
-          <a class="edit"></a>
+          <a class="edit" @click="editAddress(item)"></a>
           <div class="delete"  @click="deleteAddress(item.addressId,index)">删除</div>
         </li>
       </ul>
     </section>
-    <div class="add_address">
+    <div class="add_address"  @click="gotoAddress({path: 'addaddress'})">
       <button class="add_btn">
         <i class="add_icon"></i>
         新增收货地址
@@ -92,6 +92,19 @@ export default {
         this.activeIndex = index
       }
       this.moveStartX = 0;
+    },
+    gotoAddress(path) {
+      this.$router.push(path);
+    },
+    editAddress(item){
+      this.gotoAddress({path: 'addaddress', query: {addressId: item.addressId
+      ,gender: item.gender
+      ,name: item.name
+      ,phone: item.phone
+      ,poi: item.poi
+      ,houseNumber: item.houseNumber
+      ,editType: 'edit'
+      }})
     }
   },
 }

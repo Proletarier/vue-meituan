@@ -12,6 +12,7 @@ import qualification from '../page/menu/children/qualification.vue';
 import orderdetail from '../page/order/children/orderdetail.vue';
 import city from '../page/city/city.vue';
 import addresslist from '@/page/mine/address/addresslist.vue';
+import addaddress from '@/page/mine/address/addaddress.vue';
 
 Vue.use(Router);
 
@@ -66,6 +67,10 @@ export const constantRouterMap = [
   {
     path: '/addresslist',
     component: addresslist
+  },
+  {
+    path: '/addaddress',
+    component: addaddress
   }
 
 ];
