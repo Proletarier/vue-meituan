@@ -21,7 +21,7 @@
         <span>手机号：</span>
         <input type="text"  v-model="address.phone">
       </div>
-      <div class="shipping_address">
+      <div class="shipping_address" @click="$router.push({path: 'poipicker',query: {source: 'address'}})">
         <span>收货地址：</span>
         <p class="poi">{{address.poi}}</p>
       </div>
