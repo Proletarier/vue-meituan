@@ -13,7 +13,11 @@
       </div>
       <div class="cancel_txt">取消</div>
     </header>
-    <section class="poi"></section>
+    <section class="poi">
+      当前位置：
+      <span class="loc">{{location}}</span>
+      <span class="reloc">重新定位</span>
+    </section>
     <section class="shopping_address"></section>
     <section class="nearby_address"></section>
   </div>
@@ -23,8 +27,38 @@
 export default {
   data(){
     return{
+      location: '新天府国际中心',
       city: '成都市',
       keyword: ''
+    }
+  },
+  mounted(){
+  
+  },
+  created(){
+    this.getLocation();
+  },
+  methods:{
+    getLocation(){
+      var options = {
+        enableHighAccuracy : true,
+        maximumAge : 1000
+      }
+      if (navigator.geolocation) {
+        //浏览器支持geolocation
+        navigator.geolocation.getCurrentPosition(this.onSuccess,this.onError,options);
+      }
+    },
+    onSuccess(position) {
+      //经度
+      var longitude = position.coords.longitude;
+      //纬度
+      var latitude = position.coords.latitude;
+      console.log(position)
+      alert('当前地址的经纬度：经度' + longitude + '，纬度' + latitude);
+    },
+    onError(error) {
+
     }
   }
 }
@@ -104,4 +138,18 @@ export default {
       background: #e4e4e4
       left: 0
       top 0
+  .poi
+    position relative
+    margin: 20px 0 10px
+    padding-left: 15px
+    font-size: 16px
+    color: #333
+    .loc
+      font-weight: 600
+    .reloc
+      position: absolute
+      top: 0
+      right: 15px
+      font-size: 14px
+      color #ffb000
 </style>
