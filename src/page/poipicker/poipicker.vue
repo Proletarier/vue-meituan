@@ -15,21 +15,38 @@
     </header>
     <section class="poi">
       当前位置：
-      <span class="loc">{{location}}</span>
-      <span class="reloc">重新定位</span>
+      <span class="loc">{{ location }}</span>
+      <span class="reloc" @click="getLocation()">重新定位</span>
     </section>
-    <section class="shopping_address"></section>
+    <section class="shopping_address">
+      <p class="title">我的收货地址</p>
+      <ul class="address_items">
+        <li class="address_item" v-for="(item,index) in addresslist" :key="index">
+          <div class="detail">
+            <span class="poi">{{item.poi}}</span>
+            <span>{{item.houseNumber}}</span>
+          </div>
+          <div class="contact">
+            <span class="name">{{item.name}}</span>
+            <span>{{item.phone}}</span>
+          </div>
+        </li>
+      </ul>
+    </section>
     <section class="nearby_address"></section>
   </div>
 </template>
 
 <script>
+import { address_list } from '@/api/address';
+
 export default {
   data(){
     return{
-      location: '新天府国际中心',
+      location: '',
       city: '成都市',
-      keyword: ''
+      keyword: '',
+      addresslist:[]
     }
   },
   mounted(){
@@ -37,29 +54,46 @@ export default {
   },
   created(){
     this.getLocation();
+    this.addressList();
   },
   methods:{
-    getLocation(){
-      var options = {
-        enableHighAccuracy : true,
-        maximumAge : 1000
-      }
-      if (navigator.geolocation) {
-        //浏览器支持geolocation
-        navigator.geolocation.getCurrentPosition(this.onSuccess,this.onError,options);
-      }
+    addressList(){
+      address_list().then((result) => {
+        this.addresslist=result.data
+      })
     },
-    onSuccess(position) {
-      //经度
-      var longitude = position.coords.longitude;
-      //纬度
-      var latitude = position.coords.latitude;
-      console.log(position)
-      alert('当前地址的经纬度：经度' + longitude + '，纬度' + latitude);
-    },
-    onError(error) {
+    getLocation() {
+      let _this = this;
+      let mapObj = new AMap.Map('iCenter');
+      mapObj.plugin('AMap.Geolocation', function () {
+        var geolocation = new AMap.Geolocation({
+          GeoLocationFirst: true,
+          extensions:'all'
+        })
+        mapObj.addControl(geolocation);
+        geolocation.getCurrentPosition()
+        AMap.event.addListener(geolocation, 'complete', onComplete);
+        AMap.event.addListener(geolocation, 'error', onError);
 
-    }
+        function onComplete(data) {
+          console.log('具体的定位信息',data)
+          _this.location = data.aois[0].name
+        }
+        
+        function onError(data) {
+          // 失败 启用 ip定位
+          AMap.plugin('AMap.CitySearch', function () {
+            var citySearch = new AMap.CitySearch();
+            citySearch.getLocalCity(function (status, result) {
+              if (status === 'complete' && result.info === 'OK') {
+                  console.log('通过ip获取当前城市：', result)
+                  _this.location =result.city
+              }
+            })
+          })
+        }
+      })
+    },
   }
 }
 </script>
@@ -152,4 +186,34 @@ export default {
       right: 15px
       font-size: 14px
       color #ffb000
+      &:before
+        display: inline-block
+        content: ''
+        margin-right: 3px
+        width: 15px
+        height: 15px
+        background:  url(../../images/loc.png) no-repeat
+        background-size: cover
+        vertical-align: top 
+  .shopping_address
+    .title
+     padding: 15px 0 10px 15px
+     font-size: 14px
+     color: #999
+     &:before
+        display: inline-block
+        content: ''
+        margin-right: 3px
+        width: 15px
+        height: 15px
+        background:  url(../../images/house.png) no-repeat
+        background-size: cover
+        vertical-align: text-bottom
+    .address_items
+      padding-left: 15px
+      .address_item
+        padding: 20px 0
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
 </style>

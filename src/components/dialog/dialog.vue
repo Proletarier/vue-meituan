@@ -1,5 +1,5 @@
 <template>
-    <div id="dialog">
+    <div id="DialogConversation">
         <div class="dialog-box">
             <p class="content">{{ content }}</p>
             <div class="btn-box">
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-  #dialog
+  #DialogConversation
     position: fixed;
     top: 0;
     left: 0;
