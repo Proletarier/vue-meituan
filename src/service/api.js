@@ -1,4 +1,6 @@
 import { get } from '../config/http';
+import request from '@/utils/request';
+
 
 /**
  * 获取食品分类列表
@@ -54,3 +56,12 @@ export const cityList = () => get('city/list');
  * 订单明细
  */
 export const orderDetail = () => get('/order/detail');
+
+//登录
+export const login = (phone, captcha) => request({ url: '/login', method: 'post',data:{phone,captcha}}); 
+export const logout = () => request({ url: '/logout', method: 'post'}); 
+export const getInfo = () => request({ url: '/info', method: 'get'}); 
+export const getCaptcha = (data) => request({ url: '/captcha', method: 'get',params:data});
+//地址
+export const address_list = () => request({ url: '/address', method: 'get'}); 
+export const delete_address = (addressId) => request({ url: '/address/'+addressId, method: 'delete'});

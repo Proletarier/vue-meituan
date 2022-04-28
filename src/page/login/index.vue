@@ -1,4 +1,3 @@
-/* eslint-disable arrow-parens */
 <template>
 <div class="login">
    <div class="top">
@@ -58,7 +57,7 @@
 
 <script>
 import { mapActions } from 'vuex';
-import { getCaptcha, login } from '@/api/login';
+import { getCaptcha, login } from '@/service/api';
 
 export default {
   data() {

@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { address_list,delete_address } from '@/api/address';
+import { address_list,delete_address } from '@/service/api';
 
 export default {
   data() {

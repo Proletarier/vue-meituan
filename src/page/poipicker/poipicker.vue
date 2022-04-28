@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { address_list } from '@/api/address';
+import { address_list } from '@/service/api';
 
 export default {
   data(){
