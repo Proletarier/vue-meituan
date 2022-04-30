@@ -63,5 +63,5 @@ export const logout = () => request({ url: '/logout', method: 'post'});
 export const getInfo = () => request({ url: '/info', method: 'get'}); 
 export const getCaptcha = (data) => request({ url: '/captcha', method: 'get',params:data});
 //地址
-export const address_list = () => request({ url: '/address', method: 'get'}); 
+export const address_list = () => request({ url: '/address/list', method: 'get'}); 
 export const delete_address = (addressId) => request({ url: '/address/'+addressId, method: 'delete'});

@@ -24,7 +24,7 @@
             </div>
           </div>
           <a class="edit" @click="editAddress(item)"></a>
-          <div class="delete"  @click="deleteAddress(item.addressId,index)">删除</div>
+          <div class="delete"  @click="deleteAddress(item.id,index)">删除</div>
         </li>
       </ul>
     </section>
@@ -65,7 +65,7 @@ export default {
         onOk: () => {
           delete_address(addressId).then((result) => {
               this.$message.success('删除成功')
-             this.$refs.addressItem[index].remove()
+              this.$refs.addressItem[index].remove()
           }).catch((err) => {
            this.$message.error(err.message)
           });
