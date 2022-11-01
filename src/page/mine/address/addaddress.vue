@@ -3,7 +3,7 @@
     <section class="address_detail">
       <div>
         <span>联系人：</span>
-        <input type="text"  v-model="address.name">
+        <input type="text"  v-model="address.name" placeholder="请填写收货人">
       </div>
       <div class="gender">
         <label class="gender_select">
@@ -19,34 +19,35 @@
       </div>
       <div>
         <span>手机号：</span>
-        <input type="text"  v-model="address.phone">
+        <input type="text"  v-model="address.phone" placeholder="请填写收货手机号码">
       </div>
       <div class="shipping_address" @click="$router.push({path: 'poipicker',query: {source: 'address'}})">
         <span>收货地址：</span>
-        <p class="poi">{{address.poi}}</p>
+        <p class="poi">{{address.shippingAddress}}</p>
       </div>
       <div>
         <span>门牌号：</span>
-        <input type="text"  v-model="address.houseNumber">
+        <input type="text"  v-model="address.houseNumber" placeholder="详细地址，例1层101室">
       </div>
     </section>
-    <div class="address_save">保存</div>
-    <div v-if="'edit' === editType" class="address_del">删除</div>
-    <div class="address_return" @click="$router.go(-1)">返回</div>
+    <div class="address_save" @click="saveAddress()">保存</div>
+    <div v-if="'edit' === editType" @click="deleteAddress()" class="address_del">删除</div>
+    <div class="address_return" @click="gotoAddress('/mine/addresslist')">返回</div>
   </div>
 </template>
 
 <script>
 import index from '../../login/index.vue';
+import service from "@/service";
 
 const defaultAddress = {
-  addressId: null,
-  customerId: null,
+  id: null,
   phone: null,
   name: null,
   gender: 1,
   houseNumber: null,
-  poi: null
+  shippingAddress: undefined,
+  location: null
 }
 
 export default {
@@ -60,13 +61,49 @@ export default {
   created(){
      this.editType = this.$route.query.editType;
     if('edit' ===   this.editType){
-      this.address = this.$route.query;
+      this.address = { ...this.$route.query };
     }else{
+      const { name, location } = this.$route.query
+      if(name && location) {
+        this.address.shippingAddress = name 
+        this.address.location = location
+      }
 
     }
   },
-  mounted(){
-    
+  methods:{
+    gotoAddress(path) {
+      this.$router.push(path);
+    },
+    saveAddress(){
+      if(this.editType === 'edit'){
+        service.editAddress({ ...this.address }).then(result=>{
+         if(result){
+           this.$message.success("修改成功");
+           this.gotoAddress("/mine/addresslist")
+          }
+        })
+      }else {
+        service.saveAddress({ ...this.address }).then(result=>{
+         if(result){
+           this.$message.success("添加成功");
+           this.gotoAddress("/mine/addresslist")
+         }
+      })
+      }
+    },deleteAddress(){
+      this.$dialog({
+        content: '确定要删除收获地址吗？',
+        onOk: () => {
+          service.deleteAddress({addressId:this.address.id}).then((result) => {
+             if(result){
+               this.$message.success('删除成功')
+               this.gotoAddress("/mine/addresslist")
+             }
+          })
+        },
+      })
+    },
   }
 }
 </script>

@@ -13,7 +13,7 @@ import orderdetail from '../page/order/children/orderdetail.vue';
 import city from '../page/city/city.vue';
 import addresslist from '@/page/mine/address/addresslist.vue';
 import addaddress from '@/page/mine/address/addaddress.vue';
-import poipicker from '@/page/poipicker/poipicker.vue';
+import poipicker from '@/page/mine/poipicker/poipicker.vue';
 
 Vue.use(Router);
 
@@ -47,7 +47,7 @@ export const constantRouterMap = [
   {
     path: '/mine',
     component: mine,
-    meta: { keepAlive: true }
+    meta: { keepAlive: true },
   },
   {
     path: '/shop',
@@ -65,22 +65,24 @@ export const constantRouterMap = [
     path: '/city',
     component: city
   },
+];
+
+export const mineRouter = [
   {
-    path: '/addresslist',
+    path: '/mine/addresslist',
     component: addresslist
   },
   {
-    path: '/addaddress',
+    path: '/mine/addaddress',
     component: addaddress
   },
   {
-    path: '/poipicker',
+    path: '/mine/poipicker',
     component: poipicker
   }
-
 ];
 
 export default new Router({
   scrollBehavior: () => ({ y: 0 }),
-  routes: constantRouterMap
+  routes: [ ...constantRouterMap,...mineRouter ]
 });

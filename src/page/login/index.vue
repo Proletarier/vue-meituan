@@ -57,7 +57,7 @@
 
 <script>
 import { mapActions } from 'vuex';
-import { getCaptcha, login } from '@/service/api';
+import { getCaptcha  } from '@/service/api';
 
 export default {
   data() {

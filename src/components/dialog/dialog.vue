@@ -21,17 +21,15 @@ export default {
         }
     },
     methods: {
-        //点击取消按钮
         cancel() {
-            this.onCancel()  //点击取消的回调函数
-            this.$destroy(true)  //销毁组件
-            this.$el.parentNode.removeChild(this.$el)  //父元素中移除dom元素（$el为组件实例）
+            this.onCancel && this.onCancel()   
+            this.$destroy(true)  
+            this.$el.parentNode.removeChild(this.$el)  
         },
-        //点击确定按钮
         ok() {
-            this.onOk()  //点击确定的回调函数
-            this.$destroy(true)  //销毁组件
-            this.$el.parentNode.removeChild(this.$el)  //父元素中移除dom元素（$el为组件实例）
+            this.onOk()  
+            this.$destroy(true)  
+            this.$el.parentNode.removeChild(this.$el)
         }
     }
 }

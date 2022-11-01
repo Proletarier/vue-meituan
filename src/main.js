@@ -14,8 +14,10 @@ Vue.prototype.$axios = axios;
 Vue.prototype.$message = message;
 Vue.prototype.$dialog = dialog;
 
-new Vue({
+const vue = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app');
+
+export default vue

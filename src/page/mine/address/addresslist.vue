@@ -2,7 +2,7 @@
   <div class="addresslist">
     <header>
       <div class="box_line">
-        <div class="go_back" @click="$router.go(-1)">
+        <div class="go_back" @click="gotoAddress('/mine')">
         </div>
         <div class="title">
            地址列表
@@ -15,7 +15,7 @@
         :class="{'active': activeIndex == index }">
           <div class="content" style="width: 90%"  @touchstart ="itemMoveStart" @touchend ="itemMoveEnd($event, index)">
             <div class="detail">
-              <span class="poi">{{item.poi}}</span>
+              <span class="poi">{{item.shippingAddress}}</span>
               <span>{{item.houseNumber}}</span>
             </div>
             <div class="contact">
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { address_list,delete_address } from '@/service/api';
+import service from '@/service';
 
 export default {
   data() {
@@ -51,26 +51,27 @@ export default {
   mounted(){
   },
   created(){
-    this.addressList();
+    this.getAddress();
   },
   methods: {
-    addressList(){
-      address_list().then((result) => {
-        this.addresslist=result.data
+    gotoAddress(path) {
+      this.$router.push(path);
+    },
+    getAddress(){
+      service.getAddress().then((result) => {
+        this.addresslist=result
       })
     },
     deleteAddress(addressId,index){
       this.$dialog({
         content: '确定要删除收获地址吗？',
         onOk: () => {
-          delete_address(addressId).then((result) => {
-              this.$message.success('删除成功')
-              this.$refs.addressItem[index].remove()
-          }).catch((err) => {
-           this.$message.error(err.message)
-          });
-        },
-        onCancel: () => {
+          service.deleteAddress({addressId:addressId}).then((result) => {
+             if(result){
+               this.$message.success('删除成功')
+               this.$refs.addressItem[index].remove()
+             }
+          })
         }
       })
     },
@@ -93,15 +94,12 @@ export default {
       }
       this.moveStartX = 0;
     },
-    gotoAddress(path) {
-      this.$router.push(path);
-    },
     editAddress(item){
-      this.gotoAddress({path: 'addaddress', query: {addressId: item.addressId
+      this.gotoAddress({path: 'addaddress', query: {id: item.id
       ,gender: item.gender
       ,name: item.name
       ,phone: item.phone
-      ,poi: item.poi
+      ,shippingAddress: item.shippingAddress
       ,houseNumber: item.houseNumber
       ,editType: 'edit'
       }})

@@ -23,7 +23,7 @@ function Message(data) {
   // console.log(instance.$el,'现在才可以访问$el');
   document.body.appendChild(instance.$el);
 
-  let offset = data.offset || 20;
+  let offset = data.offset || 1000;
 
   // 规定每一个消息弹框的间隔
   let offsetTop = offset;
@@ -55,7 +55,6 @@ Message.close = function (instance) {
       }
     }
     data.type = type;
-    // 整合data后再次去调用Message()
     return Message(data);
   };
 });
