@@ -11,10 +11,10 @@ const saveAddress = async params => await request(apis['saveAddress'], { ...para
 const getAddress = async params => await request(apis['getAddress'], { ...params })
 const deleteAddress = async params => await request(apis['deleteAddress'], { ...params })
 const editAddress = async params => await request(apis['editAddress'], { ...params })
-
+const getCityList = async params => await request(apis['getCityList'], { ...params })
 //map
 const aroundSearch = async params => await request(apis['aroundSearch'], { ...params })
-
+const keywordSearch = async params => await request(apis['keywordSearch'], { ...params })
 
 export default {
   logout,
@@ -24,4 +24,6 @@ export default {
   getAddress,
   deleteAddress,
   editAddress,
+  keywordSearch,
+  getCityList
 }

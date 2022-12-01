@@ -11,6 +11,10 @@ export default {
     method: 'GET',
     url: '/map/poi/around'
   },
+  keywordSearch: {
+    method: 'GET',
+    url: '/map/assistant/input_tips'
+  },
   saveAddress: {
     method: 'POST',
     url: '/customer/address/save'
@@ -26,5 +30,9 @@ export default {
   editAddress: {
     method: 'PUT',
     url: '/customer/address/update'
+  },
+  getCityList: {
+    method: 'GET',
+    url: '/customer/address/getCityList'
   },
 }

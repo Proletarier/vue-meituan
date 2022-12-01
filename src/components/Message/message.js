@@ -11,7 +11,6 @@ function Message(data) {
     }
   }
   data.onClose = function () {
-    console.log('onClose');
     // instance是消息弹框组件的实例对象即VueComponent
     Message.close(instance);
   };

@@ -78,7 +78,11 @@ export const mineRouter = [
   },
   {
     path: '/mine/poipicker',
-    component: poipicker
+    component: poipicker,
+    children: [{
+      path: 'city',
+      component: city
+    }]
   }
 ];
 

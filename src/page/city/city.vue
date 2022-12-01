@@ -1,6 +1,6 @@
 <template>
   <div class="city-container">
-    <div class="search">
+    <!-- <div class="search">
       <div class="search-input">
         <svg>
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
@@ -10,7 +10,7 @@
       <div class="go-back"  @click="$router.go(-1)">
         取消
       </div>
-    </div>
+    </div> -->
     <ul class="city-nav">
       <li v-for="(nav,index) in classify_nav" :key="index" class="nav-li" @click="selectnav(index)">
         {{nav.idx}}
@@ -22,14 +22,14 @@
         </div>
         <dl class="hot-city">
           <dt class="title">热门城市</dt>
-          <dd v-for="(city,index) in hot_city" :key="index" class="city-item">
+          <dd v-for="(city,index) in hot_city" :key="index" class="city-item" @click="selectedCity(city)">
             {{city.city_name}}
           </dd>
         </dl>
         <section v-for="(cityList,index) in city_nav" :key="index" class="city-list">
           <header class="title">{{cityList.idx}}</header>
             <ul class="city-list-ul">
-              <li v-for="(city,index)  in cityList.cities" :key="index" class="city-list-li">
+              <li  v-for="(city,index)  in cityList.cities" :key="index" class="city-list-li" @click="selectedCity(city)">
                 {{city.city_name}}
               </li>
             </ul>
@@ -41,7 +41,7 @@
 
 <script>
 import BScroll from 'better-scroll';
-import { cityList } from '../../service/api';
+import service from "@/service";
 
 export default {
   data() {
@@ -53,14 +53,16 @@ export default {
     };
   },
   created() {
-    cityList().then(res => {
-      this.hot_city = res.data.hot_city;
-      this.city_nav = res.data.city_nav;
-      this.classify_nav = res.data.classify_nav;
+    this.$loading.show()
+    service.getCityList().then(data => {
+      this.hot_city = data.hot_city;
+      this.city_nav = data.city_nav;
+      this.classify_nav = data.classify_nav;
       this.$nextTick(() => {
         this.initScroll();
         this.getcityListHeight();
       });
+      this.$loading.hide()
     });
   },
   methods: {
@@ -80,6 +82,13 @@ export default {
     selectnav(index) {
       let citylist = this.$refs.cityWrapper.querySelectorAll('.city-list');
       this.scroll.scrollToElement(citylist[index], 300, true, 0);
+    },
+    selectedCity(city = {}){
+      const { city_name,city_id } = city
+      const { source } = this.$route.query;
+      if(source === 'poipicker'){
+         this.$router.push({path: '/mine/poipicker', query: { city_name,city_id }});
+      }
     }
   }
 };
@@ -87,9 +96,13 @@ export default {
 
 <style lang="stylus">
 @import "../../style/mixin.styl";
-
   .city-container
     background #fff
+    position: fixed
+    z-index: 10
+    width: 100vw
+    height: 100vh
+    top:0
     .search
       position: relative
       top 0
@@ -126,7 +139,7 @@ export default {
         font-size 14px
     .city-wrapper
       position absolute
-      top 45px
+      top 10px
       bottom 0
       left 0
       right 30px
