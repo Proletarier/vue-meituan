@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import svgIcon from './components/svg.vue';
+import svgIcon from '@/components/svg';
 
 export default {
   components: {

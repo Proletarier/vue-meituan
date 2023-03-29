@@ -128,7 +128,7 @@
 <script>
 import BScroll from 'better-scroll';
 import { getCategories } from '../../service/api';
-import shoplist from '../_components/shoplist.vue';
+import shoplist from '../_components/shoplist';
 
 export default {
   data() {

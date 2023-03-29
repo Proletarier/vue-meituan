@@ -190,12 +190,12 @@ import { mapMutations } from 'vuex';
 import Swiper from 'swiper';
 import BScroll from 'better-scroll';
 import { getFood, getComments, getShopInfo } from '../../service/api';
-import star from '../../components/star.vue';
+import star from '@/components/star';
 import shopDetail from './children/shopDetail.vue';
 import foodDetail from './children/foodDetail.vue';
 import shopcart from './children/shopCart.vue';
-import cartcontrol from '../_components/cartcontrol.vue';
-import pics from '../../components/pics.vue';
+import cartcontrol from '../_components/cartcontrol';
+import pics from '@/components/pics';
 import 'swiper/css/swiper.min.css';
 
 export default {

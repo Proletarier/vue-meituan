@@ -37,7 +37,7 @@
 
 <script>
 import { getOrderList } from '../../service/api';
-import footguide from '../_components/footguide.vue';
+import footguide from '../_components/footguide';
 
 export default {
   data() {

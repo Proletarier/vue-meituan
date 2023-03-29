@@ -36,9 +36,10 @@
 </template>
 
 <script>
-import { getShopList } from '../../service/api';
+import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 import service from '@/service';
-import star from '../../components/star.vue';
+import star from '@/components/star/index.vue';
 
 export default {
   data() {
@@ -56,6 +57,38 @@ export default {
     window.addEventListener('scroll', this.handleScroll, true);
   },
   methods: {
+        initPlug() {
+      // 轮播
+      // eslint-disable-next-line no-new
+      new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        autoplay: true
+      });
+      // 滚动
+      this.menuWrapper = new BScroll(this.$refs.menuWrapper, {
+        click: true,
+        bounce: false
+      });
+      // 食物滚动
+      this.foodWrapper = new BScroll(this.$refs.foodWrapper, {
+        click: true,
+        probeType: 3
+      });
+      this.foodWrapper.on('scroll', pos => {
+        if (pos.y <= 0) {
+          let scrollY = Math.abs(Math.round(pos.y));
+          for (let i = 0; i < this.foodsHeight.length; i++) {
+            let height1 = this.foodsHeight[i];
+            let height2 = this.foodsHeight[i + 1];
+            if (this.menuIndexChange && (scrollY >= height1 && scrollY < height2)) {
+              this.menuIdex = i;
+              this.followScroll(i);
+            }
+          }
+        }
+      });
+    },
     gotoAddress(path) {
       this.$router.push(path);
     },

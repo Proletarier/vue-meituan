@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import footguide from '../_components/footguide.vue';
+import footguide from '../_components/footguide';
 import { getStore } from '@/config/mUtils';
 
 export default {

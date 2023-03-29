@@ -21,7 +21,7 @@
 
 <script>
 import { getQualification } from '../../../service/api';
-import pics from '../../../components/pics.vue';
+import pics from '@/components/pics';
 
 export default {
   props: {

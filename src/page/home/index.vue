@@ -114,8 +114,8 @@
 <script>
 import BScroll from 'better-scroll';
 import service from '@/service';
-import shoplist from '../_components/shoplist.vue';
-import footguide from '../_components/footguide.vue';
+import shoplist from '../_components/shoplist';
+import footguide from '../_components/footguide';
 
 export default {
   data() {
