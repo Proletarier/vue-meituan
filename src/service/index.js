@@ -5,6 +5,10 @@ import apis from './apis'
 
 const logout = async params => await request(apis['logout'], { ...params })
 const login = async params => await request(apis['login'], { ...params })
+//首页
+const listGoodsCate = async params => await request(apis['listGoodsCate'], { ...params })
+const filterConditions = async params => await request(apis['filterConditions'], { ...params })
+const nearShop = async params => await request(apis['nearShop'], { ...params })
 
 //地址
 const saveAddress = async params => await request(apis['saveAddress'], { ...params })
@@ -25,5 +29,8 @@ export default {
   deleteAddress,
   editAddress,
   keywordSearch,
-  getCityList
+  getCityList,
+  listGoodsCate,
+  filterConditions,
+  nearShop,
 }

@@ -48,7 +48,7 @@
 
 <script>
 import { mapMutations, mapState } from 'vuex';
-import cartControl from '../../../components/cartcontrol.vue';
+import cartControl from '../../_components/cartcontrol.vue';
 import { fixed } from '../../../config/mUtils';
 
 export default {

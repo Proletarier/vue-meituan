@@ -9,22 +9,22 @@
            <h2 class="title">{{shop.shopName}}</h2>
            <div class="rating_num_time">
              <div class="rating_num_left">
-                <star :size='1' :score="shop.wmPoiScore / 10" ></star>
-                <span class="score">{{shop.wmPoiScore / 10}}</span>
-                <span>{{shop.monthSalesTip}}</span>
+                <star :size='1' :score="shop.shopScore" ></star>
+                <span class="score">{{shop.shopScore}}</span>
+                <span>月售{{shop.monthSalesTip}}+</span>
              </div>
              <div class="rating_num_right">
-               <span>{{shop.deliveryTimeTip}}</span>
-               <span class="segmentation">{{shop.distance}}</span>
+               <span>{{shop.deliveryTimeTip}}47分钟</span>
+               <span class="segmentation">{{shop.distance}}1.9km</span>
              </div>
            </div>
            <div class="price">
-              <span>{{shop.minPriceTip}}</span>
-              <span class="segmentation">{{shop.shippingFeeTip}}</span>
-              <span class="segmentation">{{shop.averagePriceTip}}</span>
+              <span>起送{{shop.minPriceTip}}</span>
+              <span class="segmentation">配送{{shop.shippingFeeTip}}</span>
+              <span class="segmentation">人均{{shop.averagePriceTip}}</span>
            </div>
             <div class="discount">
-              <p v-for="(dis,index) in shop.discounts2" :key="index">
+              <p v-for="(dis,index) in shop.discountList" :key="index">
                 <img :src="dis.iconUrl" alt="">
                 <span>{{dis.info}}</span>
               </p>
@@ -36,8 +36,9 @@
 </template>
 
 <script>
-import { getShopList } from '../service/api';
-import star from './star.vue';
+import { getShopList } from '../../service/api';
+import service from '@/service';
+import star from '../../components/star.vue';
 
 export default {
   data() {
@@ -46,9 +47,10 @@ export default {
     };
   },
   created() {
-    getShopList().then((res) => {
-      this.shopList = res.data.shopList;
-    });
+    //  getShopList({}).then((data) => {
+    //      this.shopList = data.data.shopList;
+    //   });
+    this.getNearShop();
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll, true);
@@ -56,6 +58,11 @@ export default {
   methods: {
     gotoAddress(path) {
       this.$router.push(path);
+    },
+    getNearShop(){
+      service.nearShop({}).then((data) => {
+         this.shopList = data;
+      });
     }
   },
   components: {

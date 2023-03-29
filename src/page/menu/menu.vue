@@ -194,7 +194,7 @@ import star from '../../components/star.vue';
 import shopDetail from './children/shopDetail.vue';
 import foodDetail from './children/foodDetail.vue';
 import shopcart from './children/shopCart.vue';
-import cartcontrol from '../../components/cartcontrol.vue';
+import cartcontrol from '../_components/cartcontrol.vue';
 import pics from '../../components/pics.vue';
 import 'swiper/css/swiper.min.css';
 

@@ -44,7 +44,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import cartcontrol from '../../../components/cartcontrol.vue';
+import cartcontrol from '../../_components/cartcontrol.vue';
 
 export default {
   props: {

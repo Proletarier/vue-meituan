@@ -1,6 +1,5 @@
 
 const API_CODES = {
-  'failed': '操作失败',
   'Validate.Failed': '参数检验失败',
   'Unauthorized': '暂未登录或token已经过期',
   'Forbidden': '没有相关权限',

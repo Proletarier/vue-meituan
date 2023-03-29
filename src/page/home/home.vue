@@ -113,9 +113,9 @@
 
 <script>
 import BScroll from 'better-scroll';
-import { kingkongList, getCategories } from '../../service/api';
-import shoplist from '../../components/shoplist.vue';
-import footguide from '../../components/footguide.vue';
+import service from '@/service';
+import shoplist from '../_components/shoplist.vue';
+import footguide from '../_components/footguide.vue';
 
 export default {
   data() {
@@ -134,13 +134,17 @@ export default {
     };
   },
   created() {
-    this.getKingkongList();
-    getCategories().then(res => {
-      this.sortVOList = res.data.sortVOList;
-      this.multifilterVOList = res.data.multifilterVOList;
-      // 排序标题
-      this.sortTitleName = this.sortVOList.filter(obj => obj.position)[0].name;
-    });
+    Promise.all([service.listGoodsCate(),service.filterConditions()]).then(([res,filterConditions]) =>{
+       if(res){
+          this.kingkongList = res.goodsCate;
+       }
+       if(filterConditions){
+          this.sortVOList = filterConditions.sortVOList;
+          this.multifilterVOList = filterConditions.multifilterVOList;
+          // 排序标题
+          this.sortTitleName = this.sortVOList.filter(obj => obj.position)[0].name;
+       }
+    })
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll, true);
@@ -155,11 +159,6 @@ export default {
   methods: {
     setScroll() {
       document.documentElement.scrollTop = 200;
-    },
-    getKingkongList() {
-      kingkongList().then(res => {
-        this.kingkongList = res.data;
-      });
     },
     chooseType(type) {
       if (this.sortBy === type) {

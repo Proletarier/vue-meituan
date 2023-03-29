@@ -35,4 +35,16 @@ export default {
     method: 'GET',
     url: '/customer/address/getCityList'
   },
+  listGoodsCate: {
+    method: 'GET',
+    url: '/home/goods_cate'
+  },
+  filterConditions: {
+    method: 'GET',
+    url: '/home/filter_conditions'
+  },
+  nearShop: {
+    method: 'GET',
+    url: '/home/getShops'
+  },
 }
