@@ -11,9 +11,9 @@ import login from '@/page/login';
 import qualification from '@/page/menu/children/qualification.vue';
 import orderdetail from '@/page/order/children/orderdetail.vue';
 import city from '@/page/city';
-import addresslist from '@/page/mine/address/addresslist.vue';
-import addaddress from '@/page/mine/address/addaddress.vue';
-import poipicker from '@/page/mine/poipicker/poipicker.vue';
+import addresslist from '@/page/address';
+import addaddress from '@/page/address/add';
+import site from '@/page/site';
 
 Vue.use(Router);
 
@@ -77,8 +77,9 @@ export const mineRouter = [
     component: addaddress
   },
   {
+    name:'poipicker',
     path: '/mine/poipicker',
-    component: poipicker,
+    component: site,
     children: [{
       path: 'city',
       component: city

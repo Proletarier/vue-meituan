@@ -1,5 +1,5 @@
 import { get } from '../config/http';
-import request from '@/utils/request';
+import request from '@/common/request';
 
 
 /**

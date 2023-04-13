@@ -1,5 +1,5 @@
 import service from "@/service";
-import { getToken, setToken, removeToken } from '@/utils/auth';
+import { getToken, setToken, removeToken } from '@/common/auth';
 import { setStore } from '@/config/mUtils';
 
 const getDefaultState = () => ({
@@ -25,35 +25,35 @@ const actions = {
     const { phone, captcha } = loginForm;
     return new Promise((resolve, reject) => {
       service.login({ phone, captcha }).then(result => {
-        if(result){
-           const { token, face, name } = result
-           setToken(token);
-           commit('SET_TOKEN', token);
-           setStore('userInfo',result)
-           resolve(result);
-        }}).catch(error => {
-          reject(error);
-        });
+        if (result) {
+          const { token, face, name } = result
+          setToken(token);
+          commit('SET_TOKEN', token);
+          setStore('userInfo', result)
+          resolve(result);
+        }
+      }).catch(error => {
+        reject(error);
+      });
     });
   },
 
   // user logout
   logout({ commit }) {
     return new Promise((resolve, reject) => {
-      service.logout()
-        .then(result => {
-          if(result){
-            removeToken();
-            commit('RESET_STATE');
-          }
-           resolve();
-        })
+      service.logout().then(result => {
+        if (result) {
+          removeToken();
+          commit('RESET_STATE');
+        }
+        resolve();
+      })
         .catch(error => {
           reject(error);
         });
     });
   },
-  
+
   resetToken({ commit }) {
     return new Promise(resolve => {
       removeToken(); // must remove  token  first

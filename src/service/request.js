@@ -1,6 +1,6 @@
 import context from '@/main'
 import axios from "axios";
-import { getToken } from "@/utils/auth";
+import { getToken } from "@/common/auth";
 import { STATUS_CONFIG, API_CODES } from "./config";
 import { processingUrl } from "./processing";
 

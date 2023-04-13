@@ -1,0 +1,114 @@
+#poipicker {
+  .poi {
+    position: relative;
+    margin: 20px 0 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333;
+
+    .loc {
+      font-weight: 600;
+    }
+
+    .reloc {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 14px;
+      color: #ffb000;
+
+      &:before {
+        display: inline-block;
+        content: '';
+        margin-right: 3px;
+        width: 15px;
+        height: 15px;
+        background: url('../../images/loc.png') no-repeat;
+        background-size: cover;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .shopping_address {
+    .title {
+      display: flex;
+      padding: 15px 0 10px 15px;
+      font-size: 14px;
+      color: #999;
+
+      &:before {
+        display: inline-block;
+        content: '';
+        margin-right: 3px;
+        width: 15px;
+        height: 15px;
+        background: url('../../images/house.png') no-repeat;
+        background-size: cover;
+        vertical-align: text-bottom;
+      }
+    }
+
+    .address_items {
+      padding-left: 5vw;
+
+      .address_item {
+        padding: 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px solid;
+        border-color: rgba(228, 228, 228, 0.7);
+
+        .detail {
+          font-size: 16px;
+          margin-bottom: 10px;
+
+          .shippingAddress {
+            padding-right: 10px;
+          }
+        }
+
+        .contact {
+          font-size: 14px;
+          color: #666;
+
+          .name {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .nearby_address {
+    .title {
+      display: flex;
+      padding: 15px 0 10px 5vw;
+      font-size: 14px;
+      color: #999;
+
+      &:before {
+        display: inline-block;
+        content: '';
+        margin-right: 3px;
+        width: 15px;
+        height: 15px;
+        background: url('../../images/city_site.png') no-repeat;
+        background-size: cover;
+        vertical-align: text-bottom;
+      }
+    }
+
+    .address_items {
+      padding-left: 5vw;
+
+      .address_item {
+        padding: 17px 0;
+        border-bottom: 1px solid;
+        border-color: rgba(228, 228, 228, 0.7);
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -6,13 +6,17 @@
       <span class="loc">{{ presentAddress }}</span>
       <span class="reloc" @click="getLocation">重新定位</span>
     </section>
-    <section v-if="ipLoction" class="shopping_address">
+    <section v-if="this.$route.query.source === 'home'" class="shopping_address">
       <p class="title">我的地址</p>
       <ul class="address_items">
         <li
           class="address_item"
           v-for="(item, index) in mineAddresslist"
           :key="index"
+          @click="toAddress({
+            name:item.shippingAddress,
+            location:`${item.location.lat},${item.location.lng}`
+          })"
         >
           <div class="detail">
             <span class="shippingAddress">{{ item.shippingAddress }}</span>
@@ -25,7 +29,7 @@
         </li>
       </ul>
     </section>
-    <section v-else class="nearby_address">
+    <section class="nearby_address">
       <p class="title">附近地址</p>
       <ul class="address_items">
         <li
@@ -42,8 +46,10 @@
 </template>
 
 <script>
+import { mapActions} from 'vuex'
 import service from "@/service";
-import searchSite from "./searchSite";
+import search from "./search";
+import './index.styl';
 
 export default {
   data() {
@@ -63,6 +69,10 @@ export default {
   mounted() {
   },
   created() {
+    const { source } = this.$route.query
+    if(source === 'home'){
+      this.getMineAddressList();
+    }
     this.getLocation();
   },
   watch: {
@@ -80,12 +90,25 @@ export default {
     },
   },
   methods: {
+    ...mapActions('point',[
+      "setLocation"
+    ]),
     toAddress(address = {}) {
       const { name, location } = address;
+      const { source } = this.$route.query
+     if(source === 'home'){
+       this.setLocation({
+          place: name,
+          lat:location.split(',')[0],
+          lng:location.split(',')[1]
+       })
+      this.$router.push({ path: "/home"});
+     }else {
       this.$router.push({
         path: "/mine/addaddress",
-        query: { name: name, location: location },
+        query: { ...this.$route.query, shippingAddress: name, location: {lat:location.split(',')[0],lng:location.split(',')[1]}, },
       });
+     }
     },
     getMineAddressList() {
       service.getAddress().then((data) => {
@@ -161,124 +184,7 @@ export default {
     },
   },
   components: {
-    SearchSite: searchSite,
+    SearchSite: search,
   },
 };
 </script>
-
-<style lang="stylus">
-#poipicker {
-  .poi {
-    position: relative;
-    margin: 20px 0 10px;
-    padding-left: 15px;
-    font-size: 16px;
-    color: #333;
-
-    .loc {
-      font-weight: 600;
-    }
-
-    .reloc {
-      position: absolute;
-      top: 0;
-      right: 15px;
-      font-size: 14px;
-      color: #ffb000;
-
-      &:before {
-        display: inline-block;
-        content: '';
-        margin-right: 3px;
-        width: 15px;
-        height: 15px;
-        background: url('../../../images/loc.png') no-repeat;
-        background-size: cover;
-        vertical-align: top;
-      }
-    }
-  }
-
-  .shopping_address {
-    .title {
-      display: flex;
-      padding: 15px 0 10px 15px;
-      font-size: 14px;
-      color: #999;
-
-      &:before {
-        display: inline-block;
-        content: '';
-        margin-right: 3px;
-        width: 15px;
-        height: 15px;
-        background: url('../../../images/house.png') no-repeat;
-        background-size: cover;
-        vertical-align: text-bottom;
-      }
-    }
-
-    .address_items {
-      padding-left: 5vw;
-
-      .address_item {
-        padding: 10px 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        border-bottom: 1px solid;
-        border-color: rgba(228, 228, 228, 0.7);
-
-        .detail {
-          font-size: 16px;
-          margin-bottom: 10px;
-
-          .shippingAddress {
-            padding-right: 10px;
-          }
-        }
-
-        .contact {
-          font-size: 14px;
-          color: #666;
-
-          .name {
-            padding-right: 10px;
-          }
-        }
-      }
-    }
-  }
-
-  .nearby_address {
-    .title {
-      display: flex;
-      padding: 15px 0 10px 5vw;
-      font-size: 14px;
-      color: #999;
-
-      &:before {
-        display: inline-block;
-        content: '';
-        margin-right: 3px;
-        width: 15px;
-        height: 15px;
-        background: url('../../../images/city_site.png') no-repeat;
-        background-size: cover;
-        vertical-align: text-bottom;
-      }
-    }
-
-    .address_items {
-      padding-left: 5vw;
-
-      .address_item {
-        padding: 17px 0;
-        border-bottom: 1px solid;
-        border-color: rgba(228, 228, 228, 0.7);
-        font-size: 16px;
-      }
-    }
-  }
-}
-</style>

@@ -15,7 +15,7 @@
              </div>
              <div class="rating_num_right">
                <span>{{shop.deliveryTimeTip}}47分钟</span>
-               <span class="segmentation">{{shop.distance}}1.9km</span>
+               <span class="segmentation">{{shop.distance}}</span>
              </div>
            </div>
            <div class="price">
@@ -23,11 +23,13 @@
               <span class="segmentation">配送{{shop.shippingFeeTip}}</span>
               <span class="segmentation">人均{{shop.averagePriceTip}}</span>
            </div>
-            <div class="discount">
-              <p v-for="(dis,index) in shop.discountList" :key="index">
-                <img :src="dis.iconUrl" alt="">
-                <span>{{dis.info}}</span>
-              </p>
+            <div class="discount swiper-container">
+                <ul class="swiper-wrapper">
+                    <li v-for="(dis,index) in shop.discountList" :key="index" class="swiper-slide">
+                      <img :src="$$conversion(dis.promotionType)" alt="">
+                      <span>{{dis.info}}</span>
+                    </li>
+                </ul>   
            </div>
         </div>
       </li>
@@ -40,11 +42,23 @@ import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css';
 import service from '@/service';
 import star from '@/components/star/index.vue';
+import { _activity } from '@/common/config';
+import { $$conversion } from '@/common/utils';
+import './index.styl';
 
 export default {
   data() {
-    return {
-      shopList: []
+    return { 
+      shopList: [],
+      filter:{
+        location : undefined,
+        distanceSort: undefined,
+        salesSort:undefined,
+        exclusiveDelivery:undefined,
+        feature:undefined,
+        averagePrice:undefined,
+        activity:undefined
+      }
     };
   },
   created() {
@@ -57,7 +71,11 @@ export default {
     window.addEventListener('scroll', this.handleScroll, true);
   },
   methods: {
-        initPlug() {
+     $$conversion(promotionType){
+       const item = $$conversion(_activity,promotionType,true)
+       return item?.icon
+     },
+     initPlug() {
       // 轮播
       // eslint-disable-next-line no-new
       new Swiper('.swiper-container', {
@@ -65,110 +83,24 @@ export default {
         loop: true,
         autoplay: true
       });
-      // 滚动
-      this.menuWrapper = new BScroll(this.$refs.menuWrapper, {
-        click: true,
-        bounce: false
-      });
-      // 食物滚动
-      this.foodWrapper = new BScroll(this.$refs.foodWrapper, {
-        click: true,
-        probeType: 3
-      });
-      this.foodWrapper.on('scroll', pos => {
-        if (pos.y <= 0) {
-          let scrollY = Math.abs(Math.round(pos.y));
-          for (let i = 0; i < this.foodsHeight.length; i++) {
-            let height1 = this.foodsHeight[i];
-            let height2 = this.foodsHeight[i + 1];
-            if (this.menuIndexChange && (scrollY >= height1 && scrollY < height2)) {
-              this.menuIdex = i;
-              this.followScroll(i);
-            }
-          }
-        }
-      });
     },
     gotoAddress(path) {
       this.$router.push(path);
     },
     getNearShop(){
-      service.nearShop({}).then((data) => {
+      service.nearShop({location:"104.063418,30.541223"}).then((data) => {
          this.shopList = data;
+         this.$nextTick(() => {
+         this.initPlug();
+      });
       });
     }
+  },
+  computed:{
+
   },
   components: {
     star
   }
 };
 </script>
-
-<style lang="stylus">
- .shop_list
-   margin-bottom 40px
-   ul
-     .shop_li
-       display flex
-       padding 0 10px
-       margin-top 10px
-       margin-bottom 25px
-       .icon
-         margin-right 8px
-         img
-           width 76px
-           height 57px
-           border-radius 2px
-       .content
-         flex 1 0
-         min-width 0
-         .title
-           width:80%
-           font-size 16px
-           color #333
-           line-height 1.4
-           white-space nowrap
-           overflow hidden
-           text-overflow ellipsis
-           font-weight 600
-         .rating_num_time
-            display flex
-            justify-content space-between
-            margin-top 4px
-            font-size 11px
-            color #333
-            line-height 1.4
-            .rating_num_left
-              display flex
-              .score
-                margin-left 5px
-                margin-right 10px
-         .price
-           margin-top 4px
-           font-size: 11px;
-           color: #333;
-           line-height: 1.4;
-         .discount
-           max-height 46px
-           overflow hidden
-           p
-             display flex
-             align-items center
-             margin-top 8px
-             img
-               width 15px
-               height 15px
-               margin-right 5px
-             span
-               color #666
-               font-size 11px
-               line-height 1.4
-         .segmentation
-           &:before
-             content: "";
-             display: inline-block;
-             margin: 0 3px;
-             height: 6px;
-             width: 1px;
-             background: #ccc;
-</style>

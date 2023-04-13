@@ -11,6 +11,7 @@ const cityList = require('./mock/cityList.json');
 const orderDetail = require('./mock/order-detail.json');
 
 const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : './', // 默认'/'，部署应用包时的基本 URL
@@ -22,6 +23,14 @@ module.exports = {
   // eslint-disable-next-line global-require
   parallel: require('os').cpus().length > 1,
   pwa: {},
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        args[0].title= '美团外卖'
+        return args
+      })
+  },
   devServer: {
     before(app) {
       app.get('/api/kingkongList', (req, res) => {

@@ -1,0 +1,66 @@
+.shop_list
+   margin-bottom 40px
+   ul
+     .shop_li
+       display flex
+       padding 0 10px
+       margin-top 10px
+       margin-bottom 25px
+       .icon
+         margin-right 8px
+         img
+           width 76px
+           height 57px
+           border-radius 2px
+       .content
+         flex 1 0
+         min-width 0
+         .title
+           width:80%
+           font-size 16px
+           color #333
+           line-height 1.4
+           white-space nowrap
+           overflow hidden
+           text-overflow ellipsis
+           font-weight 600
+         .rating_num_time
+            display flex
+            justify-content space-between
+            margin-top 4px
+            font-size 11px
+            color #333
+            line-height 1.4
+            .rating_num_left
+              display flex
+              .score
+                margin-left 5px
+                margin-right 10px
+         .price
+           margin-top 4px
+           font-size: 11px;
+           color: #333;
+           line-height: 1.4;
+         .swiper-container
+           max-height 28px
+           overflow hidden
+           z-index 0
+           ul>li
+              display flex
+              align-items center
+              img
+                width 15px
+                height 15px
+                margin-right 5px
+              span
+                color #666
+                font-size 11px
+                line-height 1.4
+         .segmentation
+           &:before
+             content: "";
+             display: inline-block;
+             margin: 0 3px;
+             height: 6px;
+             width: 1px;
+             background: #ccc;
