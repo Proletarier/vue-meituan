@@ -2,13 +2,14 @@ import request from './request';
 import apis from './apis'
 
 
-
+const getCaptcha = async params => await request(apis['getCaptcha'], { ...params })
 const logout = async params => await request(apis['logout'], { ...params })
 const login = async params => await request(apis['login'], { ...params })
 //首页
 const listGoodsCate = async params => await request(apis['listGoodsCate'], { ...params })
 const filterConditions = async params => await request(apis['filterConditions'], { ...params })
 const nearShop = async params => await request(apis['nearShop'], { ...params })
+const categoriesByChildren = async params => await request(apis['categoriesByChildren'], { ...params })
 
 //地址
 const saveAddress = async params => await request(apis['saveAddress'], { ...params })
@@ -33,4 +34,6 @@ export default {
   listGoodsCate,
   filterConditions,
   nearShop,
+  categoriesByChildren,
+  getCaptcha,
 }

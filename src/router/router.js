@@ -34,7 +34,7 @@ export const constantRouterMap = [
   {
     path: '/home',
     component: home,
-    meta: { keepAlive: true }
+    meta: { keepAlive: false }
   },
   {
     path: '/order',

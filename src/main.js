@@ -15,6 +15,7 @@ Vue.config.productionTip = false;
 Vue.prototype.$axios = axios;
 Vue.prototype.$message = message;
 Vue.prototype.$dialog = dialog;
+
 Vue.use(loading)
 
 const vue = new Vue({

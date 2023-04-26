@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '@/store';
-import { getToken } from '@/common/auth';
+import { getToken } from '@/common/cookies';
 
 // create an axios instance
 const service = axios.create({

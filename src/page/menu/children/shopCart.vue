@@ -49,7 +49,7 @@
 <script>
 import { mapMutations, mapState } from 'vuex';
 import cartControl from '../../_components/cartcontrol';
-import { fixed } from '../../../config/mUtils';
+import { fixed } from '../../../common/utils';
 
 export default {
   props: {

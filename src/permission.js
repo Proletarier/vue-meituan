@@ -1,5 +1,5 @@
 import router from './router/router';
-import { getToken } from './common/auth'; //  验权
+import { getToken } from '@/common/cookies'; //  验权
 
 const whiteList = ['/login']; // 不重定向白名单
 

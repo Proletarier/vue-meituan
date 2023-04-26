@@ -1,6 +1,6 @@
 import service from "@/service";
-import { getToken, setToken, removeToken } from '@/common/auth';
-import { setStore } from '@/config/mUtils';
+import { getToken, setToken, removeToken } from '@/common/cookies';
+import { setStore } from '@/common/utils';
 
 const getDefaultState = () => ({
   token: getToken(),

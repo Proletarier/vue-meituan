@@ -36,7 +36,7 @@
 
 <script>
 import footguide from '../_components/footguide';
-import { getStore } from '@/config/mUtils';
+import { getStore } from '@/common/utils';
 
 export default {
   data() {

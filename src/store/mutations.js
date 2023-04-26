@@ -4,7 +4,7 @@ import {
   CLEAR_CART,
   INIT_BUYCART
 } from './mutation-types';
-import { setStore, getStore, compareArray } from '../config/mUtils';
+import { setStore, getStore, compareArray } from '../common/utils';
 
 export default {
   // 添加购物车

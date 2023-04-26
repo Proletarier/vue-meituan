@@ -1,0 +1,226 @@
+.sort_container
+    position relative
+    width 100%
+    .bd_layer
+      position fixed
+      left 0
+      top 0
+      right 0
+      bottom 0
+      background rgba(0,0,0,0.5)
+      z-index 10
+    .sort_search
+      height 40px
+      background #fafafa
+      padding 10px
+      padding-bottom 0
+      box-sizing border-box
+      div
+       position relative
+       input
+         width 100%
+         padding-left 30px
+         font-size 14px
+         height 30px
+         background #e4e4e4
+         border-radius 100px
+         box-sizing border-box
+        svg
+          width 15px
+          height 15px
+          position absolute
+          top 50%
+          margin: 0 5px 0 10px
+          transform: translateY(-50%)
+    .sort_detail
+      position relative
+      top 0
+      width 100%
+      z-index 20
+      .sub_category
+        width 100%
+        white-space nowrap
+        overflow hidden
+        .sub_category_ul
+          display inline-block
+          padding-right 9%
+          background-color #FAFAFA
+          .sub_category_ul_li
+            position relative
+            display inline-block
+            padding 0 10px
+            line-height 40px
+            text-align center
+            color #666
+            &.active
+              color #ffb000
+              &:after
+                content ''
+                position absolute
+                left 50%
+                bottom 0
+                margin-left -10px
+                width 20px
+                height 2px
+                background #FFB000
+        .arrow_bottom
+          position absolute
+          top 0
+          right 0
+          z-index 10
+          width 12%
+          line-height 40px
+          background #FAFAFA
+          text-align center
+          background linear-gradient(-270deg, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 0.8) 10%, #FAFAFA 38%)
+          svg
+            width 10px
+            height 10px
+      .category_wrapper
+        position absolute
+        top 40px
+        display flex
+        width 100%
+        .category-left, .category-right
+          min-height 150px
+          max-height 450px
+          background #F4F4F4
+          overflow-y auto
+          .category-item
+            display flex
+            padding 0 15px
+            justify-content space-between
+            line-height 42px
+            color #333
+            font-size 14px
+            &.active
+              background-color #fff
+              color #FFB000
+              font-weight bolder
+            .count
+              font-size 12px
+              color #999
+              &.active
+                color #FFB000
+                font-weight bolder
+        .category-left
+          width 40%
+        .category-right
+          flex 1
+          background-color #FFF
+    .sort_filter
+      position relative
+      width 100%
+      z-index 15
+      background-color #FAFAFA
+      .filter_container
+        display flex
+        border-bottom 1px solid rgba(228,228,228,0.4)
+        border-top 1px solid rgba(228,228,228,0.4)
+        .filter_item
+          display flex
+          flex  1
+          align-items center
+          justify-content center
+          line-height 40px
+          font-size 14px
+          color #666
+          .sort_arrow_bottom, .sort_arrow_top
+            width  15px
+            height 15px
+          .screen
+            width 14px
+            height 14px
+            padding-left 3px
+          &.active
+            color #333
+            font-weight 600
+      .sort_list
+        width 100%
+        .sort_list_li
+          padding-left 20px
+          height 42px
+          line-height 42px
+          font-size 14px
+          color #333
+          border-bottom 1px solid rgba(228,228,228,0.4)
+          &.active
+            color #ffb000
+            font-weight 600
+      .mult-filter
+        position relative
+        width 100%
+        height 400px
+        overflow hidden
+        .filter_list
+          padding  15px 0 5px 15px
+          border-bottom 1px solid rgba(228,228,228,0.4)
+          .title
+            margin-bottom 10px
+            font-size 12px
+            color #999
+          .filter_ul
+            display flex
+            flex-wrap wrap
+            font-size 12px
+            .filter_item
+              display flex
+              align-items center
+              justify-content center
+              width 29.16%
+              margin-right 4.16%
+              margin-bottom 10px
+              border 1px solid  #ccc
+              line-height 30px
+              box-sizing border-box
+              img
+                width 20px
+                height 20px
+            .filter_one
+              justify-content flex-start
+              margin-right 0
+              text-align left
+              width 50%
+              border none
+              color #333
+              img
+                display inline-block
+                margin-right 5px
+                height 15px
+                width 15px
+            .active
+              color #ffb000
+              border-color #ffb000
+              font-weight 600
+              background-color #FFFBF1
+            .radioActive
+              font-weight 600
+              color #ffb000
+        .botton
+          position absolute
+          display flex
+          bottom 0
+          left 0
+          right 0
+          font-size 16px
+          color #333
+          span
+            flex 1
+            line-height 50px
+            text-align center
+          .clear
+            background #fff
+          .complete
+            background #FFD161
+      .sum_condition
+        display inline-block
+        width 15px
+        line-height 15px
+        font-style normal
+        color #FFD161
+        font-size 11px
+        text-align: center;
+        border-radius 50%
+        background-color #000
+        vertical-align middle
+        margin -2px 0 0 2px

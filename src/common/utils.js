@@ -1,4 +1,20 @@
-// eslint-disable-next-line import/prefer-default-export
+const setStore = (name, content) => {
+  if (!name) return;
+  if (typeof content !== "string") {
+    window.localStorage.setItem(name, JSON.stringify(content));
+  } else {
+    window.localStorage.setItem(name, content);
+  }
+};
+
+/**
+ * 获取localStorage
+ */
+const getStore = (name) => {
+  if (!name) return null;
+  return window.localStorage.getItem(name);
+};
+
 const isPhone = (phoneStr) => {
   let myreg = /^[1][3,4,5,7,8,9][0-9]{9}$/;
   if (!myreg.test(phoneStr)) {
@@ -7,13 +23,13 @@ const isPhone = (phoneStr) => {
   return true;
 };
 
-const $$conversion = (list = [], value,isObj = false) => {
+const $$conversion = (list = [], value, isObj = false) => {
   const record = list.find(
     (item) => item.value === value || item.Value === value
   );
-  const { label  } = record || {};
-  if(isObj && label){
-    return record
+  const { label } = record || {};
+  if (isObj && label) {
+    return record;
   } else if (label) {
     return label;
   } else {
@@ -43,7 +59,6 @@ const compareArray = (x, y, positionFlag = true) => {
   return true;
 };
 
-
 /**
  * 解决精度问题
  * @param {Number} x 第一个数字
@@ -52,20 +67,19 @@ const compareArray = (x, y, positionFlag = true) => {
  * @param {String} fixedLength fixed位数
  * @returns {Number}
  */
- export const fixed = (x, y, type, fixedLength) => {
+export const fixed = (x, y, type, fixedLength) => {
   switch (type) {
-    case '+':
+    case "+":
       return parseFloat((x + y).toFixed(fixedLength || 10));
-    case '-':
+    case "-":
       return parseFloat((x - y).toFixed(fixedLength || 10));
-    case '*':
+    case "*":
       return parseFloat((x * y).toFixed(fixedLength || 10));
-    case '/':
+    case "/":
       return parseFloat((x / y).toFixed(fixedLength || 10));
     default:
-      return '类型错误';
+      return "类型错误";
   }
 };
 
-
-export { isPhone, $$conversion,compareArray };
+export { setStore, getStore, isPhone, $$conversion, compareArray };

@@ -1,4 +1,4 @@
-
+import { setStore } from '@/common/utils';
 
 const getDefaultState = () => ({
   location: {
@@ -23,6 +23,7 @@ const actions = {
     const { place, lat, lng } = params
     if (place && lat && lng) {
       commit('SET_LOCATION', params);
+      setStore('location',`${lat},${lng}`)
     } else {
       commit('SET_LOCATION', {
         place: '定位失败'

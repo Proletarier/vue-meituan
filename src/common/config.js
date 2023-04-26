@@ -14,6 +14,19 @@ const _activity = [
   { label: '支持开发票', value: 'invoice', icon:"http://p0.meituan.net/xianfu/476ba65ee80b6385bab292c085baed17940.png" },
 ]
 
+const _sortVOList = [
+  { label: '综合排序', value: 'synthesize' , position: 1},
+  { label: '销量最高', value: 'sales' , position: 0},
+  { label: '速度最快', value: 'speed' , position: 1},
+  { label: '距离最近', value: 'distance' , position: 0},
+  { label: '评分最高', value: 'score' , position: 1},
+  { label: '起送价最低', value: 'min_price' , position: 1},
+  { label: '配送费最低', value: 'min_shipping_fee' , position: 1},
+  { label: '人均高到低', value: 'max_average_price' , position: 1},
+  { label: '人均低到高', value: 'min_average_price' , position: 1},
+]
+
 export {
   _activity,
+  _sortVOList
 }

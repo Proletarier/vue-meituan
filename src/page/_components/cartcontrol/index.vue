@@ -19,7 +19,7 @@
 </template>
 <script>
 import { mapMutations, mapState } from 'vuex';
-import { compareArray } from '@/config/mUtils';
+import { compareArray } from '@/common/utils';
 
 export default {
   props: {

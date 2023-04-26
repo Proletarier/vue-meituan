@@ -57,7 +57,7 @@
 
 <script>
 import { mapActions } from 'vuex';
-import { getCaptcha  } from '@/service/api';
+import  service from '@/service';
 
 export default {
   data() {
@@ -89,13 +89,12 @@ export default {
         return false;
       }
       this.loading = true;
-      getCaptcha({ phone: this.phone }).then(response => {
-        this.$message.error(response.message)
+      service.getCaptcha({ phone: this.phone }).then(response => {
+        if(response){
+          this.$message.success('发送成功')
+        }
         this.loading = false;
-      }).catch((err) => {
-        this.$message.error(err.message)
-        this.loading = false;
-      });
+      })
     },
     login() {
       if (this.phone.length !== 11 || this.captcha.length !== 6) {

@@ -11,7 +11,7 @@
              <div class="rating_num_left">
                 <star :size='1' :score="shop.shopScore" ></star>
                 <span class="score">{{shop.shopScore}}</span>
-                <span>月售{{shop.monthSalesTip}}+</span>
+                <span>月售{{shop.monthSalesTip}}</span>
              </div>
              <div class="rating_num_right">
                <span>{{shop.deliveryTimeTip}}47分钟</span>
@@ -47,9 +47,16 @@ import { $$conversion } from '@/common/utils';
 import './index.styl';
 
 export default {
+  props: {
+    shopList: {
+      type: Array,
+      default() {
+        return [];
+      }
+    }
+  },
   data() {
     return { 
-      shopList: [],
       filter:{
         location : undefined,
         distanceSort: undefined,
@@ -62,13 +69,12 @@ export default {
     };
   },
   created() {
-    //  getShopList({}).then((data) => {
-    //      this.shopList = data.data.shopList;
-    //   });
-    this.getNearShop();
+    this.$nextTick(() => {
+         this.initPlug();
+    });
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll, true);
+    // window.addEventListener('scroll', this.handleScroll, true);
   },
   methods: {
      $$conversion(promotionType){
@@ -87,14 +93,6 @@ export default {
     gotoAddress(path) {
       this.$router.push(path);
     },
-    getNearShop(){
-      service.nearShop({location:"104.063418,30.541223"}).then((data) => {
-         this.shopList = data;
-         this.$nextTick(() => {
-         this.initPlug();
-      });
-      });
-    }
   },
   computed:{
 

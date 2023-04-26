@@ -1,50 +1,58 @@
 export default {
   logout: {
     method: 'POST',
-    url: '/logout'
+    url: '/api/logout'
   },
   login: {
     method: 'POST',
-    url: '/login'
+    url: '/api/login'
+  },
+  getCaptcha: {
+    method: 'GET',
+    url: '/api/captcha'
   },
   aroundSearch: {
     method: 'GET',
-    url: '/map/poi/around'
+    url: '/api/map/poi/around'
   },
   keywordSearch: {
     method: 'GET',
-    url: '/map/assistant/input_tips'
+    url: '/api/map/assistant/input_tips'
   },
   saveAddress: {
     method: 'POST',
-    url: '/customer/address/save'
+    url: '/api/customer/address/save'
   },
   getAddress: {
     method: 'GET',
-    url: '/customer/address/getAddress'
+    url: '/api/customer/address/getAddress'
   },
   deleteAddress: {
     method: 'DELETE',
-    url: '/customer/address/{{addressId}}'
+    url: '/api/customer/address/{{addressId}}'
   },
   editAddress: {
     method: 'PUT',
-    url: '/customer/address/update'
+    url: '/api/customer/address/update'
   },
   getCityList: {
     method: 'GET',
-    url: '/customer/address/getCityList'
+    url: '/api/customer/address/getCityList'
   },
   listGoodsCate: {
     method: 'GET',
-    url: '/home/goods_cate'
+    url: '/api/home/goods_cate'
   },
   filterConditions: {
     method: 'GET',
-    url: '/home/filter_conditions'
+    url: '/api/home/filter_conditions'
   },
   nearShop: {
-    method: 'GET',
-    url: '/home/getShops'
+    method: 'POST',
+    url: '/api/home/getShops'
   },
+  categoriesByChildren: {
+    method: 'GET',
+    url: '/api/home/categoriesByChildren'
+  }
 }
