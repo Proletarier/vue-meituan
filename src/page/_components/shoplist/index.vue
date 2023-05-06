@@ -1,7 +1,7 @@
 <template>
   <div class="shop_list">
     <ul>
-      <li v-for="shop in shopList" :key="shop.mtWmPoiId" class="shop_li" @click="gotoAddress({path: 'menu',query: {shopId: shop.mtWmPoiId}})">
+      <li v-for="shop in shopList" :key="shop.mtWmPoiId" class="shop_li" @click="gotoAddress({path: 'menu',query: {shopId: shop.id}})">
         <div class="icon">
           <img :src="shop.picUrl">
         </div>

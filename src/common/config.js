@@ -26,7 +26,18 @@ const _sortVOList = [
   { label: '人均低到高', value: 'min_average_price' , position: 1},
 ]
 
+const _shopCharacteristics = [
+  { label: '免配送费', value: 'free_average_price' },
+  { label: '0元起送', value: 'not_limit_delivery' },
+  { label: '新商家', value: 'new_shop' },
+  { label: '品牌商家', value: 'brand_shop' },
+  { label: '点评高分', value: 'high_mark' },
+  { label: '跨天预订', value: 'reserve' },
+  { label: '支持开发票', value: 'invoice' },
+]
+
 export {
   _activity,
-  _sortVOList
+  _sortVOList,
+  _shopCharacteristics
 }

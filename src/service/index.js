@@ -10,7 +10,6 @@ const listGoodsCate = async params => await request(apis['listGoodsCate'], { ...
 const filterConditions = async params => await request(apis['filterConditions'], { ...params })
 const nearShop = async params => await request(apis['nearShop'], { ...params })
 const categoriesByChildren = async params => await request(apis['categoriesByChildren'], { ...params })
-
 //地址
 const saveAddress = async params => await request(apis['saveAddress'], { ...params })
 const getAddress = async params => await request(apis['getAddress'], { ...params })
@@ -20,6 +19,9 @@ const getCityList = async params => await request(apis['getCityList'], { ...para
 //map
 const aroundSearch = async params => await request(apis['aroundSearch'], { ...params })
 const keywordSearch = async params => await request(apis['keywordSearch'], { ...params })
+
+const getShopInfo = async params => await request(apis['getShopInfo'], { ...params })
+const getShopQualification = async params => await request(apis['getShopQualification'], { ...params })
 
 export default {
   logout,
@@ -36,4 +38,6 @@ export default {
   nearShop,
   categoriesByChildren,
   getCaptcha,
+  getShopInfo,
+  getShopQualification
 }

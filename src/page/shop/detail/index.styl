@@ -1,0 +1,55 @@
+@import "../../../style/mixin.styl";
+.seller-container
+  width 100%
+  flex 0 0 auto
+  .info
+    padding-left 15px
+    padding-right 15px
+    border 1px solid transparent
+    border-1px(rgba(228,228,228,0.5))
+    .link
+      position relative
+      padding-right 20px
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      &:after
+        content ''
+        display inline-block
+        width 6px
+        height 11px
+        position absolute
+        right 0
+        top 5px
+        background url(../../../images/arrow-r.png)
+        background-size 6px 11px
+    .detail
+      font-size 14px
+      line-height 20px
+      margin 18px 0
+      .peisong
+        display inline-block
+        width 50px
+        height 15px
+        margin-top 2px
+        margin-right 10px
+        background url(../../../images/zhuansong.png)
+        background-repeat: no-repeat;
+        background-size 50px 15px
+        vertical-align top
+      .phone
+        display inline-block
+        float right
+        width 20px
+        height 20px
+        background url(../../../images/phone.png)
+        background-size 100% 100%
+        vertical-align middle
+      img
+        margin-right 10px
+        vertical-align middle
+    .activity
+      font-size 14px
+      line-height 25px
+      img
+        vertical-align middle

@@ -12,6 +12,7 @@
     "better-scroll": "^2.0.4",
     "core-js": "^3.6.5",
     "js-cookie": "^3.0.1",
+    "moment": "^2.29.4",
     "swiper": "^5.4.5",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",

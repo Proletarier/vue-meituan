@@ -54,5 +54,13 @@ export default {
   categoriesByChildren: {
     method: 'GET',
     url: '/api/home/categoriesByChildren'
+  },
+  getShopInfo: {
+    method: 'GET',
+    url: '/api/shop/{{shopId}}'
+  },
+  getShopQualification: {
+    method: 'GET',
+    url: '/api/shop/qualification/{{shopId}}'
   }
 }

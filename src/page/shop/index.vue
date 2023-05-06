@@ -1,222 +1,332 @@
 <template>
-  <div class="shop_container">
-    <div class="sort_container">
-      <div v-if="false" class="sort_search">
-        <div class="">
-          <svg class="search_icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+  <div style="display: flex;flex-direction: column;position: absolute;right: 0;left: 0;height: 100%;">
+    <div class="shop-info">
+      <div class="avatar">
+        <img width="85" height="64" :src="state.shopInfo.shopPic">
+      </div>
+      <div class="content">
+        <div class="delivery">
+          <span class="time">{{state.shopInfo.deliveryTimeDecoded || 30}}分钟</span>
+          <span>{{state.shopInfo.distance}}</span>
+          <i v-if="state.shopInfo.deliveryType" class="zhuansong"></i>
+        </div>
+        <div class="bulletin">
+          公告：{{state.shopInfo.bulletin}}
+        </div>
+        <div class="activity" @click="showShopDetail()">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide" v-for="(item,index) in state.shopInfo.activityList" :key="index">
+                <img width="15" height="15" :src="$$conversion(item.actType)">
+                {{item.actDesc}}
+              </li>
+            </ul>
+          </div>
+          <svg class="arrow-right">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
           </svg>
-          <input disabled readonly placeholder="请输入商家或商家名称">
         </div>
       </div>
-      <div v-if="detailFlag" class="sort_detail" :style="{position: (isFixed? 'relative':'fixed')}">
-        <div class="sub_category" ref="sub_category">
-          <ul class="sub_category_ul">
-            <li v-for="(item,index) in category.subCate" :key="index" class="sub_category_ul_li" :class="{'active': categoryId===item.cateId}" @click="selectMenu(index,item.cateId)" ref="categoryList">
-              {{item.all? category.name : item.name}}
-            </li>
-          </ul>
-          <div class="arrow_bottom" @click="showCategory()">
-            <svg>
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-bottom"></use>
-            </svg>
-          </div>
-        </div>
-        <div v-show="isCategoryShow" class="category_wrapper">
-          <div class="category-left">
-            <ul>
-              <li v-for="(category,index) in categories.filter(obj => obj.cateId)" :key="index" class="category-item" :class="{'active': currentIndex === category.cateId}" @click="selectCategoryName(category.cateId)">
-                <span>{{category.name}}</span>
-                <span :class="currentIndex === category.cateId? 'active':'count'">{{category.count}}</span>
-              </li>
-            </ul>
-          </div>
-          <div class="category-right">
-            <ul>
-              <li v-for="(item,index) in categoryDetail" :key="index" class="category-item" :class="{'active': categoryId===item.cateId}" @click="selectCategoryDetail(item.cateId, item.parentId,index)">
-                <span>{{item.name}}</span>
-                <span :class="categoryId===item.cateId? 'active':'count'">{{item.count}}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <SortFilter ref="sort" :listShop='getNearShop' />
     </div>
-    <shoplist :shopList='nearShopList'></shoplist>
+    <nav class="tab">
+      <div class="tab-item" @click="distanceX=0;changeShowType = 'food'">点菜
+        <span class="active" :style="{'transform': `translateX(${distanceX}%)`}"></span>
+      </div>
+      <div class="tab-item" @click="distanceX=100;changeShowType = 'rating'">评价</div>
+      <div class="tab-item" @click="distanceX=200;changeShowType = 'seller'">商家</div>
+    </nav>
+    <div class="shop-container">
+      <div class="shop-tab" :style="{'transform': `translateX(${-distanceX}%)`}">
+        <section class="food-container">
+          <div class="menu-wrapper" ref="menuWrapper">
+            <ul>
+              <li v-for="(shop,index) in categoryList" :key="index" class="menu-item" :class="{'active': menuIdex === index}" @click="selectMenu(index)" ref="menuList">
+                <img v-if="shop.iconUrl" width="15px" height="15px" :src="shop.iconUrl">
+                <span>{{shop.categoryName}}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="food-wrapper" ref="foodWrapper">
+            <ul>
+              <li v-for="(shop,index) in categoryList" :key="index" class="food-list" ref="foodList">
+                <h1>{{shop.categoryName}}</h1>
+                <ul>
+                  <li v-for="food in shop.spuList" :key="food.spuId" class="food-item" @click="selectFood(food,'food')">
+                    <img class="icon" height="75px" width="75px" :src="food.littleImageUrl">
+                    <section class="content">
+                      <h2 class="name">{{food.spuName}}</h2>
+                      <p class="desc">{{food.spuDesc}}</p>
+                      <p class="sale-num"><span>月售{{food.saleVolumeDecoded}}</span><span class="praise">赞{{food.praiseNumDecoded}}</span></p>
+                      <div class="price-unit">
+                        <p><span class="price">￥{{food.currentPrice}}</span>/{{food.unit}}&nbsp;起&nbsp;<span class="origin">{{food.originPrice}}</span></p>
+                        <div class="cartcontrol-wrapper">
+                          <div v-if="food.spuAttrList.length>0" class="specification" @click.stop="selectFood(food,'specification')">选规格</div>
+                          <cart-control v-else :food='food' :shopId='shopId'></cart-control>
+                        </div>
+                      </div>
+                      <div v-if="food.spuPromotionInfo" class="promotion">
+                        <span>{{food.spuPromotionInfo}}</span>
+                        <img v-for="(picture,index) in food.productLabelPictureList" :key="index" :src="picture.pictureUrl" width="30" height="15">
+                      </div>
+                    </section>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="comment-container" ref="comments">
+          <div>
+            <header class="comment-hdaer">
+              <div class="score">
+                <p class="shop-score">{{commentScores.shopScore}}</p>
+                <p>商家评分</p>
+              </div>
+              <div class="score" style="flex:2">
+                <p class="quality">
+                  <span>口味</span>
+                  <star :score="commentScores.qualityScore"></star><span>{{commentScores.qualityScore}}</span>
+                </p>
+                <p class="pack">
+                  <span>包装</span>
+                  <star :score="commentScores.packScore"></star><span>{{commentScores.packScore}}</span>
+                </p>
+              </div>
+              <div class="score">
+                <p class="delivery">{{commentScores.deliveryScore}}</p>
+                <p>配送评分</p>
+              </div>
+            </header>
+            <ul class="comment-label">
+              <li v-for="(label,index) in commentLabels" :key="index" class="label-item" :class="{active: labelId === label.ID}">
+                {{label.content}}
+              </li>
+            </ul>
+            <ul class="comment-list">
+              <li v-for="(comment,index) in commentList" :key="index" class="comment-list-li">
+                <div class="icon">
+                  <img v-if="comment.userPicUrl" :src="comment.userPicUrl" width="40px">
+                  <img v-else src='../../images/userpic_defalut.png' width="40px">
+                </div>
+                <section class="comment-list-details">
+                  <p class="name">{{comment.userName}} <span class="time">{{comment.commentTime}}</span></p>
+                  <p class="delivery">{{comment.deliveryTime}}</p>
+                  <p class="content">{{comment.content}}</p>
+                  <div class="pics">
+                    <img class="pic" v-for="(pic,index) in comment.pictures" :key="index" :src="pic.smallPicUrl" @click="seletPic(comment.pictures,index)">
+                  </div>
+                  <p v-if="comment.praiseDish" class="dish">
+                    <svg width='20' height='20'>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#praise"></use>
+                    </svg>{{comment.praiseDish}}
+                  </p>
+                  <p v-if="comment.label" class="label">
+                    <svg width='20' height='20'>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#label"></use>
+                    </svg>{{comment.label}}
+                  </p>
+                  <p v-if="comment.shopReply" class="reply">{{comment.shopReply}}</p>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <ShopDetail :shopInfo='state.shopInfo' :showShopDetail='showShopDetail' />
+      </div>
+    </div>
+    <transition name="fade">
+      <div class="screen-cover" @click="hideList" v-show="listShow"></div>
+    </transition>
+    <Bulletin :shopInfo='state.shopInfo' ref="shopDetail"></Bulletin>
+    <food-detail ref="food" :shopId='shopId' :food="foodDetail"></food-detail>
+    <shop-cart v-show="changeShowType === 'food'" :shopId="shopId" :minFee='shopInfo.minFee' :deliveryFee='shopInfo.deliveryFee'></shop-cart>
+    <pics :images="pictures" :index="picIndex" ref="pics"></pics>
+    <router-view :shopId="state.shopId"></router-view>
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapMutations } from 'vuex';
+import Swiper from 'swiper';
 import BScroll from 'better-scroll';
-import service from '@/service';
-import shoplist from '../_components/shoplist';
-import SortFilter from '../_components/sort-filter';
+import { getFood, getComments, getShopInfo } from '../../service/api';
+import star from '@/components/star';
+import { Bulletin } from './children';
+import ShopDetail from './detail';
+import foodDetail from './children/foodDetail.vue';
+import shopcart from './children/shopCart.vue';
+import cartcontrol from '../_components/cartcontrol';
+import pics from '@/components/pics';
+import 'swiper/css/swiper.min.css';
 
+import { $$conversion } from '@/common/utils';
+import { _activity } from '@/common/config';
+import store from './store';
 import './index.styl';
 export default {
   data() {
     return {
-      categoryId: -1, // 种类Id
-      category: '', // categories顶部
-      categories: [], // categories左侧列表
-      categoryDetail: [], // categories分类右侧数据
-      isCategoryShow: false, // 隐藏/显示 category-list
-      currentIndex: 0, // categories选中index
-      isFixed: true, // 顶部吸附
-      detailFlag: false, // 顶部标题是否显示
-      nearShopList: [],
-      hasNext: true,
-      sortFilter: {
-        nextStartIndex: 1,
-        ruleSort: undefined,
-        exclusiveDelivery: undefined,
-        feature: undefined,
-        averagePrice: undefined,
-        activity: undefined
-      },
+      shopId: '', // 商家id
+      categoryList: [], // 食物列表
+      shopInfo: {}, // 商家详情
+      foodDetail: {}, // 食物详情
+      commentList: [], // 评论列表
+      commentLabels: [], // 评论Tag列表
+      commentScores: '', // 商铺评论详情
+      foodsHeight: [], // food元素的高度
+      labelId: 0, // 评论Tag Id
+      changeShowType: 'food', // 选项卡
+      distanceX: 0, // tab切换下标
+      menuIdex: 0, // menu选中Index
+      menuIndexChange: true,
+      listShow: false, // 遮罩层
+      pictures: [], // 照片view
+      picIndex: 0, // pic index
+      state: store.state,
     };
   },
   created() {
-    this.categoryId = Number(this.$route.query.categoryId);
-    service.categoriesByChildren().then(data => {
-      this.categories = data;
-      this.category = this.getCategory(data, this.categoryId);
-      if (this.category && this.category.subCate.length > 1) {
-        this.categoryDetail = this.category.subCate;
-        this.detailFlag = true;
-        this.currentIndex = this.categoryId;
-      }
+    const shopId = this.$route.query.shopId;
+    store.saveState({ shopId })
+    this.$loading.show();
+    Promise.all([store.getShopInfo(shopId)]).then(result => {
+      this.initPlug();
+      this.$loading.hide();
+    })
+
+    getFood().then(res => {
+      this.categoryList = res.data.categoryList;
+      this.shopInfo = res.data.shopInfo;
       this.$nextTick(() => {
-        this.initScroll();
-        // const { lat, lng } = this.location
-        // this.sortFilter.location = { lat, lng }
-        this.getNearShop()
+        this.initPlug();
+        this.calculateHeight();
       });
     });
-    this.sortTitleName = this.sortVOList?.filter(obj => obj.position)[0].name;
+    getComments().then(res => {
+      this.commentScores = res.data;
+      this.commentList = res.data.list;
+      this.commentLabels = res.data.commentLabels;
+      this.$nextTick(() => {
+        this.comments = new BScroll(this.$refs.comments, {
+          probeType: 3,
+          bounce: false,
+          click: true
+        });
+      });
+    });
+    this.INIT_BUYCART();
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
   },
   computed: {
-    ...mapState('point', ['location']),
+    selectFoods() {
+      let foods = [];
+      this.categoryList.forEach(good => {
+        good.forEach(food => {
+          if (food.count) {
+            foods.push(food);
+          }
+        });
+      });
+      return foods;
+    }
   },
   methods: {
-    // 初始化滚动
-    initScroll() {
-      if (this.$refs.sub_category) {
-        this.categoryScroll = new BScroll(this.$refs.sub_category, {
-          scrollX: true,
-          click: true,
-          bounce: false
-        });
-      }
-      this.multScroll = new BScroll(this.$refs.mult_filter, {
-        scrollX: true,
+    ...mapMutations(['INIT_BUYCART']),
+    $$conversion(promotionType) {
+      const item = $$conversion(_activity, promotionType, true)
+      return item?.icon
+    },
+    initPlug() {
+      // 轮播
+      // eslint-disable-next-line no-new
+      new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        autoplay: true
+      });
+      // 滚动
+      this.menuWrapper = new BScroll(this.$refs.menuWrapper, {
         click: true,
         bounce: false
       });
-      this.multScroll.once('beforeScrollStart', () => {
-        this.multScroll.refresh();
+      // 食物滚动
+      this.foodWrapper = new BScroll(this.$refs.foodWrapper, {
+        click: true,
+        probeType: 3
+      });
+      this.foodWrapper.on('scroll', pos => {
+        if (pos.y <= 0) {
+          let scrollY = Math.abs(Math.round(pos.y));
+          for (let i = 0; i < this.foodsHeight.length; i++) {
+            let height1 = this.foodsHeight[i];
+            let height2 = this.foodsHeight[i + 1];
+            if (this.menuIndexChange && (scrollY >= height1 && scrollY < height2)) {
+              this.menuIdex = i;
+              this.followScroll(i);
+            }
+          }
+        }
       });
     },
-    // 获取subCate
-    getCategory(categories = [], categoryId = undefined) {
-      for (let i = 0; i < categories.length; i++) {
-        if (categoryId === categories[i].cateId) {
-          return categories[i].subCate.length > 1 ? categories[i] : undefined;
-        }
-      }
-      return null;
-    },
-    // 选中categoryMenu
-    selectMenu(index, id) {
-      this.categoryId = id;
+
+    selectMenu(index) {
+      this.menuIdex = index;
+      // 控制menu重复设置
+      this.menuIndexChange = false;
       this.followScroll(index);
-      this.getNearShop({ categoryId: id })
-    },
-    // 选中左侧category-list
-    selectCategoryName(cateId) {
-      this.currentIndex = cateId;
-      // 刷新右侧category-list
-      this.categoryDetail = this.getCategory(this.categories, cateId).subCate;
-    },
-    // 选中右侧category-list
-    selectCategoryDetail(cateId, parentId, index) {
-      this.categoryId = cateId;
-      // 关闭遮罩层
-      this.isCategoryShow = false;
-      // 刷新顶部menu
-      this.category = this.getCategory(this.categories, parentId);
-      //  重新计算顶部Scroll，设置偏移量
-      this.$nextTick(() => {
-        this.categoryScroll.refresh();
-        this.followScroll(index);
+      // 食物滚动
+      this.foodWrapper.scrollToElement(this.$refs.foodList[index], 300);
+      this.foodWrapper.on('scrollEnd', () => {
+        this.menuIndexChange = true;
       });
-      this.getNearShop({ categoryId: cateId })
     },
-    // 隐藏/显示 categoryList
-    showCategory() {
-      this.isCategoryShow = !this.isCategoryShow;
-      this.isFixed = false;
+    selectFood(food, chooseType) {
+      this.foodDetail = food;
+      this.$refs.food.chooseType = chooseType;
+      this.$refs.food.show();
     },
-    // 顶部menu偏移量设置
+    // 获取food高度集合
+    calculateHeight() {
+      let foodList = this.$refs.foodList;
+      let height = 0;
+      this.foodsHeight.push(height);
+      for (let i = 0; i < foodList.length; i++) {
+        height += foodList[i].clientHeight;
+        this.foodsHeight.push(height);
+      }
+    },
     followScroll(index) {
-      let subList = this.$refs.categoryList;
-      let el = subList[index];
-      this.categoryScroll.scrollToElement(el, 300, true, 0);
+      let menuList = this.$refs.menuList;
+      let el = menuList[index];
+      this.menuWrapper.scrollToElement(el, 300, 0, -100);
     },
-    handleScroll() {
-      const scrollTop = document.documentElement.scrollTop || window.pageYOffset;
-      const clientHeight = window.innerHeight || Math.min(document.documentElement.clientHeight, document.body.clientHeight)
-      const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight
-      this.isFixed = !scrollTop;
-      if (scrollTop + clientHeight >= scrollHeight && !this.$loading.isrun() && this.hasNext) {
-        this.getNearShop({} , true)
-      }
+    showShopDetail() {
+      this.$refs.shopDetail.show();
+      this.listShow = true;
     },
-    async getNearShop(params = {}, ismore = false) {
-      if (params) {
-        this.saveSortFilter(params)
-      }
-      this.$loading.show()
-      const { nextStartIndex, ruleSort } = this.sortFilter
-      const { lat, lng } = this.location
-      const data = await service.nearShop({
-        categoryId: this.categoryId,
-        location: { lat, lng },
-        ruleSort,
-        nextStartIndex: ismore ? nextStartIndex + 1 : 1,
-        ...params,
+    hideList() {
+      this.$refs.shopDetail.hide();
+      this.listShow = false;
+    },
+    seletPic(pictures, index) {
+      let pictureList = [];
+      this.picIndex = index;
+      pictures.forEach(pic => {
+        pictureList.push(pic.originalPicUrl);
       });
-      if (data) {
-        const { count, shopVoList } = data
-        if (ismore) {
-          const { nextStartIndex } = params
-          this.nearShopList = [...this.nearShopList, ...shopVoList];
-          this.sortFilter.nextStartIndex = nextStartIndex
-        } else {
-          this.nearShopList = shopVoList;
-          this.sortFilter.nextStartIndex = 1
-        }
-        this.hasNext = count > this.nearShopList.length
-      }
-      this.$loading.hide()
-    },
-    saveSortFilter(data = {}) {
-      for (const key in data) {
-        this.sortFilter[key] = data[key];
-      }
+      this.pictures = pictureList;
+      this.$refs.pics.show();
     }
   },
   components: {
-    shoplist,
-    SortFilter
+    star,
+    Bulletin,
+    ShopDetail,
+    'food-detail': foodDetail,
+    'cart-control': cartcontrol,
+    'shop-cart': shopcart,
+    pics
   }
 };
 </script>

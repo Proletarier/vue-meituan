@@ -39,7 +39,10 @@ const request = async ({ url, method = "get" } = {}, params = {}) => {
         window.location.href = "/logout";
       }
     })
-    .catch((error) => error);
+    .catch((error) => {
+      context.$message.error(error.message);
+      return false;
+    });
   return result;
 };
 
