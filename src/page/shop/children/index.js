@@ -1,5 +1,11 @@
 import Bulletin from './bulletin';
+import FoodDetail from './foodDetail';
+import Cart from './shopCart';
+import CartControl from './cartcontrol';
 
 export  {
-  Bulletin
+  Bulletin,
+  FoodDetail,
+  Cart,
+  CartControl,
 }

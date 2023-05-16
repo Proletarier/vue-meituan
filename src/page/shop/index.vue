@@ -37,44 +37,7 @@
     </nav>
     <div class="shop-container">
       <div class="shop-tab" :style="{'transform': `translateX(${-distanceX}%)`}">
-        <section class="food-container">
-          <div class="menu-wrapper" ref="menuWrapper">
-            <ul>
-              <li v-for="(shop,index) in categoryList" :key="index" class="menu-item" :class="{'active': menuIdex === index}" @click="selectMenu(index)" ref="menuList">
-                <img v-if="shop.iconUrl" width="15px" height="15px" :src="shop.iconUrl">
-                <span>{{shop.categoryName}}</span>
-              </li>
-            </ul>
-          </div>
-          <div class="food-wrapper" ref="foodWrapper">
-            <ul>
-              <li v-for="(shop,index) in categoryList" :key="index" class="food-list" ref="foodList">
-                <h1>{{shop.categoryName}}</h1>
-                <ul>
-                  <li v-for="food in shop.spuList" :key="food.spuId" class="food-item" @click="selectFood(food,'food')">
-                    <img class="icon" height="75px" width="75px" :src="food.littleImageUrl">
-                    <section class="content">
-                      <h2 class="name">{{food.spuName}}</h2>
-                      <p class="desc">{{food.spuDesc}}</p>
-                      <p class="sale-num"><span>月售{{food.saleVolumeDecoded}}</span><span class="praise">赞{{food.praiseNumDecoded}}</span></p>
-                      <div class="price-unit">
-                        <p><span class="price">￥{{food.currentPrice}}</span>/{{food.unit}}&nbsp;起&nbsp;<span class="origin">{{food.originPrice}}</span></p>
-                        <div class="cartcontrol-wrapper">
-                          <div v-if="food.spuAttrList.length>0" class="specification" @click.stop="selectFood(food,'specification')">选规格</div>
-                          <cart-control v-else :food='food' :shopId='shopId'></cart-control>
-                        </div>
-                      </div>
-                      <div v-if="food.spuPromotionInfo" class="promotion">
-                        <span>{{food.spuPromotionInfo}}</span>
-                        <img v-for="(picture,index) in food.productLabelPictureList" :key="index" :src="picture.pictureUrl" width="30" height="15">
-                      </div>
-                    </section>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Menu :shopId='state.shopId' :selectFood='selectFood' :categoryList='state.categoryList' />
         <section class="comment-container" ref="comments">
           <div>
             <header class="comment-hdaer">
@@ -138,8 +101,8 @@
       <div class="screen-cover" @click="hideList" v-show="listShow"></div>
     </transition>
     <Bulletin :shopInfo='state.shopInfo' ref="shopDetail"></Bulletin>
-    <food-detail ref="food" :shopId='shopId' :food="foodDetail"></food-detail>
-    <shop-cart v-show="changeShowType === 'food'" :shopId="shopId" :minFee='shopInfo.minFee' :deliveryFee='shopInfo.deliveryFee'></shop-cart>
+    <FoodDetail ref="food" :shopId='shopId' :food="foodDetail"></FoodDetail>
+    <Cart v-show="changeShowType === 'food'" :shopId="state.shopId" :minFee='state.shopInfo.minFee' :deliveryFee='state.shopInfo.deliveryFee'></Cart>
     <pics :images="pictures" :index="picIndex" ref="pics"></pics>
     <router-view :shopId="state.shopId"></router-view>
   </div>
@@ -149,13 +112,11 @@
 import { mapMutations } from 'vuex';
 import Swiper from 'swiper';
 import BScroll from 'better-scroll';
-import { getFood, getComments, getShopInfo } from '../../service/api';
+import {  getComments } from '../../service/api';
 import star from '@/components/star';
-import { Bulletin } from './children';
+import { Bulletin, FoodDetail, Cart } from './children';
 import ShopDetail from './detail';
-import foodDetail from './children/foodDetail.vue';
-import shopcart from './children/shopCart.vue';
-import cartcontrol from '../_components/cartcontrol';
+import Menu from './menu';
 import pics from '@/components/pics';
 import 'swiper/css/swiper.min.css';
 
@@ -167,18 +128,13 @@ export default {
   data() {
     return {
       shopId: '', // 商家id
-      categoryList: [], // 食物列表
-      shopInfo: {}, // 商家详情
       foodDetail: {}, // 食物详情
       commentList: [], // 评论列表
       commentLabels: [], // 评论Tag列表
       commentScores: '', // 商铺评论详情
-      foodsHeight: [], // food元素的高度
       labelId: 0, // 评论Tag Id
       changeShowType: 'food', // 选项卡
       distanceX: 0, // tab切换下标
-      menuIdex: 0, // menu选中Index
-      menuIndexChange: true,
       listShow: false, // 遮罩层
       pictures: [], // 照片view
       picIndex: 0, // pic index
@@ -189,19 +145,10 @@ export default {
     const shopId = this.$route.query.shopId;
     store.saveState({ shopId })
     this.$loading.show();
-    Promise.all([store.getShopInfo(shopId)]).then(result => {
+    Promise.all([store.getShopInfo(shopId),store.getFood(shopId)]).then(result => {
       this.initPlug();
       this.$loading.hide();
     })
-
-    getFood().then(res => {
-      this.categoryList = res.data.categoryList;
-      this.shopInfo = res.data.shopInfo;
-      this.$nextTick(() => {
-        this.initPlug();
-        this.calculateHeight();
-      });
-    });
     getComments().then(res => {
       this.commentScores = res.data;
       this.commentList = res.data.list;
@@ -218,88 +165,18 @@ export default {
   },
   mounted() {
   },
-  computed: {
-    selectFoods() {
-      let foods = [];
-      this.categoryList.forEach(good => {
-        good.forEach(food => {
-          if (food.count) {
-            foods.push(food);
-          }
-        });
-      });
-      return foods;
-    }
-  },
   methods: {
-    ...mapMutations(['INIT_BUYCART']),
+    ...mapMutations('cart',['INIT_BUYCART']),
     $$conversion(promotionType) {
       const item = $$conversion(_activity, promotionType, true)
       return item?.icon
     },
     initPlug() {
-      // 轮播
-      // eslint-disable-next-line no-new
       new Swiper('.swiper-container', {
         direction: 'vertical',
         loop: true,
         autoplay: true
       });
-      // 滚动
-      this.menuWrapper = new BScroll(this.$refs.menuWrapper, {
-        click: true,
-        bounce: false
-      });
-      // 食物滚动
-      this.foodWrapper = new BScroll(this.$refs.foodWrapper, {
-        click: true,
-        probeType: 3
-      });
-      this.foodWrapper.on('scroll', pos => {
-        if (pos.y <= 0) {
-          let scrollY = Math.abs(Math.round(pos.y));
-          for (let i = 0; i < this.foodsHeight.length; i++) {
-            let height1 = this.foodsHeight[i];
-            let height2 = this.foodsHeight[i + 1];
-            if (this.menuIndexChange && (scrollY >= height1 && scrollY < height2)) {
-              this.menuIdex = i;
-              this.followScroll(i);
-            }
-          }
-        }
-      });
-    },
-
-    selectMenu(index) {
-      this.menuIdex = index;
-      // 控制menu重复设置
-      this.menuIndexChange = false;
-      this.followScroll(index);
-      // 食物滚动
-      this.foodWrapper.scrollToElement(this.$refs.foodList[index], 300);
-      this.foodWrapper.on('scrollEnd', () => {
-        this.menuIndexChange = true;
-      });
-    },
-    selectFood(food, chooseType) {
-      this.foodDetail = food;
-      this.$refs.food.chooseType = chooseType;
-      this.$refs.food.show();
-    },
-    // 获取food高度集合
-    calculateHeight() {
-      let foodList = this.$refs.foodList;
-      let height = 0;
-      this.foodsHeight.push(height);
-      for (let i = 0; i < foodList.length; i++) {
-        height += foodList[i].clientHeight;
-        this.foodsHeight.push(height);
-      }
-    },
-    followScroll(index) {
-      let menuList = this.$refs.menuList;
-      let el = menuList[index];
-      this.menuWrapper.scrollToElement(el, 300, 0, -100);
     },
     showShopDetail() {
       this.$refs.shopDetail.show();
@@ -317,15 +194,20 @@ export default {
       });
       this.pictures = pictureList;
       this.$refs.pics.show();
-    }
+    },
+    selectFood(food, chooseType) {
+      this.foodDetail = food;
+      this.$refs.food.chooseType = chooseType;
+      this.$refs.food.show();
+    },
   },
   components: {
     star,
     Bulletin,
+    FoodDetail,
     ShopDetail,
-    'food-detail': foodDetail,
-    'cart-control': cartcontrol,
-    'shop-cart': shopcart,
+    Menu,
+    Cart,
     pics
   }
 };

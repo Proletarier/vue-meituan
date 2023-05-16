@@ -34,7 +34,7 @@
             ￥{{ food.payableAmount | filterPrice(food.count,'*')}}
            </div>
            <div class="cartcontrol-warrper">
-             <cartControl :shopId='shopId' :food='food' :attrs='food.attrs' :attrValues='food.attrValues'></cartControl>
+             <CartControl :shopId='shopId' :food='food' :attrs='food.attrs' :attrValues='food.attrValues'></CartControl>
            </div>
          </li>
        </ul>
@@ -48,11 +48,11 @@
 
 <script>
 import { mapMutations, mapState } from 'vuex';
-import cartControl from '../../_components/cartcontrol';
+import CartControl from './cartcontrol';
 import { fixed } from '../../../common/utils';
 
 export default {
-  props: {
+  props: { 
     shopId: String,
     deliveryFee: Number, // 配送费
     minFee: Number // 最低起送
@@ -63,7 +63,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(['cartList']),
+    ...mapState('cart',['cartList']),
     shopCart() {
       // eslint-disable-next-line prefer-spread
       return [].concat.apply([], (this.cartList[this.shopId]));
@@ -131,7 +131,7 @@ export default {
     }
   },
   components: {
-    cartControl
+    CartControl
   }
 };
 </script>

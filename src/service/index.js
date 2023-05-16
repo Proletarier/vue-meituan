@@ -23,6 +23,9 @@ const keywordSearch = async params => await request(apis['keywordSearch'], { ...
 const getShopInfo = async params => await request(apis['getShopInfo'], { ...params })
 const getShopQualification = async params => await request(apis['getShopQualification'], { ...params })
 
+const getFood = async params => await request(apis['getFood'], { ...params })
+
+
 export default {
   logout,
   login,
@@ -39,5 +42,6 @@ export default {
   categoriesByChildren,
   getCaptcha,
   getShopInfo,
-  getShopQualification
+  getShopQualification,
+  getFood
 }

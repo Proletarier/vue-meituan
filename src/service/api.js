@@ -62,8 +62,3 @@ export const login = (phone, captcha) => request({ url: '/login', method: 'post'
 export const logout = () => request({ url: '/logout', method: 'post'}); 
 export const getInfo = () => request({ url: '/info', method: 'get'}); 
 export const getCaptcha = (data) => request({ url: '/captcha', method: 'get',params:data});
-//地址
-export const address_list = () => request({ url: '/customer/address/getAddress', method: 'get'}); 
-export const delete_address = (addressId) => request({ url: '/customer/address/'+addressId, method: 'delete'});
-//定位
-export const ip_location = () => request({ url: '/map/ip/location', method: 'get'}); 

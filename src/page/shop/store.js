@@ -3,9 +3,10 @@ import context from "@/main";
 
 const Index = {
   state: {
-    shopId: undefined,
+    shopId: Number,
     shopInfo: {},
-    shopLicense:{}
+    shopLicense:{},
+    categoryList:[]
   },
   async getShopQualification() {
     context.$loading.show();
@@ -20,6 +21,12 @@ const Index = {
     const data = await service.getShopInfo({ shopId });
     if (data) {
       this.saveState({ shopInfo: data });
+    }
+  },
+  async getFood(shopId) {
+    const data = await service.getFood({ shopId });
+    if (data) {
+      this.saveState({ categoryList: data });
     }
   },
   saveState(data = {}) {

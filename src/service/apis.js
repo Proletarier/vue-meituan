@@ -62,5 +62,9 @@ export default {
   getShopQualification: {
     method: 'GET',
     url: '/api/shop/qualification/{{shopId}}'
+  },
+  getFood: {
+    method: 'GET',
+    url: '/api/shop/getFood/{{shopId}}'
   }
 }

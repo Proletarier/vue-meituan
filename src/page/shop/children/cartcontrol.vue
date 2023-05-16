@@ -2,14 +2,14 @@
   <div class="cartcontrol">
      <div class="cart-bottom" @click.capture="showSpecification($event)">
       <transition name='move'>
-        <div class="cart-decrease" v-show="foodNum>0" @click.stop="decreaseCart(food.spuId)">
+        <div class="cart-decrease" v-show="foodNum>0" @click.stop="decreaseCart(food.foodId)">
           <svg width="25" height="25">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-decrease"></use>
           </svg>
         </div>
       </transition>
         <div class="cart-count" v-show="foodNum>0">{{foodNum}}</div>
-        <div class="cart-add" @click.stop="addToCart(food.spuId,food.skuList, food.spuName,food.currentPrice, food.unit)">
+        <div class="cart-add" @click.stop="addToCart(food.foodId,food.skuList, food.spuName,food.currentPrice, food.unit)">
           <svg width="25" height="25">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart-add"></use>
           </svg>
@@ -47,13 +47,13 @@ export default {
     };
   },
   computed: {
-    ...mapState(['cartList']),
+    ...mapState('cart',['cartList']),
     foodNum() {
       let cartList = this.cartList[this.shopId];
       let num = 0;
       if (cartList && cartList.length > 0) {
         cartList.forEach((item) => {
-          if (item.spuId === this.food.spuId && (!this.attrs.length || compareArray(this.attrs, item.attrs, true))) {
+          if (item.spuId === this.food.foodId && (!this.attrs.length || compareArray(this.attrs, item.attrs, true))) {
             num += item.count;
           }
         });
@@ -62,7 +62,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['ADD_CART', 'REDUCE_CART']),
+    ...mapMutations('cart',['ADD_CART', 'REDUCE_CART']),
     // 判断attr的值是否进入规格页面
     showSpecification(event) {
       if (this.food.spuAttrList && this.food.spuAttrList.length && this.chooseType !== 'specification') {

@@ -36,8 +36,13 @@ const _shopCharacteristics = [
   { label: '支持开发票', value: 'invoice' },
 ]
 
+const _food_tag = [
+  { label: '力荐', value: 'recommend', icon: 'https://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png' },
+]
+
 export {
   _activity,
   _sortVOList,
-  _shopCharacteristics
+  _shopCharacteristics,
+  _food_tag
 }
