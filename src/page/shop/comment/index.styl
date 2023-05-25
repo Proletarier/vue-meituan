@@ -1,0 +1,122 @@
+@import "../../../style/mixin.styl";
+.comment-container
+  width 100%
+  flex 0 0 auto
+  overflow hidden
+  background rgb(244,244,244)
+  .comment-hdaer
+    display flex
+    justify-content space-between
+    padding 15px 0
+    margin-bottom 10px
+    background #fff
+    .score
+      flex 1
+      display flex
+      flex-direction column
+      justify-content space-between
+      min-height 50px
+      color #999999
+      font-size 12px
+      text-align center
+      &:first-child
+        margin-right 20px
+      &:nth-child(2)
+        position relative
+        &:after
+          content ''
+          height 50px
+          width 1px
+          display inline-block
+          position absolute
+          right 0
+          background #e4e4e4
+          transform: scale(0.5, 1);
+      .shop-score
+        font-size 27px
+        color #ffb000
+      .quality,.pack
+        text-align left
+        color #333
+        span:first-child
+          margin-right 10px
+        span:last-child
+          margin-left 10px
+          color #ffb000
+      .quality
+        line-height 20px
+      .delivery
+        font-size  27px
+  .comment-label
+    background #fff
+    padding-top 15px
+    padding-left 15px
+    border-1px(rgba(228,228,228,0.5))
+    .label-item
+      display inline-block
+      padding 5px 10px
+      margin-right 10px
+      margin-bottom 15px
+      border 1px solid #dddddd
+      border-radius 20px
+      font-size 14px
+      color #333
+      &.active
+        background #fffbf1
+        color #FFB000
+  .comment-list
+    background #fff
+    .comment-list-li
+      padding-top 15px
+      padding-left 15px
+      display flex
+      border-1px(rgba(228,228,228,0.5))
+      .icon img
+        width 40px
+        height 40px
+        border-radius 50%
+        margin-right 15px
+      .comment-list-details
+        padding-right 15px
+        padding-bottom 10px
+        box-sizing border-box
+        .name
+          font-size 16px
+          line-height 16px
+          color #2f2f2f
+          .time
+            font-size 12px
+            color #898989
+            float right
+        .delivery
+          color #666666
+          font-size 12px
+          line-height 20px
+        .content
+          margin-top 10px
+          margin-bottom 10px
+          font-size 14px
+          line-height 20px
+          color #2f2f2f
+        .pic
+          display inline-block
+          margin-right 5px
+          margin-bottom 5px
+          width 80px
+          height 80px
+        .dish,.label
+          margin-bottom 3px
+          font-size 12px
+          line-height 20px
+          color #999
+          svg
+            vertical-align bottom
+            margin-right 5px
+        .reply
+            padding 5px
+            margin-bottom 10px
+            font-size 12px
+            line-height 16px
+            letter-spacing 1px
+            color #666666
+            background #f4f4f4  

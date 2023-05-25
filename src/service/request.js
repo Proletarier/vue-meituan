@@ -25,7 +25,7 @@ const request = async ({ url, method = "get" } = {}, params = {}) => {
         if (code === "Success") {
           return data || true;
         } else {
-          context.$message.error(API_CODES[code] || message || "请求出错");
+          context.$message.error(message || API_CODES[code]  || "请求出错");
           return false;
         }
       } else if (response.status) {

@@ -15,13 +15,15 @@ const mutations = {
   ADD_CART: (
     state, {
       shopId,
-      spuId,
-      skuList,
+      foodId,
+      imageUrl,
       spuName,
-      payableAmount,
-      spec,
       attrs,
-      attrValues
+      attrValues,
+      boxFee,
+      currentPrice,
+      originPrice,
+      unit,
     }
   ) => {
     let cartList = state.cartList;
@@ -30,7 +32,7 @@ const mutations = {
 
     if (cart.length) {
       for (let i = 0; i < cart.length; i++) {
-        if (cart[i].spuId === spuId && (!attrs.length || compareArray(attrs, shop[i].attrs, false))) {
+        if (cart[i].foodId === foodId && (!attrs.length || compareArray(attrs, cart[i].attrs, false))) {
           cart[i].count += 1;
           isAdd = true;
           cart[i].wrnm = attrs;
@@ -39,14 +41,16 @@ const mutations = {
     }
     if (!isAdd) {
       cart.push({
-        spuId,
-        skuList,
+        foodId,
+        imageUrl,
         spuName,
         count: 1,
-        payableAmount,
-        spec,
         attrs,
         attrValues,
+        boxFee,
+        currentPrice,
+        originPrice,
+        unit,
       });
     }
     state.cartList = { ...cartList };
@@ -56,14 +60,14 @@ const mutations = {
   // 移除购物车
   REDUCE_CART: (state, {
     shopId,
-    spuId,
+    foodId,
     attrs
   }) => {
     let cartList = state.cartList;
     let cart = cartList[shopId];
 
     for (let i = 0; i < cart.length; i++) {
-      if (cart[i].spuId === spuId && (!attrs.length || compareArray(attrs, cart[i].attrs, false))) {
+      if (cart[i].foodId === foodId && (!attrs.length || compareArray(attrs, cart[i].attrs, false))) {
         if (cart[i].count === 1) {
           cart.splice(i, 1);
         } else {

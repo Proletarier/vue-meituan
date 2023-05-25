@@ -13,17 +13,17 @@
         <li v-for="(shop,index) in categoryList" :key="index" class="food-list" ref="foodList">
           <h1>{{shop.categoryName}}</h1>
           <ul>
-            <li v-for="food in shop.spuList" :key="food.spuId" class="food-item" @click="selectFood(food,'food')">
+            <li v-for="food in shop.spuList" :key="food.foodId" class="food-item" @click="selectFood(food,'food')">
               <img class="icon" height="75px" width="75px" :src="food.imageUrl">
               <section class="content">
                 <h2 class="name">{{food.spuName}}</h2>
                 <p class="desc">{{food.spuDesc}}</p>
                 <p class="sale-num"><span>月售{{food.saleVolume}}</span><span class="praise">赞{{food.praiseNum}}</span></p>
                 <div class="price-unit">
-                  <p><span class="price">￥{{food.currentPrice}}</span>/{{food.unit}}&nbsp;起&nbsp;<span class="origin">{{food.originPrice}}</span></p>
+                  <p><span class="price">￥{{food.currentPrice}}</span><span v-if="food.unit">/{{food.unit}}</span>&nbsp;&nbsp;<span v-if="food.originPrice > food.currentPrice" class="origin">{{food.originPrice}}</span></p>
                   <div class="cartcontrol-wrapper">
-                    <div v-if="food.spuAttrList.length>0" class="specification" @click.stop="selectFood(food,'specification')">选规格</div>
-                    <CartControl v-else :food='food' :shopId='shopId'></CartControl>
+                    <div v-if="food.spuAttrList.length>0 && foodNum(food.foodId) == 0" class="specification" @click.stop="selectFood(food,'specification')">选规格</div>
+                    <CartControl v-else :food='food' :shopId='shopId' @showSpecification="selectFood(food,'specification')"></CartControl>
                   </div>
                 </div>
                 <div v-if="food.spuPromotionInfo" class="promotion">
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import BScroll from 'better-scroll';
 import { CartControl } from '../children';
 
@@ -66,13 +67,8 @@ export default {
       menuIndexChange: true,
     };
   },
-  // mounted() {
-  //   this.$nextTick(() => {
-  //     this.initPlug();
-  //     this.calculateHeight();
-  //   });
-  // },
   computed: {
+    ...mapState('cart', ['cartList']),
     selectFoods() {
       let foods = [];
       this.categoryList.forEach(good => {
@@ -83,7 +79,7 @@ export default {
         });
       });
       return foods;
-    }
+    },
   },
   methods: {
     initPlug() {
@@ -110,6 +106,16 @@ export default {
           }
         }
       });
+     this.calculateHeight();
+    },
+    calculateHeight() {
+      let foodList = this.$refs.foodList;
+      let height = 0;
+      this.foodsHeight.push(height);
+      for (let i = 0; i < foodList.length; i++) {
+        height += foodList[i].clientHeight;
+        this.foodsHeight.push(height);
+      }
     },
     selectMenu(index) {
       this.menuIdex = index;
@@ -122,20 +128,24 @@ export default {
         this.menuIndexChange = true;
       });
     },
-    calculateHeight() {
-      let foodList = this.$refs.foodList;
-      let height = 0;
-      this.foodsHeight.push(height);
-      for (let i = 0; i < foodList.length; i++) {
-        height += foodList[i].clientHeight;
-        this.foodsHeight.push(height);
-      }
-    },
     followScroll(index) {
       let menuList = this.$refs.menuList;
       let el = menuList[index];
       this.menuWrapper.scrollToElement(el, 300, 0, -100);
     },
+    foodNum(foodId) {
+      let cartList = { ...this.cartList };
+      let cart = cartList[this.shopId];
+      let num = 0;
+      if (cart && cart.length > 0) {
+        cart.forEach(item => {
+          if (item.foodId === foodId) {
+            num += item.count;
+          }
+        });
+      }
+      return num;
+    }
   },
   watch: {
     categoryList: {
@@ -143,11 +153,11 @@ export default {
         if (data && data.length > 0) {
           this.$nextTick(() => {
             this.initPlug();
-            this.calculateHeight();
           });
         }
       },
-      deep: true
+      deep: true,
+      immediate: true
     }
   },
   components: {

@@ -22,8 +22,9 @@ const keywordSearch = async params => await request(apis['keywordSearch'], { ...
 
 const getShopInfo = async params => await request(apis['getShopInfo'], { ...params })
 const getShopQualification = async params => await request(apis['getShopQualification'], { ...params })
-
 const getFood = async params => await request(apis['getFood'], { ...params })
+const commentsSummary = async params => await request(apis['commentsSummary'], { ...params })
+const getCommentList = async params => await request(apis['getCommentList'], { ...params })
 
 
 export default {
@@ -43,5 +44,7 @@ export default {
   getCaptcha,
   getShopInfo,
   getShopQualification,
-  getFood
+  getFood,
+  commentsSummary,
+  getCommentList
 }

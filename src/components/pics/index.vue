@@ -34,6 +34,7 @@ export default {
   },
   methods: {
     show() {
+       console.log('222')
       this.showFlag = true;
       this.$nextTick(() => {
         this.swiper = new Swiper('.swiper-container', {

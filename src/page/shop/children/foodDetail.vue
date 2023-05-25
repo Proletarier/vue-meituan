@@ -4,7 +4,7 @@
       <div class="detail">
         <div v-if="chooseType === 'food'" class="info">
           <div class="cover">
-            <img width="100%" :src="food.imageUrl">
+            <img width="100%"  height="100%" :src="food.imageUrl">
           </div>
           <dl class="content">
             <dt class="title">{{food.spuName}}</dt>
@@ -77,14 +77,13 @@ export default {
   },
   computed: {
     ...mapState('cart',['cartList']),
-
     foodNum() {
       let cartList = { ...this.cartList };
       let cart = cartList[this.shopId];
       let num = 0;
       if (cart && cart.length > 0) {
         cart.forEach(item => {
-          if (item.spuId === this.food.spuId) {
+          if (item.foodId === this.food.foodId) {
             num += item.count;
           }
         });
@@ -104,7 +103,7 @@ export default {
       if (this.chooseType === 'food' && this.food.spuAttrList.length) {
         this.chooseType = 'specification';
       } else {
-        this.$refs.cartcontrol.addToCart(this.food.spuId, this.food.skuList, this.food.spuName, this.food.currentPrice, this.food.unit);
+        this.$refs.cartcontrol.addToCart(this.food);
       }
     },
     // 选择规格
@@ -152,6 +151,7 @@ export default {
       .info {
         .cover {
           width: 100%;
+          min-height: 30vh
         }
 
         .content {

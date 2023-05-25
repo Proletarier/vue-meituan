@@ -103,6 +103,8 @@ export default {
       ,shippingAddress: item.shippingAddress
       ,houseNumber: item.houseNumber
       ,editType: 'edit'
+      ,lat:item.location.lat
+      ,lng:item.location.lng
       }})
     }
   },

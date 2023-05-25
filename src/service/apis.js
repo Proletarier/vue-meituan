@@ -66,5 +66,13 @@ export default {
   getFood: {
     method: 'GET',
     url: '/api/shop/getFood/{{shopId}}'
+  },
+  commentsSummary: {
+    method: 'GET',
+    url: '/api/shop/commentsSummary/{{shopId}}'
+  },
+  getCommentList: {
+    method: 'GET',
+    url: '/api/shop/getCommentList'
   }
 }
