@@ -24,6 +24,7 @@ const mutations = {
       currentPrice,
       originPrice,
       unit,
+      activityPolicy
     }
   ) => {
     let cartList = state.cartList;
@@ -40,17 +41,19 @@ const mutations = {
       }
     }
     if (!isAdd) {
+      const { minPurchaseNum } = activityPolicy?.discount || {}
       cart.push({
         foodId,
         imageUrl,
         spuName,
-        count: 1,
+        count: minPurchaseNum || 1,
         attrs,
         attrValues,
         boxFee,
-        currentPrice,
-        originPrice,
+        currentPrice: currentPrice,
+        originPrice: originPrice,
         unit,
+        activityPolicy
       });
     }
     state.cartList = { ...cartList };
@@ -68,8 +71,9 @@ const mutations = {
 
     for (let i = 0; i < cart.length; i++) {
       if (cart[i].foodId === foodId && (!attrs.length || compareArray(attrs, cart[i].attrs, false))) {
-        if (cart[i].count === 1) {
-          cart.splice(i, 1);
+         const { minPurchaseNum = 1 }  = cart[i]?.activityPolicy?.discount
+         if (cart[i].count === minPurchaseNum) {
+           cart.splice(i, 1);
         } else {
           cart[i].count -= 1;
         }

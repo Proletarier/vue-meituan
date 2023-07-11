@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style="position: 'absolute'; width:0px; height:0px;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style="position: 'absolute'; width:0px; height:0px; display: none;">
     <defs>
       <symbol viewBox="0 0 1024 1024" id="site">
         <path d="M512 0.448C300.352 0.448 128.192 173.376 128.192 385.92c0 200.064 316.864 562.56 352.96 603.264l30.784 34.688 30.912-34.688c36.096-40.704 352.96-403.2 352.96-603.264C895.808 173.44 723.648 0.448 512 0.448z m0 903.104C405.376 777.408 208.896 517.44 208.896 385.92c0-170.048 135.872-308.416 302.976-308.416 167.104 0 303.04 138.368 303.04 308.416 0 131.328-196.544 391.424-303.04 517.632z" fill="#ffffff" p-id="3924" data-spm-anchor-id="a313x.7781069.0.i49" class="selected"></path><path d="M376.64 376.32c0 69.632 59.2 126.08 132.16 126.08 73.024 0 132.224-56.448 132.224-126.08 0-69.696-59.2-126.144-132.224-126.144-72.96 0-132.16 56.448-132.16 126.08z" fill="#ffffff" p-id="3925" data-spm-anchor-id="a313x.7781069.0.i48" class=""></path>

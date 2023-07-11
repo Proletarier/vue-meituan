@@ -3,17 +3,19 @@ import Router from 'vue-router';
 
 import home from '@/page/home';
 import redirect from '@/page/redirect.vue';
-import order from '@/page/order';
+import order from '@/page/orderlist';
 import mine from '@/page/mine';
 import shop from '@/page/near-shop';
 import menu from '@/page/shop';
 import login from '@/page/login';
 import qualification from '@/page/shop/qualification';
-import orderdetail from '@/page/order/children/orderdetail.vue';
+import orderdetail from '@/page/orderlist/children/orderdetail.vue';
 import city from '@/page/city';
 import addresslist from '@/page/address';
 import addaddress from '@/page/address/add';
 import site from '@/page/site';
+import orderAdd from '@/page/order-add';
+
 
 Vue.use(Router);
 
@@ -35,14 +37,6 @@ export const constantRouterMap = [
     path: '/home',
     component: home,
     meta: { keepAlive: false }
-  },
-  {
-    path: '/order',
-    component: order
-  },
-  {
-    path: '/orderdetail',
-    component: orderdetail
   },
   {
     path: '/mine',
@@ -87,7 +81,22 @@ export const mineRouter = [
   }
 ];
 
+export const orderRouter =[
+  {
+    path: '/order',
+    component: order
+  },
+  {
+    path: '/orderdetail',
+    component: orderdetail
+  },
+  {
+    path: '/orderAdd',
+    component: orderAdd
+  },
+]
+
 export default new Router({
   scrollBehavior: () => ({ y: 0 }),
-  routes: [ ...constantRouterMap,...mineRouter ]
+  routes: [ ...constantRouterMap,...mineRouter,...orderRouter ]
 });

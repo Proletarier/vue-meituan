@@ -74,5 +74,9 @@ export default {
   getCommentList: {
     method: 'GET',
     url: '/api/shop/getCommentList'
+  },
+  orderPreView: {
+    method: 'POST',
+    url: '/api/order/preview'
   }
 }

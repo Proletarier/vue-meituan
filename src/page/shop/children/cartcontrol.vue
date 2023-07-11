@@ -69,10 +69,10 @@ export default {
         event.stopPropagation();
       }
     },
-    addToCart({ foodId, imageUrl, spuName, boxFee,currentPrice,originPrice,unit }) {
+    addToCart({ foodId, imageUrl, spuName, boxFee,currentPrice,originPrice,unit, activityPolicy }) {
       this.ADD_CART({
         shopId: this.shopId, foodId, imageUrl, spuName, attrs: this.attrs.slice(), attrValues: this.attrValues.slice(),
-        boxFee,currentPrice,originPrice,unit 
+        boxFee,currentPrice,originPrice,unit,activityPolicy
       });
     },
     decreaseCart(foodId) {

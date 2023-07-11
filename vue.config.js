@@ -107,6 +107,6 @@ module.exports = {
     open: true, // 是否打开浏览器
     port: '9537', // 代理断就
     https: false,
-    hotOnly: false // 热更新
+    hotOnly: true // 热更新
   }
 };

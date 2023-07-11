@@ -106,7 +106,7 @@ export default {
           }
         }
       });
-     this.calculateHeight();
+      this.calculateHeight();
     },
     calculateHeight() {
       let foodList = this.$refs.foodList;

@@ -5,7 +5,7 @@
         <svg class="site_icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#site"></use>
         </svg>
-        <span class="site_text">{{this.poiStatus ? "定位中..." : this.location.place}}</span>
+        <span class="site_text">{{this.poiStatus ? "定位中..." : this.location.place }}</span>
         <svg class="arrow_right">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
         </svg>
@@ -154,7 +154,7 @@ export default {
         }
         function onError(data) {
           _this.poiStatus = false;
-          _this.setLocation()
+          _this.$router.push({path: '/mine/poipicker', query: { source:'home' } });
         }
       });
     },

@@ -1,0 +1,460 @@
+@import "../../style/mixin.styl";
+.order-add{
+  background: #EFEFEF
+  padding-bottom: 50px
+  section{
+    margin: 15px auto
+    width: 88%
+    background: #fff
+    border-radius: 8px
+  }
+  .deliver{
+    padding: 5vw 3vw
+    .addressDetail{
+       position relative
+       font-size: 16px;
+       color: #FFB000;
+       height: 21px;
+       line-height: 21px;
+       font-weight: bold
+       &:after {
+         content: '';
+         position: absolute;
+         background-image: url(//s3.meituan.net/static-prod01/com.sankuai.wmcapp.openh5.static/images/arrow-left-2-7e7678.png);
+         background-size: 3.2vw 3.2vw;
+         width: 3.2vw;
+         height: 3.2vw;
+         top: 2vw;
+         right: 4vw;
+      }
+    }
+    .tip{
+       font-size: 3.2vw;
+       line-height: normal;
+       color: #FF8000;
+       letter-spacing: 0.34px;
+       margin-top: 2vw;
+    }
+    .timeDeliver{
+      padding-top: 5vw;
+      padding-right: 7vw;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .keyword{
+        font-weight: 600;
+        font-size: 4vw;
+        color: #333333;
+      }
+      .timeDesc{
+        font-size: 4vw;
+        color: #333333;
+        letter-spacing: 0.04vw;
+      }
+      &:after {
+         content: '';
+         position: absolute;
+         background-image: url(//s3.meituan.net/static-prod01/com.sankuai.wmcapp.openh5.static/images/arrow-left-2-7e7678.png);
+         background-size: 3.2vw 3.2vw;
+         width: 3.2vw;
+         height: 3.2vw;
+         right: 4vw;
+      }
+    }
+  }
+  .detail{
+    position relative;
+    padding: 0vw 3vw;
+    .shop{
+        padding-left: 8vw
+        position relative
+        color: #999999;
+        background-color: #fff;
+        top: 0;
+        box-sizing: border-box;
+        .shopIcon{
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          left: 0px
+          top: 14px
+       }
+       .shopName{
+         line-height: 50px
+         font-size: 14px;
+         color: #666;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+       }
+       .mtzsWord{
+          background-image: url(//s3.meituan.net/static-prod01/com.sankuai.wmcapp.openh5.static/images/sjzp-f92a39.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 4vh;
+          width: 13vw;
+          box-sizing: border-box;
+          position: absolute;
+          object-fit: cover;
+          top: 4.5vw;
+          right: 0;
+       }
+       .zhuansong{
+          height: 4vh;
+          width: 13vw;
+          background url(../../images/zhuansong.png)
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          object-fit: cover;
+          top: 4.5vw;
+          right: 0;
+        }
+    }
+    .spuList{
+      margin: 0 -3vw
+      .cart-ul-li{
+        height: 75px
+        display: flex
+        background-color: #F8F8F8;
+        padding: 10px
+        margin-bottom: 5px
+        box-sizing: border-box;
+        .spuInfoList{
+          flex: 1
+          padding-left: 10px
+          position relative
+          .spuInfo{
+            height: 20px
+            line-height: 20px
+            display: flex
+            .name{
+              font-size: 14px
+              color: #333
+              max-width: 180px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .price{
+              flex: 1 1;
+              display: block;
+              font-size: 14px;
+              color: #333;
+              text-align: right 
+            }
+          }
+          .attrs{
+            font-size: 12px;
+            line-height: 17px;
+            color: #999;
+            max-width: 180px;
+            .amount{
+              color: #999;
+              font-size: 12px;
+              text-decoration: line-through;
+              float: right;
+              position: absolute;
+              right: 0;
+              top: 20px;
+            }
+          }
+          .count{
+            font-size: 12px;
+            line-height: 17px;
+            color: #999;
+          }
+        }
+      }
+    }
+    .fee{
+      padding-right: 0;
+      position: relative;
+      overflow: visible;
+      overflow: initial;
+      border-bottom: 1px dashed rgba(151,151,151,0.4);
+      .feeInner{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .feeInfo{
+          display: flex;
+          line-height: 20px;
+          margin: 8px 0;
+          margin-bottom: 15px
+          font-size: 14px;
+          color: #333;
+          .feeInfoSpan{
+            text-align: right
+            flex: 1 1
+          }
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -16px;
+        height: 12px;
+        width: 12px;
+        background-color: #f4f4f4;
+        border-radius: 50%;
+        top: initial;
+        bottom: -6px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -16px;
+        height: 12px;
+        width: 12px;
+        background-color: #f4f4f4;
+        border-radius: 50%;
+        left: initial;
+        top: initial;
+        bottom: -6px;
+        right: -16px;
+      }
+    }
+    .root{
+      position: relative;
+      padding: 2vw 0;
+      border-bottom: 1px dashed rgba(151,151,151,0.4);
+      .promotion{
+        padding: 2vw 3.2vw 2vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3.7vw;
+        color: #030303;
+        position: relative;
+        .promotionSelect{
+          font-size: 3vw;
+          color: #FFFFFF;
+          background: #FF3900;
+          border-radius: 1.1vw;
+          padding: 1vw 2vw;
+        }
+        &:after{
+          top: 50%;
+          right: 0;
+          margin-top: -5px;
+          content: '';
+          display: inline-block;
+          height: 11px;
+          width: 6px;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWBAMAAAAGFmApAAAAG1BMVEUAAACvr6+np6eurq6srKyurq6urq6np6evr6+aZHW7AAAACHRSTlMAzhHbG8S8HSeiSm4AAAAwSURBVAjXY0gsYACBDBMwpdjsAKKYJMjhNoIp51YQyWIhBOY0KhDPYZAAcxhCwRwAI1kNBzm+faIAAAAASUVORK5CYII=");
+          background-repeat: no-repeat;
+          background-size: 6px 11px;
+          position: absolute;
+        }
+      }
+    }
+    .promote{
+      position: relative;
+      padding-right: 0;
+      .promoInfo{
+        min-height: 13.3vw;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .remindInfos{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 3.2vw;
+          color: #FF8000;
+          transform: translateY(1.3vw);
+          .remindInfosIcon{
+            flex: none;
+            content: '';
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAY1BMVEUAAADq0gDl0gDN1ADK1ADC1ADx0QDf0wDG1QDa0wC/1QC51ADd0wDE1QDM1ADU1ADR1ADP1ADI1QDE1ADA1QDy0QD/0AD/////5nj40AD/1BT/4FT/+uL/7Z7/1yf//PD/42dkzI+iAAAAFnRSTlMA9vChiDf85WzaHQzgY5bEsql6VCz8X6E8MgAAAtVJREFUaN7E1tuOgjAUheEeoJSDCoJr3HOh7/+WkxATEuN2CnTp/wJfugttzeqa6E+ds0EEEAnWdScfG0OtjX0V8LJQ9bE1lCZfCd4mlZ9yq413SMr5nFM/1ILkpD5kYguHlbkiB2uxIbuXjhYbs3EHW3bYUVdudQfBrmTYtlyH3bkNiz4KMiTHlWxbI1N1u2rMFtmyK8Y9XpCxy5jqngVZk3OaWyCl23XuhpSKFPeY5t5/5u6/SOmYa724/jy6Is+az+DA+GefR2HBMr5zywAWjFDqbmvBg2FbFa7BhFHrPxIT1n+qUgAuLK+32YENw71yB8xRYQz6oEmwPuwKn4DRPbsRS0wY8Qm2WKLCVr+TuDAKfcFc2OoL5sIo9LODC7vFPUCJAuOg30pUeLmlGoESB5bmAXt8FobXPy0u7MzcBCUajEmfNBf2+r3Ehav5aSlQ4sHSzqcHFdbPkB5KTLjXt5gFL5scoMSEgzENlKgwGv2xxYWjfnxwYW9OUOLCJ9NBiQt3+tXEhZ3+vuTC1lygxIWDEShxYfkejO/A+Cvf3FIYhIEoiqKlYhWqNGp84P5XWTAt1J+SeIRL2ruBIa2ZzONcWeA//I9V10mWQGQpU/ZIyJ5FWSEgK31kxZ6qvJUV9LIWRta0ydpUVWMuG0XIhi+qcZNswCYbKYIh6voOvJpgFWRsbCcXd7ImWBUZlBs7bjoQNwWrAaQMLEOIErD+oQeWHDkBKz6kK1hqEt3IGtfJjn0ffJuGnC6u7dxtmsNC3+mqfpm6l6bF+CulcIJLmMFJc8gpjjF3H5qNr2oKoNhuJ98jFxi5GfeBR+OlpMSQUe8ChtUClxxgVSDw0AKQjPzUDUDnyMeVAViQXKca4JEkgWQACAUpc2gAAgseiUcLoF/wLCZ5DJjziWB3PCj7KfB+bHYFaNCI05Jy1IQTt+0o1Gj1G9Yyp7L6ZqargpKjzD74BBNZz8TuKG8gAAAAAElFTkSuQmCC');
+            background-size: 3.2vw 3.2vw;
+            height: 3.2vw;
+            width: 3.2vw;
+            display: inline-block;
+            margin-right: 1.3vw;
+          }
+        }
+        .rule{
+          flex: auto;
+          display: flex;
+          justify-content: flex-start;
+          .ruleInner{
+            display: flex;
+            align-items: center;
+            .ruleText{
+              font-weight: 500;
+              font-size: 3.2vw;
+              color: #909191;
+            }
+            .ruleIcon{
+              display: inline-block;
+              margin-left: 0.8vw;
+              height: 3.6vw;
+              width: 3.6vw;
+              background-image: url(//s3.meituan.net/static-prod01/com.sankuai.wmcapp.openh5.static/images/question-185eb2.png);
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .discountSpan{
+          font-weight: 400;
+          height: 13.3vw;
+          line-height: 13.3vw;
+          .discountWord{
+            font-size: 3.7vw;
+            color: #111111;
+            line-height: 5.3vw;
+            margin-top: 4.2vw;
+          }
+          .redYuan{
+            font-size: 2.9vw;
+            color: #FF3900;
+            line-height: 4vw;
+            margin-top: 5.3vw;
+            margin-left: 0.6vw;
+          }
+          .discountFee{
+            font-size: 3.7vw;
+            color: #FF3900;
+            line-height: 5.3vw;
+            margin-top: 4.2vw;
+            margin-left: 0.2vw;
+          }
+        }
+        .promoInfoActual{
+          font-weight: 400;
+          height: 13.3vw;
+          line-height: 13.3vw;
+          margin-left: 3.4vw;
+          .actualWord{
+            font-size: 3.73333333vw;
+            color: #111111;
+            line-height: 5.33333333vw;
+            margin-top: 4.26666667vw;
+          }
+          .blackYuan{
+            font-size: 2.9vw;
+            color: #000000;
+            line-height: 4vw;
+            margin-top: 5.3vw;
+            margin-left: 1.6vw;
+          }
+          .actuallyPaidFee{
+            font-size: 5vw;
+            color: #333333;
+            line-height: 6.9vw;
+            margin-top: 2.9vw;
+            margin-left: 0.5vw;
+          }
+        }
+      }
+    }
+  }
+  .tableware{
+    position relative;
+    padding: 0vw 3vw;
+    .people,.remark,.invoice{
+      padding: 12px 15px 12px 0;
+      padding-right: 0;
+      line-height: 26px;
+      font-size: 14px
+      color #333
+      &:before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        right: -50%;
+        transform: scale(0.5);
+        border: 1px solid #e4e4e4;
+        border-radius: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+    .people{
+      padding-right: 10px;
+      position: relative;
+      .peopleSelect,.input{
+        float: right;
+        text-align: right;
+      }
+      .peopleSelect{
+        margin-right: 5px;
+      }
+      icon-arrow-right()
+    }
+    .remark{
+       icon-arrow-right()
+    }
+    .invoice{
+      icon-arrow-right()
+    }
+  }
+}
+
+.root{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .submitWrapper{
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: constant(safe-area-inset-left)!important;
+    left: env(safe-area-inset-left)!important;
+    right: constant(safe-area-inset-right)!important;
+    right: env(safe-area-inset-right)!important;
+    .submitSubWrapper{
+      position: relative;
+      display: flex;
+      .submitDetail{
+        position: relative;
+        background-color: #fff;
+        flex: 1;
+        .coupon{
+          position: absolute;
+          font-size: 14px;
+          color: #333;
+          left: 15px;
+          line-height: 50px;
+        }
+        .actual{
+          position: absolute;
+          right: 15px;
+          line-height: 50px;
+          font-size: 16px;
+          color: #333;
+          & > i{
+            color: #FB4E44;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+      }
+      .submit{
+        height: 50px;
+        width: 125px;
+        border-radius: 0;
+        background-color: #f8c74e;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+  }
+}

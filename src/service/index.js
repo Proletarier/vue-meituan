@@ -26,6 +26,8 @@ const getFood = async params => await request(apis['getFood'], { ...params })
 const commentsSummary = async params => await request(apis['commentsSummary'], { ...params })
 const getCommentList = async params => await request(apis['getCommentList'], { ...params })
 
+const orderPreView = async params => await request(apis['orderPreView'], { ...params })
+
 
 export default {
   logout,
@@ -46,5 +48,6 @@ export default {
   getShopQualification,
   getFood,
   commentsSummary,
-  getCommentList
+  getCommentList,
+  orderPreView
 }
