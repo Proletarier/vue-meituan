@@ -76,20 +76,8 @@
           </div>
         </div>
       </section>
-      <section class="tableware">
-        <div class="people">
-          <span>餐具数量</span>
-          <span class="peopleSelect">依据餐量提供</span>
-        </div>
-        <div class="remark">
-          <p class="invoiceTitleLine">
-            <span class="invoiceTitle">备注</span><span class="invoiceTip">推荐使用无接触配送</span>
-          </p>
-        </div>
-        <div class="invoice">
-          <span class="needInvoice">发票</span>
-          <div class="invoiceInput_KbN_Ja"><span class="invoiceTip2_LEJbfN">未选择</span></div>
-        </div>
+      <section class="orderOther">
+        <People/>
       </section>
     </article>
     <div class="root">
@@ -115,6 +103,8 @@ import { mapMutations, mapState } from "vuex";
 import service from '@/service';
 import Nav from '@/page/_components/nav';
 import Coupon from './coupon';
+import People from './people';
+
 
 import './index.styl';
 
@@ -179,7 +169,8 @@ export default {
   },
   components: {
     Nav,
-    Coupon
+    Coupon,
+    People
   }
 };
 </script>
