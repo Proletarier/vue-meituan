@@ -59,6 +59,5 @@ export const orderDetail = () => get('/order/detail');
 
 //登录
 export const login = (phone, captcha) => request({ url: '/login', method: 'post',data:{phone,captcha}}); 
-export const logout = () => request({ url: '/logout', method: 'post'}); 
 export const getInfo = () => request({ url: '/info', method: 'get'}); 
 export const getCaptcha = (data) => request({ url: '/captcha', method: 'get',params:data});
